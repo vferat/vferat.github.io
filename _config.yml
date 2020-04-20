@@ -44,6 +44,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
+  - jemoji
 
 paginate: 4
 paginate_path: "/page/:num"
