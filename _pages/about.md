@@ -16,7 +16,7 @@ My main research topics are indeed **EEG**, **EEG microstates**, and **neurofeed
 This website is a small window which will allow me to share with you professional or personal projects on which I am working, small tutorials or just a few photos or other hobbies that are close to my heart.
 
 You can also find part of my work on my GitHub: [:octocat:](https://github.com/vferat)
-or contact me if you want : <a href = "mailto:victor.ferat@live.fr">:email:</a> \
+or contact me if you want : <a href = "mailto:victor.ferat@live.fr">:email:</a>  
 I hope you find some interesting information here or at least spend a few minutes changing your ideas.
 
 
