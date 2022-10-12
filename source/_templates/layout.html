@@ -1,0 +1,22 @@
+{% extends "pydata_sphinx_theme/layout.html" %}
+
+{% block docs_body %}
+{{ super() }}
+<!-- giscus -->
+<script src="https://giscus.app/client.js"
+        data-repo="vferat/vferat.github.io"
+        data-repo-id="R_kgDOIMr2YA"
+        data-category="Q&A"
+        data-category-id="DIC_kwDOIMr2YM4CR7_W"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endblock %}
