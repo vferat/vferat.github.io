@@ -38,7 +38,13 @@ html_theme_options = {
             "name": "ORCID",
             "url": "https://orcid.org/0000-0003-1952-7657",
             "icon": "fa-brands fa-orcid",
-        },],
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/victor-ferat/",
+            "icon": "fa-brands fa-linkedin",
+        },        
+        ],
   "search_bar_text": "Search this site...",
 }
 
