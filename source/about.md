@@ -1,3 +1,8 @@
+:::{dropdown} Looking for a new professional opportunity
+   :color: primary
+   :icon: dependabot
+   I am currently available for a 30% research engineer position starting January 1st 2023. If you like what you read here, do not hesitate to contact me on the professional network you prefer the most.
+:::
 # About Me
 
 I am a French engineer who started a PhD in neuroscience. I work at the [Functional Brain Mapping Lab](https://www.campusbiotech.ch/en/node/326) where I study brain wave (EEG). . I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
