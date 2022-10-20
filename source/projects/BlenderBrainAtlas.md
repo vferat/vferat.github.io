@@ -12,3 +12,6 @@ BlenderBrainAtlas is a script to create 3D objects from a MRI segmentation file 
 +++
 [https://github.com/vferat/BlenderBrainAtlas](https://github.com/vferat/BlenderBrainAtlas)
 :::
+
+
+<script src="https://embed.github.com/view/3d/vferat/BlenderBrainAtlas/main/BlenderBrainAtlas/STL/Left-Hippocampus.stl"></script>

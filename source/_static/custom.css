@@ -8,10 +8,9 @@ div.profile-pic {
 div.profile-pic img {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
+    height: 100%;
     margin: 0 auto;
     display: block;
-    filter: grayscale(80%);
 }
 
 .title {
