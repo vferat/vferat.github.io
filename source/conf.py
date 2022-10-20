@@ -32,8 +32,12 @@ html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
   "github_url": "https://github.com/vferat/",
-  "twitter_url": "https://twitter.com/ferat_victor",
   "icon_links": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/ferat_victor",
+            "icon": "fa-brands fa-twitter",
+        },
         {
             "name": "ORCID",
             "url": "https://orcid.org/0000-0003-1952-7657",
