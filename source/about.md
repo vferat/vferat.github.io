@@ -16,13 +16,14 @@ At the same time, I try to play your part by making analysis tools and technique
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2015 - 2018
+:::{grid-item-card} 2020 - today
 :columns: 3
 :::
-:::{grid-item-card}  Master’s in industrial and mechanical engineering
+:::{grid-item-card}  PhD in Neuroscience
 :columns: 9
-Arts et Métiers
+Lemanic Neurosicences Doctoral School
 :::
+
 ::::
 
 ::::{grid} 2
@@ -36,18 +37,19 @@ Arts et Métiers
 Bioengineering and Innovation in Neurosciences (Paristech)
 :::
 
-
 ::::
+
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2015 - 2018
 :columns: 3
 :::
-:::{grid-item-card}  PhD in Neuroscience
+:::{grid-item-card}  Master’s in industrial and mechanical engineering
 :columns: 9
-Lemanic Neurosicences Doctoral School
+Arts et Métiers
 :::
+
 ::::
 
 ## Work Experiences
