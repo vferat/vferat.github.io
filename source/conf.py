@@ -49,7 +49,7 @@ html_theme_options = {
 }
 
 html_favicon = "_static/favicon.ico"
-html_title = "Pycromancer"
+html_title = "vferat"
 
 html_static_path = ['_static']
 html_css_files = [
