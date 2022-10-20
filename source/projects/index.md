@@ -20,6 +20,7 @@ An open-source Python package for analyzing EEG microstates developed to work wi
 ```{image} https://lh5.googleusercontent.com/ByeozYMIJO3Wiac6G7MdCthBmWX1mulcWGQKyaSIgZkdAXoxW8G3_Y74bsRTYcH07BNTp6WNSXtFK5Nm5GxTfy4=w16383
 :align: right
 :width: 100
+:alt: Cartool is broken
 ```
 PyCartool is a simple open source Python package which provides I/O for most Cartool file formats as well as additional computing features.
 +++
