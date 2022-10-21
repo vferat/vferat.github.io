@@ -3,7 +3,8 @@
 {% block docs_body %}
 {{ super() }}
 <!-- giscus -->
-<script src="https://giscus.app/client.js"
+<script id="giscus_script"
+        src="https://giscus.app/client.js"
         data-repo="vferat/vferat.github.io"
         data-repo-id="R_kgDOIMr2YA"
         data-category="Q&A"
@@ -18,5 +19,14 @@
         data-loading="lazy"
         crossorigin="anonymous"
         async>
+</script>
+
+<script>
+var observer = new MutationObserver(function(mutations) {
+      const theme = document.documentElement.dataset.theme
+      document.getElementById('giscus_script').setAttribute('data-theme', theme);
+    })
+    observer.observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+
 </script>
 {% endblock %}
