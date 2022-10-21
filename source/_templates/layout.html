@@ -22,22 +22,11 @@
 </script>
 
 <script>
-function reload_giscus() {
-  script = document.getElementById('giscus_script')
-  document.getElementById('giscus_script').remove();
-  var theme = document.documentElement.dataset.theme;
-  script.setAttribute('data-theme', theme);
-  console.log(script)
-  document.body.appendChild(script);
-  }
-
 var observer = new MutationObserver(function(mutations) {
-      //const theme = document.documentElement.dataset.theme
-      //document.getElementById('giscus_script').setAttribute('data-theme', theme);
-      console.log(document.getElementById('giscus_script').getAttribute('data-theme'))
-      reload_giscus('source_file.js');
+      const theme = document.documentElement.dataset.theme
+      document.getElementById('giscus_script').setAttribute('data-theme', theme);
     })
-observer.observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+    observer.observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
 
 </script>
 {% endblock %}
