@@ -4,6 +4,7 @@
 {{ super() }}
 <!-- giscus -->
 <script>
+
 var script = document.createElement('script');
 script.setAttribute("src", "https://giscus.app/client.js");
 script.setAttribute("data-repo", "vferat/vferat.github.io");
@@ -15,7 +16,7 @@ script.setAttribute("data-strict", "0");
 script.setAttribute("data-reactions-enabled", "1");
 script.setAttribute("data-emit-metadata", "1");
 script.setAttribute("data-input-position", "top");
-script.setAttribute("data-theme", document.documentElement.dataset.theme);
+script.setAttribute("data-theme", document.documentElement.dataset.theme == "dark" ? "dark_high_contrast" : "light");
 script.setAttribute("data-lang", "en");
 script.setAttribute("data-loading", "lazy");
 script.setAttribute("crossorigin", "anonymous");
