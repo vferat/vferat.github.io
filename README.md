@@ -1,7 +1,11 @@
-# sphinx-blog-page
-A repository template to create a blog with Github Pages and Sphinx
+# Portfolio
 
-https://vferat.github.io/sphinx-blog-page/
+A repository template to create a Portfolio / blog with Github Pages and Sphinx
+
+https://desktop.github.com/
+
+
+https://vferat.github.io/about.html
 
 
 create a branch name "gt-pages"
@@ -13,46 +17,73 @@ Branch -> gh-pages
 ## Sphinx
 
 ## Create a new environment
+```console
 conda create -n sphinx python=3.9
 conda activate sphinx
-
+```
 ## install sphinx
+```console
 pip install sphinx
+```
 
 ## Start a new sphinx project
+```console
 sphinx-quickstart
+```
 
 ## Build Docs
 
+```console
 make html
-
+```
 open build/index.html
 
 # Configure the website
 
-Edit conf.py
+Edit ```conf.py```
 
 ## Use markdown
 install myst-parser
+
+```console
 pip install --upgrade myst-parser
+```
 
 Add myst_parser to the list of configured extensions:
+
+```python
 extensions = ['myst_parser']
+```
 
 adjust the source_suffix variable in conf.py
+```python
+...
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.txt': 'markdown',
     '.md': 'markdown',
 }
 
+...
+```
 ## Install a new theme
+```console
 pip install pydata_sphinx_theme
+```
 
 In conf.py
+```python
+...
+
 html_theme = 'pydata_sphinx_theme'
 
+...
+```
 ## Configure pydata_sphinx_theme
+
+```python
+...
 
 html_theme_options = {
   "github_url": "https://github.com/vferat/",
@@ -63,7 +94,13 @@ html_theme_options = {
 html_favicon = "_static/favicon.ico"
 html_title = "Pycromancer"
 
+...
+```
+
 ## Bonus: Adda custom icon link
+
+```python
+...
 
 html_theme_options = {
   "github_url": "https://github.com/vferat/",
@@ -76,41 +113,47 @@ html_theme_options = {
         },],
   "search_bar_text": "Search this site...",
 }
+...
 
-## Configure the nav bar
-Create a new page 'about.md'
-
-add a toctree to 'index.md'
-
-```{toctree}
-:maxdepth: 2
-:hidden:
-about.md
 ```
 
-Add another page:
-Create a new page 'blog.md'
-
+## Configure the nav bar
+- Create a new page ```about.md```
+- Create a new page 'blog.md'
+- Add a toctree to ```index.md```
+``````md
 ```{toctree}
 :maxdepth: 2
 :hidden:
 about.md
 blog.md
 ```
+``````
+
 
 ## Create a sidebar
 
-create sidebar.html in _templates
-html_sidebars = {'**': ['sidebar.html']}
+create ```sidebar.html``` in ```_templates```
 
-use the sidebar only for specific pages
+```python
+html_sidebars = {'**': ['sidebar.html']}
+```
+
+or use the sidebar only for specific pages
+```python
+...
+
 html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html']}
 
+...
+```
+
 ### Custom the sidebar with css
 
-#### create custom.css in _static
+#### create ```custom.css``` in ```_static```
 
+```css
 /* Bio area */
 div.profile-pic {
     margin-top: 1em;
@@ -135,67 +178,108 @@ div.profile-pic img {
     font-size: 1.5em;
     text-align: center;
 }
+```
 
 #### Use css in conf
+
+```python
+...
 
 html_css_files = [
     'custom.css',
 ]
 
+...
+```
+
 ## Add a blog
 
 https://ablog.readthedocs.io/
 
+
+### Install
+```console
+pip install ablog
+```
+
+### Configure
+
+```python
+...
+
+extensions += ['ablog']
+
+...
+```
+
+### Add Content
 create post/_year_/yy_mm_dd_title.md
 
-pip install ablog
-extensions = ['...',
-             'ablog',
-             '...']
+### Edit blog sidebar
 
-
-### edit blog sidebar
+```python
+...
 
 html_sidebars = {...
                  'blog': ['tagcloud.html', 'archives.html'],}
+                 
+...
+```
 
+## Add Bibliography
 
-## Edit content
+```sphinxbibtex```
 
-### Bibliography
+### Install 
 
-#### install sphinxbibtex
+```console
 pip install sphinxcontrib-bibtex
+```
 
-#### Edit conf.py
+#### Configure
+
+```python
+...
+
 extensions += ['sphinxcontrib.bibtex']
 bibtex_bibfiles = ['bibliography.bib']
 
-#### Create bibliography
-create 'bibliography.bib'
+...
+```
 
-# Publications
+### Add content
 
+- Create ```bibliography.bib```
 
-#### Create bibliography page
-create publications.md
-add it to toctree in index.md
+- Create ```publications.md```
 
-insert biblio:
+- Add it to toctree in ```index.md```
 
+- Insert biblio:
 
+``````md
 ```{bibliography}
 :list: bullet
 :filter: author % "Ferat" or "Férat"
 ```
+``````
+
+### Panels with sphinx_design
+
+```console
+pip install sphinx_design
+```
+
+```python
+...
+
+extensions += ['sphinx_design']
+
+...
+```
 
 ### Twitter
 "sphinxcontrib.twitter"
-
-### Panels with sphinx_design
-pip install sphinx_design
-
-extensions += ['sphinx_design']
 
 ## Edit style
 
