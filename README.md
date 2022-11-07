@@ -8,11 +8,12 @@ https://desktop.github.com/
 https://vferat.github.io/about.html
 
 
-create a branch name "gt-pages"
-go to respository Settings -> Pages
+Create a new branch named ```gt-pages```
+Go to <kbd>Settings</kbd> -> <kbd>Pages</kbd>
 
-Source -> deploy from a branch
-Branch -> gh-pages
+- <kbd>Source</kbd> -> <kbd>deploy from a branch</kbd>
+
+- <kbd>Branch</kbd> -> <kbd>gh-pages</kbd>
 
 ## Sphinx
 
@@ -24,6 +25,10 @@ conda activate sphinx
 ## install sphinx
 ```console
 pip install sphinx
+```
+also add it to ```requirements.txt```
+```txt
+sphinx
 ```
 
 ## Start a new sphinx project
@@ -48,7 +53,11 @@ install myst-parser
 ```console
 pip install --upgrade myst-parser
 ```
-
+also add it to ```requirements.txt```
+```txt
+sphinx
+myst-parser
+```
 Add myst_parser to the list of configured extensions:
 
 ```python
