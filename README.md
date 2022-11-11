@@ -144,6 +144,19 @@ blog.md
 
 create ```sidebar.html``` in ```_templates```
 
+```
+<div class="profile-pic"><img src="{{ pathto('_static/profil.jfif', 1) }}" /></div>
+
+<div class="bio">
+    <div class="name">
+        Victor Férat
+    </div>
+    <div class="title">
+        <center>Neurosciences & Python </center>
+    </div>
+</div>
+```
+
 ```python
 html_sidebars = {'**': ['sidebar.html']}
 ```
