@@ -41,7 +41,14 @@ sphinx-quickstart
 ```console
 make html
 ```
-open build/index.html
+
+open <kbd>build</kbd>/ <kbd>index.html</kbd>
+
+## Delete Docs
+
+```console
+make clean
+```
 
 # Configure the website
 
