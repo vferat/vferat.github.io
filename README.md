@@ -288,20 +288,23 @@ extensions += ['sphinx_design']
 ```
 
 ### Twitter
+
 "sphinxcontrib.twitter"
 
 ## Edit style
 
 https://pydata-sphinx-theme.readthedocs.io/en/v0.5.2/user_guide/customizing.html
 
-conf.py
+Edit ```conf.py```
+```
 
 html_css_files = [
     'custom.css',
 ]
+```
 
-custom.css
-
+Edit ```custom.css```
+```css
 /* Theme */
 /* https://pydata-sphinx-theme.readthedocs.io/en/v0.7.2/user_guide/customizing.html */
 @import "../basic.css";
@@ -315,7 +318,7 @@ html[data-theme="dark"] {
     --pst-color-primary: rgb(68, 180, 255);
     --pst-color-text-base: rgb(7, 226, 255);
 }
-
+```
 
 # Bonus
 
