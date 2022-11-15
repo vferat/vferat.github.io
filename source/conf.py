@@ -96,3 +96,5 @@ numfig = True
 # Tabs
 extensions += ['sphinx_tabs.tabs']
 
+# Copy button
+extensions += ['sphinx_copybutton']

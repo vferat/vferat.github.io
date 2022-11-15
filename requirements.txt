@@ -6,3 +6,4 @@ sphinxcontrib-bibtex
 sphinx_design
 sphinx_togglebutton
 sphinx-tabs
+sphinx-copybutton
