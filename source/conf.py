@@ -12,7 +12,7 @@ author = 'Victor Férat'
 release = '0.0.1'
 
 # -- Brave --
-html_extra_path = ['../.nojekyll', '../well-known']
+html_extra_path = ['../.nojekyll', 'extra']
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
