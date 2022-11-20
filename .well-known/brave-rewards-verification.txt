@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: vferat.github.io
+Token: 31b175fd821c04926825d0c3bbab7eb8079739610f31ade3f3872c4fb12b44b9
