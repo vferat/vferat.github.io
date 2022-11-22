@@ -100,3 +100,9 @@ extensions += ['sphinx_tabs.tabs']
 
 # Copy button
 extensions += ['sphinx_copybutton']
+
+# Spelling
+extensions += [ 'sphinxcontrib.spelling' ]
+
+# Inter sphinx
+extensions += ["sphinx.ext.intersphinx"]
