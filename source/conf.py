@@ -111,7 +111,7 @@ html_context = {
     "github_user": "vferat",
     "github_repo": "vferat.github.io",
     "github_version": "main",
-    "doc_path": "./",
+    "doc_path": "./source/",
 }
 html_theme_options["use_edit_page_button"] = True
 
