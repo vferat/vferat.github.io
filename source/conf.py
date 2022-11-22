@@ -113,6 +113,7 @@ html_context = {
     "github_version": "main",
     "doc_path": "./",
 }
+html_theme_options["use_edit_page_button"] = True
 
 # -- Brave Creator --
 html_extra_path = ['../.nojekyll', 'extra']
