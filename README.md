@@ -342,6 +342,52 @@ html[data-theme="dark"] {
 
 # Bonus
 
+## PR preview
+Add a new github workflow: ```pr_preview.yml```
+
+```txt
+name: Deploy PR previews
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v2
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Build and Commit
+      uses: sphinx-notes/pages@v2
+      with:
+        documentation_path: './source'
+    - name: Deploy preview
+      uses: rossjrw/pr-preview-action@v1
+      with:
+        source-dir: ./
+```
+
+Make sure to set ```clean-exclude: pr-preview/``` in  ```publish.yml```
+in order not to erase preview when building a new site on the main branch.
+
+```txt
+- name: Push changes
+    uses: ad-m/github-push-action@master
+    with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    branch: gh-pages
+    clean-exclude: pr-preview/
+```
+
 ## Using giscus
 
 create layout.html in templates
