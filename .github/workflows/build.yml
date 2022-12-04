@@ -29,4 +29,4 @@ jobs:
           python -m pip install --progress-bar off -r requirements.txt
       - name: Build Sphinx
         run: |
-          sphinx-build -b html source builddir -W --keep-going
+          sphinx-build -b html source build -W --keep-going

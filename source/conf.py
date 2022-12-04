@@ -11,14 +11,12 @@ copyright = '2022, Victor Férat'
 author = 'Victor Férat'
 release = '0.0.1'
 
-# -- Brave --
-html_extra_path = ['../.nojekyll', 'extra']
-
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['myst_parser']
 templates_path = ['_templates']
+
 exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -100,3 +98,22 @@ extensions += ['sphinx_tabs.tabs']
 
 # Copy button
 extensions += ['sphinx_copybutton']
+
+# Spelling
+extensions += [ 'sphinxcontrib.spelling' ]
+
+# Inter sphinx
+extensions += ["sphinx.ext.intersphinx"]
+
+# Github context
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "vferat",
+    "github_repo": "vferat.github.io",
+    "github_version": "main",
+    "doc_path": "./source/",
+}
+html_theme_options["use_edit_page_button"] = True
+
+# -- Brave Creator --
+html_extra_path = ['../.nojekyll', 'extra']
