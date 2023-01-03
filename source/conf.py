@@ -79,7 +79,7 @@ post_auto_excerpt = 1 # Number of paragraphs (default is ``1``) that will be dis
 
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
