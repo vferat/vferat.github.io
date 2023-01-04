@@ -17,7 +17,23 @@ release = '0.0.1'
 extensions = ['myst_parser']
 templates_path = ['_templates']
 
-exclude_patterns = []
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "linkify",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+exclude_patterns = ['spelling_wordlist.txt']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 source_suffix = {
@@ -50,6 +66,7 @@ html_theme_options = {
         },        
         ],
   "search_bar_text": "Search this site...",
+  "show_prev_next": False,
 }
 
 html_favicon = "_static/favicon.ico"
@@ -69,17 +86,25 @@ html_sidebars = {'index': ['sidebar.html'],
                  'blog/**': ['tagcloud.html', 'archives.html'],}
 
 # -- Blog -------------------------------------------------
-extensions += ['ablog']
+extensions += ['ablog', 'sphinx.ext.intersphinx']
+myst_update_mathjax = False
+
 blog_title = html_title
 blog_path = "blog"
 fontawesome_included = True
-blog_post_pattern = "posts/*/*"
+blog_post_pattern = "posts/*/*.md"
 post_auto_image = 1 # Index of the image that will be displayed
 post_auto_excerpt = 1 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
 
+blog_authors = {
+    'me': ('Victor Férat', 'https://vferat.github.io/about.html'),}
+blog_languages = {
+    'en': ('English', None),
+    'fr': ('French', None),
+}
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
@@ -92,6 +117,9 @@ extensions += ['sphinx_togglebutton']
 
 # figures
 numfig = True
+
+# Equations
+math_numfig = True
 
 # Tabs
 extensions += ['sphinx_tabs.tabs']
