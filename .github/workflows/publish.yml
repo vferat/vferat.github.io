@@ -28,4 +28,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           directory: build
-          clean-exclude: pr-preview/
