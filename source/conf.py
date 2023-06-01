@@ -82,8 +82,8 @@ html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
-                 'blog': ['tagcloud.html', 'archives.html'],
-                 'blog/**': ['tagcloud.html', 'archives.html'],}
+                 'blog': ['ablog/tagcloud.html', 'ablog/archives.html'],
+                 'blog/**': ['ablog/tagcloud.html', 'ablog/archives.html'],}
 
 # -- Blog -------------------------------------------------
 extensions += ['ablog', 'sphinx.ext.intersphinx']
