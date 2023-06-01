@@ -1,15 +1,15 @@
-:::{dropdown} Looking for a new professional opportunity
-   :color: primary
-   :icon: dependabot
-   I am currently available for a 30% research engineer position starting January 1st 2023. If you like what you read here, do not hesitate to contact me on the professional network you prefer the most.
-:::
-
 # Victor Férat
 
 [![@vferat's Holopin board](https://holopin.me/vferat)](https://holopin.io/@vferat)
 
-   And some content!
-Hello there
+Hello there !
+
+I am thrilled to have you here. As a passionate software engineer and neurosicences PhD student, I am excited to share my journey and showcase my work in the realm of open source programming. I invite you to explore the diverse range of projects I have been involved in, ranging from innovative research to robust frameworks. Within each project, you will find my commitment to clean code, efficiency, and attention to detail.
+Whether you are a fellow enthusiast, a potential collaborator, or an employer, I hope that this portfolio provides you with insight into my skills, experiences, and potential.
+
+I look forward to connecting with you and exploring the exciting possibilities that lie ahead in the world of open source programming.
+
+Victor
 
 ```{toctree}
 :maxdepth: 2

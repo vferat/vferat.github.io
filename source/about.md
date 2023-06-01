@@ -11,47 +11,6 @@ populations.
 
 At the same time, I try to play your part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
 
-## Education
-
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2020 - today
-:columns: 3
-:::
-:::{grid-item-card}  PhD in Neuroscience
-:columns: 9
-Lemanic Neurosicences Doctoral School
-:::
-
-::::
-
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2018 - 2019
-:columns: 3
-:::
-:::{grid-item-card}  Master in Neurosciences and engineering
-:columns: 9
-Bioengineering and Innovation in Neurosciences (Paristech)
-:::
-
-::::
-
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2015 - 2018
-:columns: 3
-:::
-:::{grid-item-card}  Master’s in industrial and mechanical engineering
-:columns: 9
-Arts et Métiers
-:::
-
-::::
-
 ## Work Experiences
 
 ::::{grid} 2
@@ -73,7 +32,23 @@ Ongoing PhD research on Training spatio-temporally defined brain activity patter
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2023 - today
+:columns: 3
+[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
+
+Geneva
+:::
+:::{grid-item-card}   Software Engineer (30%)
+:columns: 9
+Provide automated workflows for researchers at Campus Biotech.
+
+:::
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
@@ -81,7 +56,7 @@ Geneva
 :::
 :::{grid-item-card}  Software Development Engineer (30%)
 :columns: 9
-Development of open-source python libraries for EEG microstates analysis
+Development of open-source python libraries for EEG microstates analysis.
 
 :::
 ::::
@@ -172,4 +147,46 @@ Troyes (FR)
 Regulated the production flow in a wheel manufacturing company.
 
 :::
+
+::::
+
+## Education
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2020 - today
+:columns: 3
+:::
+:::{grid-item-card}  PhD in Neuroscience
+:columns: 9
+Lemanic Neurosicences Doctoral School
+:::
+
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2018 - 2019
+:columns: 3
+:::
+:::{grid-item-card}  Master in Neurosciences and engineering
+:columns: 9
+Bioengineering and Innovation in Neurosciences (Paristech)
+:::
+
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2015 - 2018
+:columns: 3
+:::
+:::{grid-item-card}  Master’s in industrial and mechanical engineering
+:columns: 9
+Arts et Métiers
+:::
+
 ::::
