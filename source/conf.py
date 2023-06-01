@@ -145,3 +145,8 @@ html_theme_options["use_edit_page_button"] = True
 
 # -- Brave Creator --
 html_extra_path = ['../.nojekyll', 'extra']
+
+# -- Google analytics --
+html_theme_options["analytics"] = {
+    "google_analytics_id": "G-FCG0LMTFDL",
+}
