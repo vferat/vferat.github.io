@@ -1,5 +1,3 @@
-# Victor Férat
-
 [![@vferat's Holopin board](https://holopin.me/vferat)](https://holopin.io/@vferat)
 
 Hello there !
