@@ -15,6 +15,7 @@ ferat2022beyond
 ```{bibliography}
 :filter: False
 :list: bullet
+guedj2023self
 iftimovici2023eeg
 terpou2022spectral
 mancini2022aberrant

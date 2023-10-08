@@ -26,7 +26,6 @@ Geneva
 :::
 ::::
 
-
 ::::{grid} 2
 :gutter: 1
 
@@ -86,6 +85,7 @@ Geneva
 :::
 :::{grid-item-card} Software Development & Data analysis Intern – EEG
 :columns: 9
+
 - Develop user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
 processing, interpolation, referencing...
 - In depth study of artefact cleaning algorithm by mean of large-scale EEG simulation.
@@ -104,6 +104,7 @@ Paris (FR)
 :::
 :::{grid-item-card} Software Development & Data analysis Intern – EEG
 :columns: 9
+
 - Setting up a neurofeedback paradigm for tinnitus treatment (real time):
 - Creation and optimization of bad channel interpolation and artefact rejection algorithms (ICA)
 - Scientific data analysis of tinnitus related EEG (offline):
