@@ -45,7 +45,7 @@ Ongoing PhD research on Training spatio-temporally defined brain activity patter
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - 2023
+:::{grid-item-card} 2020 - 2022
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
