@@ -13,6 +13,7 @@ jobs:
         documentation_path: './source'
         requirements_path: './requirements.txt'
         publish: false
+        artifact: './build'
     - name: ls
       run: ls
     - name: Commit and push changes
