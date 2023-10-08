@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'sphinx-blog-page'
-copyright = '2022, Victor Férat'
+copyright = '2023, Victor Férat'
 author = 'Victor Férat'
 release = '0.0.1'
 
