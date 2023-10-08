@@ -1,17 +1,31 @@
-:::{dropdown} Looking for a new professional opportunity
-   :color: primary
-   :icon: dependabot
-   I am currently available for a 30% research engineer position starting January 1st 2023. If you like what you read here, do not hesitate to contact me on the professional network you prefer the most.
-:::
 # About Me
 
-I am a French engineer who started a PhD in neuroscience. I work at the [Functional Brain Mapping Lab](https://www.campusbiotech.ch/en/node/326) where I study brain wave (EEG). . I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
-currently develop a framework for using these biomarkers as targets for neurofeedback therapies, with a special focus on attention deficit 
-populations.
+I am a French engineer who started a PhD in neuroscience. I work at the [Functional Brain Mapping Lab](https://www.campusbiotech.ch/en/node/326) where I study brain wave (EEG). As a researcher, I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
+currently develop a framework for using these biomarkers as targets for neurofeedback therapies, with a special focus on attention deficit and hyperactivity 
+disorder.
 
-At the same time, I try to play your part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+As a researcher engineer, I try to play my part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
 
 ## Work Experiences
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2023 - today
+:columns: 3
+[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
+
+Geneva
+:::
+:::{grid-item-card}   Software Engineer (30%)
+:columns: 9
+
+- Provide automated workflows for analyzing neurofimaging data.
+- Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.
+
+:::
+::::
+
 
 ::::{grid} 2
 :gutter: 1
@@ -25,22 +39,6 @@ Geneva
 :::{grid-item-card}  PhD researcher Assistant (70%)
 :columns: 9
 Ongoing PhD research on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.
-
-:::
-::::
-
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2023 - today
-:columns: 3
-[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
-
-Geneva
-:::
-:::{grid-item-card}   Software Engineer (30%)
-:columns: 9
-Provide automated workflows for researchers at Campus Biotech.
 
 :::
 ::::
