@@ -7,14 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v4
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Build and Commit
-      uses: sphinx-notes/pages@v2
+      uses: sphinx-notes/pages@v3
       with:
         documentation_path: './source'
+        publish: false
     - name: Push changes
       uses: s0/git-publish-subdir-action@develop
       env:
