@@ -13,6 +13,8 @@ jobs:
         documentation_path: './source'
         requirements_path: './requirements.txt'
         publish: false
+    - name: ls
+      run: ls
     - name: Commit and push changes
       uses: devops-infra/action-commit-push@master
       with:
