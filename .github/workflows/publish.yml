@@ -14,11 +14,9 @@ jobs:
         documentation_path: './source'
         requirements_path: './requirements.txt'
         publish: false
-    - id: ls
-      name: List files
-      run: ls ${{ steps.build_and_commit.outputs.artifact }}
-    - name: Publish
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ${{ steps.build_and_commit.outputs.artifact }}
+        folder: ${{ steps.build_and_commit.outputs.artifact }}
+        clean-exclude: pr-preview
+        branch: gh-pages
