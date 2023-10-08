@@ -11,6 +11,7 @@ jobs:
       uses: sphinx-notes/pages@v3
       with:
         documentation_path: './source'
+        requirements_path: './requirements.txt'
         publish: false
     - name: Push changes
       uses: s0/git-publish-subdir-action@develop
@@ -19,4 +20,3 @@ jobs:
         BRANCH: gh-pages
         FOLDER: ./
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CLEAR_GLOBS_FILE: ".clear-target-files"
