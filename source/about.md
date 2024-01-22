@@ -7,6 +7,21 @@ disorder.
 As a researcher engineer, I try to play my part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
 
 ## Work Experiences
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2023 - today
+:columns: 3
+[@UNIGE](https://www.unige.ch/)
+
+Geneva
+:::
+:::{grid-item-card}   Post doctoral researcher (70%)
+:columns: 9
+
+
+:::
+::::
 
 ::::{grid} 2
 :gutter: 1
@@ -20,7 +35,7 @@ Geneva
 :::{grid-item-card}   Software Engineer (30%)
 :columns: 9
 
-- Provide automated workflows for analyzing neurofimaging data.
+- Provide automated workflows for analyzing neuroimaging data.
 - Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.
 
 :::
@@ -29,7 +44,7 @@ Geneva
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
@@ -154,7 +169,7 @@ Regulated the production flow in a wheel manufacturing company.
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 :::
 :::{grid-item-card}  PhD in Neuroscience
