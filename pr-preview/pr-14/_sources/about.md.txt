@@ -44,7 +44,7 @@ Geneva
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - 2023
+:::{grid-item-card} 2020 - 2024
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
