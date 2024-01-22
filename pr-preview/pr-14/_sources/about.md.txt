@@ -10,7 +10,7 @@ As a researcher engineer, I try to play my part by making analysis tools and tec
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2023 - today
+:::{grid-item-card} 2024 - today
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
@@ -44,7 +44,7 @@ Geneva
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - 2024
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
