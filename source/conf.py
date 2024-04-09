@@ -150,3 +150,8 @@ html_extra_path = ['../.nojekyll', 'extra']
 html_theme_options["analytics"] = {
     "google_analytics_id": "G-FCG0LMTFDL",
 }
+
+# -- Referencing --
+extensions += ['sphinx_sitemap']
+html_baseurl = 'https://vferat.github.io'
+html_extra_path += ["extra"]

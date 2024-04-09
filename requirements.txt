@@ -8,3 +8,5 @@ sphinx_togglebutton
 sphinx-tabs >=1.2.1
 sphinx-copybutton
 sphinxcontrib-spelling
+
+sphinx-sitemap
