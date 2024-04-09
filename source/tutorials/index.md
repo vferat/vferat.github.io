@@ -7,6 +7,7 @@ tutorial section
 :maxdepth: 2
 :hidden:
 
-00_installation
+fondamentals/index
+neuroimaging/index
 
 ```
