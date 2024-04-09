@@ -1,7 +1,7 @@
 ---
 html_meta:
-  "description lang=en": ""Welcome to Victor Férat's personal website. Explore my work, interests and programming and neuroimaging tutorials.""
-  "keywords": "neuroimaging, personal website, portfolio, eeg, fmri, meg, dev"
+  "description lang=en": "Welcome to Victor Férat's personal website. Explore my work, interests as well as programming and neuroimaging tutorials."
+  "keywords": "Neuroimaging, Portfolio, eeg, fmri, meg, dev"
   "property=og:locale": "en_US"
 ---
 
