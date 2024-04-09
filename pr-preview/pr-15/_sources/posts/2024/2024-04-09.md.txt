@@ -1,0 +1,39 @@
+---
+tags: neurofeedback
+date: "2024-04-09"
+author: me
+language: en
+---
+
+# How to improve this portfolio referencing.
+
+
+## Sphinx sitemap
+
+Add ```sphinx-sitemap``` to ```requirements.txt```
+
+Edit ```conf.py```
+
+```python
+# -- Referencing --
+extensions += ['sphinx_sitemap']
+html_baseurl = 'https://vferat.github.io'
+html_extra_path += ["extra"]
+```
+
+## Add meta tags
+
+```
+.. meta::
+    :description lang=en:
+        Adding additional CSS or JavaScript files to your Sphinx documentation
+        can let you customize the look and feel of your docs or add additional functionality.
+```
+
+## References
+
+- [Readthedocs seo guide](https://docs.readthedocs.io/en/stable/guides/technical-docs-seo-guide.html)
+- [documatt "How to add a sitemap to the Sphinx project" tutorial](https://documatt.com/blog/20/sphinx-sitemap/)
+
+
+
