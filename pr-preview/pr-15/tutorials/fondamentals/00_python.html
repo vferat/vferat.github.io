@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Python &#8212; vferat</title>
+    <title>Introduction to Python &#8212; vferat</title>
   
   
   
@@ -449,7 +449,7 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Fondamentals</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Python</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="01_github.html">Git(hub)</a></li>
 </ul>
 </li>
@@ -499,7 +499,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Fondamentals</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Python</li>
+    <li class="breadcrumb-item active" aria-current="page">Introduction...</li>
   </ul>
 </nav>
 </div>
@@ -517,9 +517,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-<section id="python">
-<h1>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h1>
+<section id="introduction-to-python">
+<h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Link to this heading">#</a></h1>
+<p>Python is a high-level, object oriented, interpreted programming language <a class="footnote-reference brackets" href="#footcite-pythonabout" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<ul class="simple">
+<li><p>high-level: code closely resembles human language and logic: users can focus more on the problem they are trying to solve rather than the intricacies of how the computer executes the code (i.e. how memory is allocated, pointers, types)</p></li>
+<li><p>interpreted: the code is executed line by line by an interpreter software (on-the-fly), rather than being compiled into machine code before execution. This allows for Dynamic Typing, Interactivity, Portability</p></li>
+<li><p>object oriented: a programming paradigm based on the concept of “objects,” which can contain data (attributes) and code (methods) to manipulate that data.
+The object ‘apple’ does not only have a weight apple.weight but can also change itself apple.fall()</p></li>
+</ul>
+<section id="the-choice-of-python-for-neuroimaging">
+<h2>The choice of python for neuroimaging<a class="headerlink" href="#the-choice-of-python-for-neuroimaging" title="Link to this heading">#</a></h2>
+<p>simplicity and readability
+multipurpose
+Portability
+License-Free and Open-Source
+Integration with Other Environments and Tools</p>
+<section id="for-education">
+<h3>For education<a class="headerlink" href="#for-education" title="Link to this heading">#</a></h3>
+<p>Python’s simplicity and readability (high-level) make it an ideal programming language for educational purposes.
+License-Free and Open-Source</p>
+</section>
+<section id="for-research">
+<h3>For research<a class="headerlink" href="#for-research" title="Link to this heading">#</a></h3>
+<p>This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.</p>
+<p>documentation</p>
+</section>
+<section id="a-lot-of-libraries">
+<h3>A lot of libraries<a class="headerlink" href="#a-lot-of-libraries" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="package-managers">
+<h2>Package managers<a class="headerlink" href="#package-managers" title="Link to this heading">#</a></h2>
+<section id="pypi">
+<h3>Pypi<a class="headerlink" href="#pypi" title="Link to this heading">#</a></h3>
+</section>
+<section id="conda">
+<h3>conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="installing-python">
+<h2>Installing python<a class="headerlink" href="#installing-python" title="Link to this heading">#</a></h2>
+<section id="install-miniconda">
+<h3>install miniconda<a class="headerlink" href="#install-miniconda" title="Link to this heading">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On windows, if you want to use cmd instead of the anaconda shell ( no recommended), you might need to initialize (only once) conda for cmd. for that, start the anaconda shell, find conda location using “where conda”.
+Now, on your cmd, use the path to run the following conda script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ferat</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">Scripts</span>\<span class="n">conda</span><span class="o">.</span><span class="n">exe</span> <span class="n">init</span> <span class="n">cmd</span><span class="o">.</span><span class="n">exe</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="environment-managment">
+<h3>environment managment<a class="headerlink" href="#environment-managment" title="Link to this heading">#</a></h3>
+<p>conda env list</p>
+<p>conda create -n python=</p>
+<p>conda activate</p>
+</section>
+</section>
+<section id="ipython-and">
+<h2>Ipython and<a class="headerlink" href="#ipython-and" title="Link to this heading">#</a></h2>
 <p>Python &amp; conda</p>
+<div class="docutils container" id="id2">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="footcite-pythonabout" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Python.org. URL: <a class="reference external" href="https://www.python.org/about/">https://www.python.org/about/</a>.</p>
+</aside>
+</aside>
+</div>
+<hr class="footnotes docutils" />
+</section>
 </section>
 
 <div class="section ablog__blog_comments">
@@ -562,6 +631,34 @@ main.appendChild(script);
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-choice-of-python-for-neuroimaging">The choice of python for neuroimaging</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-education">For education</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-research">For research</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-lot-of-libraries">A lot of libraries</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-managers">Package managers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pypi">Pypi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">conda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-python">Installing python</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-miniconda">install miniconda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-managment">environment managment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ipython-and">Ipython and</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
