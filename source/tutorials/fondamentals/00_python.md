@@ -25,32 +25,53 @@ License-Free and Open-Source
 This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.
 
 
-:::::{grid} 3 2
+::::{grid} 3
+:gutter: 1
 
-::::{grid-item}
-
-:::{card} Numpy
+:::{grid-item-card} Numpy
+:columns: 3
+[website](https://numpy.org/doc/stable/index.html)
+Numeric
 :::
 
-:::{card} Scipy
+:::{grid-item-card} Scipy
+:columns: 3
+[website](https://scipy.org/)
+Signal processing
 :::
 
-:::{card} Matplotlib
+:::{grid-item-card} Matplotlib
+:columns: 3
+[website](https://matplotlib.org/)
+Plots
 :::
 
-:::{card} Pandas
 :::
-
-:::{card} OS
-:::
-
-:::{card} Scikit-learn
-:::
-
-
 ::::
 
-:::::
+::::{grid} 3
+:gutter: 1
+
+:::{grid-item-card} Pandas
+:columns: 3
+[website](https://pandas.pydata.org/)
+Numeric
+:::
+
+:::{grid-item-card} Scikit-learn
+:columns: 3
+[website](https://scikit-learn.org/stable/)
+Signal processing
+:::
+
+:::{grid-item-card} OS
+:columns: 3
+[website](https://docs.python.org/3/library/os.html)
+Plots
+:::
+
+:::
+::::
 
 documentation
 
