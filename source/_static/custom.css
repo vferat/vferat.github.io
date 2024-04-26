@@ -46,6 +46,6 @@ html[data-theme="dark"] {
     --pst-color-text-base: rgb(248, 248, 248);
 }
 
-.bd-main .bd-content .bd-article-container {
-    max-width: 100%;  /* default is 60em */
+.bd-page-width {
+    max-width: 100%;  /* default is 88rem */
   }

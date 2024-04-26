@@ -25,25 +25,32 @@ License-Free and Open-Source
 This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.
 
 
-::::{card-carousel} 2
+:::::{grid} 3 2
 
-:::{card} card 1
-content
-:::
-:::{card} card 2
-Longer
+::::{grid-item}
 
-content
+:::{card} Numpy
 :::
-:::{card} card 3
+
+:::{card} Scipy
 :::
-:::{card} card 4
+
+:::{card} Matplotlib
 :::
-:::{card} card 5
+
+:::{card} Pandas
 :::
-:::{card} card 6
+
+:::{card} OS
 :::
+
+:::{card} Scikit-learn
+:::
+
+
 ::::
+
+:::::
 
 documentation
 
