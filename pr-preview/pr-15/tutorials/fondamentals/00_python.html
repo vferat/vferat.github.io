@@ -41,7 +41,7 @@
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../../_static/documentation_options.js?v=d45e8c67"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
@@ -541,6 +541,47 @@ License-Free and Open-Source</p>
 <section id="for-research">
 <h3>For research<a class="headerlink" href="#for-research" title="Link to this heading">#</a></h3>
 <p>This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.</p>
+<div class="sd-sphinx-override sd-cards-carousel sd-card-cols-2 docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 1</div>
+<p class="sd-card-text">content</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 2</div>
+<p class="sd-card-text">Longer</p>
+<p class="sd-card-text">content</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 3</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 4</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 5</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+card 6</div>
+</div>
+</div>
+</div>
 <p>documentation</p>
 </section>
 <section id="a-lot-of-libraries">
@@ -560,10 +601,18 @@ License-Free and Open-Source</p>
 <h2>Installing python<a class="headerlink" href="#installing-python" title="Link to this heading">#</a></h2>
 <section id="install-miniconda">
 <h3>install miniconda<a class="headerlink" href="#install-miniconda" title="Link to this heading">#</a></h3>
+<p>https://docs.anaconda.com/free/miniconda/index.html</p>
+<p>use the latest stable version</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>On windows, if you want to use cmd instead of the anaconda shell ( no recommended), you might need to initialize (only once) conda for cmd. for that, start the anaconda shell, find conda location using “where conda”.
-Now, on your cmd, use the path to run the following conda script:</p>
+<p>On windows, if you want to use cmd instead of the anaconda shell ( no recommended), you might need to initialize (only once) conda for cmd. for that, start the anaconda shell, find conda location using “where conda”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">C</span><span class="p">:</span>\<span class="o">&gt;</span><span class="n">where</span> <span class="n">conda</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ferat</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">Library</span>\<span class="nb">bin</span>\<span class="n">conda</span><span class="o">.</span><span class="n">bat</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ferat</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">Scripts</span>\<span class="n">conda</span><span class="o">.</span><span class="n">exe</span>
+<span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ferat</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">condabin</span>\<span class="n">conda</span><span class="o">.</span><span class="n">bat</span>
+</pre></div>
+</div>
+<p>Now, on your cmd, use the path of conda.exe to run the following conda script:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">ferat</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">miniconda3</span>\<span class="n">Scripts</span>\<span class="n">conda</span><span class="o">.</span><span class="n">exe</span> <span class="n">init</span> <span class="n">cmd</span><span class="o">.</span><span class="n">exe</span>
 </pre></div>
 </div>
@@ -574,6 +623,11 @@ Now, on your cmd, use the path to run the following conda script:</p>
 <p>conda env list</p>
 <p>conda create -n python=</p>
 <p>conda activate</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>conda can also be used to manage R environments
+https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/</p>
+</div>
 </section>
 </section>
 <section id="ipython-and">
@@ -719,7 +773,7 @@ main.appendChild(script);
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
     <br/>
   </p>
 </div>
