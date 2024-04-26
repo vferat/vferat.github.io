@@ -25,6 +25,25 @@ License-Free and Open-Source
 This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.
 
 
+::::{card-carousel} 2
+
+:::{card} card 1
+content
+:::
+:::{card} card 2
+Longer
+
+content
+:::
+:::{card} card 3
+:::
+:::{card} card 4
+:::
+:::{card} card 5
+:::
+:::{card} card 6
+:::
+::::
 
 documentation
 
@@ -42,13 +61,22 @@ documentation
 
 ### install miniconda
 
+https://docs.anaconda.com/free/miniconda/index.html
 
-
+use the latest stable version
 
 
 ``````{note}
 On windows, if you want to use cmd instead of the anaconda shell ( no recommended), you might need to initialize (only once) conda for cmd. for that, start the anaconda shell, find conda location using "where conda".
-Now, on your cmd, use the path to run the following conda script:
+
+```
+(base) C:\>where conda
+C:\Users\ferat\AppData\Local\miniconda3\Library\bin\conda.bat
+C:\Users\ferat\AppData\Local\miniconda3\Scripts\conda.exe
+C:\Users\ferat\AppData\Local\miniconda3\condabin\conda.bat
+```
+
+Now, on your cmd, use the path of conda.exe to run the following conda script:
 
 ```
 C:\Users\ferat\AppData\Local\miniconda3\Scripts\conda.exe init cmd.exe
@@ -66,6 +94,14 @@ conda env list
 conda create -n python=
 
 conda activate
+
+
+
+``````{note}
+conda can also be used to manage R environments
+https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/
+
+``````
 
 
 
