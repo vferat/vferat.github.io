@@ -45,7 +45,3 @@ html[data-theme="dark"] {
     --pst-color-primary: rgb(0, 128, 117);
     --pst-color-text-base: rgb(248, 248, 248);
 }
-
-.bd-page-width {
-    max-width: 100%;  /* default is 88rem */
-  }
