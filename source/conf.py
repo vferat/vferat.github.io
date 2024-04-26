@@ -82,8 +82,10 @@ html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
-                 'tutorials/index': ["sidebar-nav-bs.html"],
                  'tutorials/**': [],
+                 'tutorials/index': ["sidebar-nav-bs.html"],
+                 'tutorials/fondamentals/index': ["sidebar-nav-bs.html"],
+                 'tutorials/neuroimaging/index': ["sidebar-nav-bs.html"],
                  'blog': ['ablog/tagcloud.html', 'ablog/archives.html'],
                  'blog/**': ['ablog/tagcloud.html', 'ablog/archives.html'],}
 

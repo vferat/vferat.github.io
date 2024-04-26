@@ -5,6 +5,4 @@
 :hidden:
 
 00_python
-01_github
-
 ```
