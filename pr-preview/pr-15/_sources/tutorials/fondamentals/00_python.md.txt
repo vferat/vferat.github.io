@@ -40,6 +40,7 @@ Numeric
 :columns: 3
 :img-top: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
 :link: https://scipy.org/
++++
 Signal processing
 :::
 
