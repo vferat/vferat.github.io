@@ -38,12 +38,14 @@ Numeric
 
 :::{grid-item-card} Scipy
 :columns: 3
+:img-background: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
 :link: https://scipy.org/
 Signal processing
 :::
 
 :::{grid-item-card} Matplotlib
 :columns: 3
+:img-background: https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png
 :link: https://matplotlib.org/
 +++
 Plots
@@ -57,6 +59,7 @@ Plots
 
 :::{grid-item-card} Pandas
 :columns: 3
+:img-background: https://pandas.pydata.org/static/img/pandas_mark.svg
 :link: https://pandas.pydata.org/
 +++
 Numeric
@@ -64,6 +67,7 @@ Numeric
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
+:img-background: https://github.com/scikit-learn/scikit-learn/raw/main/doc/logos/1280px-scikit-learn-logo.png
 :link: https://scikit-learn.org/stable/
 +++
 Signal processing
