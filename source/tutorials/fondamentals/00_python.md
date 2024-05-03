@@ -30,7 +30,7 @@ This openness promotes collaboration, reproducibility, and transparency in neuro
 
 :::{grid-item-card} Numpy
 :columns: 3
-:img-background: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
+:img-top: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
 :link: https://numpy.org/doc/stable/index.html
 +++
 Numeric
@@ -38,14 +38,14 @@ Numeric
 
 :::{grid-item-card} Scipy
 :columns: 3
-:img-background: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
+:img-top: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
 :link: https://scipy.org/
 Signal processing
 :::
 
 :::{grid-item-card} Matplotlib
 :columns: 3
-:img-background: https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png
+:img-top: https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png
 :link: https://matplotlib.org/
 +++
 Plots
@@ -59,7 +59,7 @@ Plots
 
 :::{grid-item-card} Pandas
 :columns: 3
-:img-background: https://pandas.pydata.org/static/img/pandas_mark.svg
+:img-top: https://pandas.pydata.org/static/img/pandas_mark.svg
 :link: https://pandas.pydata.org/
 +++
 Numeric
@@ -67,7 +67,7 @@ Numeric
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
-:img-background: https://github.com/scikit-learn/scikit-learn/raw/main/doc/logos/1280px-scikit-learn-logo.png
+:img-top: https://github.com/scikit-learn/scikit-learn/raw/main/doc/logos/1280px-scikit-learn-logo.png
 :link: https://scikit-learn.org/stable/
 +++
 Signal processing
@@ -75,7 +75,7 @@ Signal processing
 
 :::{grid-item-card} OS
 :columns: 3
-:img-background: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
+:img-top: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
 :link: https://docs.python.org/3/library/os.html
 +++
 Plots
