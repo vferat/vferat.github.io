@@ -68,7 +68,7 @@ Tables (csv)
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
-:img-top: https://github.com/scikit-learn/scikit-learn/raw/main/doc/logos/1280px-scikit-learn-logo.png
+:img-top: https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo.svg
 :link: https://scikit-learn.org/stable/
 +++
 Machine Learning
@@ -79,7 +79,7 @@ Machine Learning
 :img-top: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
 :link: https://docs.python.org/3/library/os.html
 +++
-Interacting with Operating System ( path, files)
+Operating System (path, files)
 :::
 
 :::
@@ -143,10 +143,13 @@ https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/
 ``````
 
 
+### Code editors
 
-## Ipython and
+#### Spider
 
-Python & conda
+#### Jupyter
+
+
 
 
 ```{footbibliography}
