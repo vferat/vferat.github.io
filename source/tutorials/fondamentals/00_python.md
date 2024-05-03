@@ -63,7 +63,7 @@ Plots
 :img-top: https://pandas.pydata.org/static/img/pandas_mark.svg
 :link: https://pandas.pydata.org/
 +++
-Numeric
+Tables (csv)
 :::
 
 :::{grid-item-card} Scikit-learn
@@ -71,7 +71,7 @@ Numeric
 :img-top: https://github.com/scikit-learn/scikit-learn/raw/main/doc/logos/1280px-scikit-learn-logo.png
 :link: https://scikit-learn.org/stable/
 +++
-Signal processing
+Machine Learning
 :::
 
 :::{grid-item-card} OS
@@ -79,13 +79,12 @@ Signal processing
 :img-top: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
 :link: https://docs.python.org/3/library/os.html
 +++
-Plots
+Interacting with Operating System ( path, files)
 :::
 
 :::
 ::::
 
-documentation
 
 ### A lot of libraries
 
