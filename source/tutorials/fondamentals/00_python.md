@@ -75,6 +75,7 @@ Signal processing
 
 :::{grid-item-card} OS
 :columns: 3
+:img-background: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
 :link: https://docs.python.org/3/library/os.html
 +++
 Plots
