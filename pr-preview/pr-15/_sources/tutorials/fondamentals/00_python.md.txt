@@ -30,19 +30,22 @@ This openness promotes collaboration, reproducibility, and transparency in neuro
 
 :::{grid-item-card} Numpy
 :columns: 3
-[website](https://numpy.org/doc/stable/index.html)
+:img-background: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
+:link: https://numpy.org/doc/stable/index.html
++++
 Numeric
 :::
 
 :::{grid-item-card} Scipy
 :columns: 3
-[website](https://scipy.org/)
+:link: https://scipy.org/
 Signal processing
 :::
 
 :::{grid-item-card} Matplotlib
 :columns: 3
-[website](https://matplotlib.org/)
+:link: https://matplotlib.org/
++++
 Plots
 :::
 
@@ -54,19 +57,22 @@ Plots
 
 :::{grid-item-card} Pandas
 :columns: 3
-[website](https://pandas.pydata.org/)
+:link: https://pandas.pydata.org/
++++
 Numeric
 :::
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
-[website](https://scikit-learn.org/stable/)
+:link: https://scikit-learn.org/stable/
++++
 Signal processing
 :::
 
 :::{grid-item-card} OS
 :columns: 3
-[website](https://docs.python.org/3/library/os.html)
+:link: https://docs.python.org/3/library/os.html
++++
 Plots
 :::
 
