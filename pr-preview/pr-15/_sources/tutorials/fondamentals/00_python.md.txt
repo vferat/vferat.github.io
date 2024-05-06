@@ -86,7 +86,7 @@ Machine Learning
 :class-img-top: sd-avatar-xl
 :link: https://docs.python.org/3/library/os.html
 +++
-Operating System (path, files)
+Path, Files
 :::
 
 :::
@@ -96,6 +96,15 @@ Operating System (path, files)
 ### A lot of libraries
 
 ::::{card-carousel} 2
+
+
+:::{card} Psychopy
+:img-top: https://github.com/psychopy/psychopy/blob/dev/docs/source/_static/psychopy256.png?raw=true
+:class-img-top: sd-avatar-xl
+:link: https://www.psychopy.org/
++++
+Creating experiments
+:::
 
 :::{card} NiLearn
 :img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png?raw=true
