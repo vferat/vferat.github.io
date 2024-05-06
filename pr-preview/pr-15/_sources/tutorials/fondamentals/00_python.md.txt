@@ -88,6 +88,46 @@ Operating System (path, files)
 
 ### A lot of libraries
 
+::::{card-carousel} 2
+
+:::{card} NiLearn
+:img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png
+:link: https://nilearn.github.io/stable/index.html
++++
+fMRI Analysis (ICA, GLM, Decoding)
+:::
+
+:::{card} MNE-python
+:img-top: https://github.com/mne-tools/mne-python/blob/main/doc/_static/mne_logo.svg
+:link: https://mne.tools/stable/index.html#
++++
+M/EEG - Intra - fNIRS 
+:::
+
+:::{card} fMRIprep
+:link: https://fmriprep.org/en/stable/index.html
++++
+fMRI Preprocessing
+:::
+
+:::{card} dabest
+:img-top: https://github.com/ACCLAB/DABEST-python/blob/master/nbs/images/DABEST-square-outline.svg
+:link: https://acclab.github.io/DABEST-python/
++++
+Estimation Statistics
+:::
+
+
+:::{card} Nipype
+:img-top: https://github.com/nipy/nipype/blob/master/doc/_static/nipype-banner-bg.png
+:link: https://nipype.readthedocs.io/en/latest/index.html
++++
+Neuroimaging pipelines
+:::
+
+
+::::
+
 
 ## Package managers
 
