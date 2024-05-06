@@ -91,9 +91,83 @@ Operating System (path, files)
 
 ## Package managers
 
+
 ### Pypi
 
 ### conda
+
+## Environment manager
+
+### Why using a environment manager ?
+
+API changes:
+
+````{eval-rst}
+.. tabs::
+
+   .. tab:: Numpy '1.26.4'
+
+    ```
+    >>> import numpy as np
+    >>> np.__version__
+    '1.26.4'
+    >>> np.percentile([1,2,3], q=95, method='linear')
+    2.9
+    ```
+
+   .. tab:: Numpy '1.21.0'
+
+    ```
+    >>> import numpy as np
+    >>> np.__version__
+    '1.21.0'
+    >>> np.percentile([1,2,3], q=95, method='linear')
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    File "<__array_function__ internals>", line 4, in percentile
+    TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
+    ```
+
+````
+
+
+API changes:
+
+````{eval-rst}
+.. tabs::
+
+   .. tab:: Numpy '1.23.0'
+
+        ```
+        >>> import numpy as np
+        >>> np.__version__
+        '1.23.0'
+        >>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
+        array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)
+        ```
+
+   .. tab:: Numpy '1.26.4'
+
+        ```
+        >>> import numpy as np
+        >>> np.__version__
+        '1.26.4'
+        >>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
+        <stdin>:1: RuntimeWarning: overflow encountered in floor_divide
+        array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,
+            -2147483648, -2147483648, -2147483648, -2147483648, -2147483648],
+            dtype=int32)
+        ```
+
+````
+
+#### Managing dependencies conflicts
+
+
+
+#### Reproducibility
+
+
 
 
 ## Installing python

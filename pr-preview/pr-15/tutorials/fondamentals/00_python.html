@@ -49,6 +49,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/tabs.js?v=3030b3cb"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FCG0LMTFDL"></script>
@@ -616,6 +617,60 @@ OS</div>
 <h3>conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h3>
 </section>
 </section>
+<section id="environment-manager">
+<h2>Environment manager<a class="headerlink" href="#environment-manager" title="Link to this heading">#</a></h2>
+<section id="why-using-a-environment-manager">
+<h3>Why using a environment manager ?<a class="headerlink" href="#why-using-a-environment-manager" title="Link to this heading">#</a></h3>
+<p>API changes:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Numpy ‘1.26.4’</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Numpy ‘1.21.0’</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
+<span class="pre">'1.26.4'</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.percentile([1,2,3],</span> <span class="pre">q=95,</span> <span class="pre">method='linear')</span>
+<span class="pre">2.9</span>
+<span class="pre">`</span></code></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
+<span class="pre">'1.21.0'</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.percentile([1,2,3],</span> <span class="pre">q=95,</span> <span class="pre">method='linear')</span>
+<span class="pre">Traceback</span> <span class="pre">(most</span> <span class="pre">recent</span> <span class="pre">call</span> <span class="pre">last):</span>
+<span class="pre">File</span> <span class="pre">&quot;&lt;stdin&gt;&quot;,</span> <span class="pre">line</span> <span class="pre">1,</span> <span class="pre">in</span> <span class="pre">&lt;module&gt;</span>
+<span class="pre">File</span> <span class="pre">&quot;&lt;__array_function__</span> <span class="pre">internals&gt;&quot;,</span> <span class="pre">line</span> <span class="pre">4,</span> <span class="pre">in</span> <span class="pre">percentile</span>
+<span class="pre">TypeError:</span> <span class="pre">_percentile_dispatcher()</span> <span class="pre">got</span> <span class="pre">an</span> <span class="pre">unexpected</span> <span class="pre">keyword</span> <span class="pre">argument</span> <span class="pre">'method'</span>
+<span class="pre">`</span></code></p>
+</div></div>
+<p>API changes:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Numpy ‘1.23.0’</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Numpy ‘1.26.4’</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
+<span class="pre">'1.23.0'</span>
+<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.array([np.iinfo(np.int32).min]*10,</span> <span class="pre">dtype=np.int32)</span> <span class="pre">//</span> <span class="pre">np.int32(-1)</span>
+<span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0],</span> <span class="pre">dtype=int32)</span>
+<span class="pre">`</span></code></p>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; np.__version__
+‘1.26.4’
+&gt;&gt;&gt; np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
+&lt;stdin&gt;:1: RuntimeWarning: overflow encountered in floor_divide
+array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,</p>
+<blockquote>
+<div><p>-2147483648, -2147483648, -2147483648, -2147483648, -2147483648],
+dtype=int32)</p>
+</div></blockquote>
+<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+</div></div>
+<section id="managing-dependencies-conflicts">
+<h4>Managing dependencies conflicts<a class="headerlink" href="#managing-dependencies-conflicts" title="Link to this heading">#</a></h4>
+</section>
+<section id="reproducibility">
+<h4>Reproducibility<a class="headerlink" href="#reproducibility" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
 <section id="installing-python">
 <h2>Installing python<a class="headerlink" href="#installing-python" title="Link to this heading">#</a></h2>
 <section id="install-miniconda">
@@ -727,6 +782,14 @@ main.appendChild(script);
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-managers">Package managers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pypi">Pypi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">conda</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-manager">Environment manager</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-using-a-environment-manager">Why using a environment manager ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-dependencies-conflicts">Managing dependencies conflicts</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reproducibility">Reproducibility</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-python">Installing python</a><ul class="nav section-nav flex-column">
