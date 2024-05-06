@@ -68,7 +68,6 @@ Tables (csv)
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
-
 :img-top: https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo.svg?raw=true
 :class-img-top: sd-avatar-md
 :link: https://scikit-learn.org/stable/
