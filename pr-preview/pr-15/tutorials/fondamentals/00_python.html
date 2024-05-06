@@ -622,35 +622,18 @@ OS</div>
 <section id="why-using-a-environment-manager">
 <h3>Why using a environment manager ?<a class="headerlink" href="#why-using-a-environment-manager" title="Link to this heading">#</a></h3>
 <p>API changes:</p>
-<div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Numpy ‘1.26.4’</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Numpy ‘1.21.0’</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
-<span class="pre">'1.26.4'</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.percentile([1,2,3],</span> <span class="pre">q=95,</span> <span class="pre">method='linear')</span>
-<span class="pre">2.9</span>
-<span class="pre">`</span></code></p>
-</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
-<span class="pre">'1.21.0'</span>
-<span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.percentile([1,2,3],</span> <span class="pre">q=95,</span> <span class="pre">method='linear')</span>
-<span class="pre">Traceback</span> <span class="pre">(most</span> <span class="pre">recent</span> <span class="pre">call</span> <span class="pre">last):</span>
-<span class="pre">File</span> <span class="pre">&quot;&lt;stdin&gt;&quot;,</span> <span class="pre">line</span> <span class="pre">1,</span> <span class="pre">in</span> <span class="pre">&lt;module&gt;</span>
-<span class="pre">File</span> <span class="pre">&quot;&lt;__array_function__</span> <span class="pre">internals&gt;&quot;,</span> <span class="pre">line</span> <span class="pre">4,</span> <span class="pre">in</span> <span class="pre">percentile</span>
-<span class="pre">TypeError:</span> <span class="pre">_percentile_dispatcher()</span> <span class="pre">got</span> <span class="pre">an</span> <span class="pre">unexpected</span> <span class="pre">keyword</span> <span class="pre">argument</span> <span class="pre">'method'</span>
-<span class="pre">`</span></code></p>
-</div></div>
+<div class="sd-tab-set docutils">
+</div>
 <p>API changes:</p>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Numpy ‘1.23.0’</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Numpy ‘1.26.4’</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Numpy ‘1.23.0’</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Numpy ‘1.26.4’</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p><code class="docutils literal notranslate"><span class="pre">`</span>
 <span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">numpy</span> <span class="pre">as</span> <span class="pre">np</span>
 <span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.__version__</span>
 <span class="pre">'1.23.0'</span>
 <span class="pre">&gt;&gt;&gt;</span> <span class="pre">np.array([np.iinfo(np.int32).min]*10,</span> <span class="pre">dtype=np.int32)</span> <span class="pre">//</span> <span class="pre">np.int32(-1)</span>
 <span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0],</span> <span class="pre">dtype=int32)</span>
 <span class="pre">`</span></code></p>
-</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
 &gt;&gt;&gt; import numpy as np
 &gt;&gt;&gt; np.__version__
 ‘1.26.4’
