@@ -107,7 +107,6 @@ API changes:
 :::{tab-item} Numpy '1.26.4'
 
 ```
-:language: python
 >>> import numpy as np
 >>> np.__version__
 '1.26.4'
@@ -137,33 +136,38 @@ TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
 
 API changes:
 
-````{eval-rst}
-.. tabs::
 
-   .. tab:: Numpy '1.23.0'
+::::{tab-set}
 
-        ```
-        >>> import numpy as np
-        >>> np.__version__
-        '1.23.0'
-        >>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
-        array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)
-        ```
+:::{tab-item} Numpy '1.23.0'
 
-   .. tab:: Numpy '1.26.4'
+```
+>>> import numpy as np
+>>> np.__version__
+'1.23.0'
+>>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
+array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)
+```
 
-        ```
-        >>> import numpy as np
-        >>> np.__version__
-        '1.26.4'
-        >>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
-        <stdin>:1: RuntimeWarning: overflow encountered in floor_divide
-        array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,
-            -2147483648, -2147483648, -2147483648, -2147483648, -2147483648],
-            dtype=int32)
-        ```
+:::
 
-````
+:::{tab-item} Numpy '1.26.4'
+
+```
+>>> import numpy as np
+>>> np.__version__
+'1.26.4'
+>>> np.array([np.iinfo(np.int32).min]*10, dtype=np.int32) // np.int32(-1)
+<stdin>:1: RuntimeWarning: overflow encountered in floor_divide
+array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,
+    -2147483648, -2147483648, -2147483648, -2147483648, -2147483648],
+    dtype=int32)
+```
+
+:::
+
+::::
+
 
 #### Managing dependencies conflicts
 
