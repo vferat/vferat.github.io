@@ -102,31 +102,28 @@ Operating System (path, files)
 
 API changes:
 
-````{eval-rst}
-.. tabs::
+````{tab-set-code}
 
-   .. tab:: Numpy '1.26.4'
+```{code-block} Numpy '1.26.4'
+:language: python
+>>> import numpy as np
+>>> np.__version__
+'1.26.4'
+>>> np.percentile([1,2,3], q=95, method='linear')
+2.9
+```
 
-    ```
-    >>> import numpy as np
-    >>> np.__version__
-    '1.26.4'
-    >>> np.percentile([1,2,3], q=95, method='linear')
-    2.9
-    ```
-
-   .. tab:: Numpy '1.21.0'
-
-    ```
-    >>> import numpy as np
-    >>> np.__version__
-    '1.21.0'
-    >>> np.percentile([1,2,3], q=95, method='linear')
-    Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-    File "<__array_function__ internals>", line 4, in percentile
-    TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
-    ```
+```{code-block} Numpy '1.21.0'
+:language: python
+>>> import numpy as np
+>>> np.__version__
+'1.21.0'
+>>> np.percentile([1,2,3], q=95, method='linear')
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+File "<__array_function__ internals>", line 4, in percentile
+TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
+```
 
 ````
 
