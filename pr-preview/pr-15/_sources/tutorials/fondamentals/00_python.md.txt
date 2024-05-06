@@ -31,7 +31,7 @@ This openness promotes collaboration, reproducibility, and transparency in neuro
 :::{grid-item-card} Numpy
 :columns: 3
 :img-top: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://numpy.org/doc/stable/index.html
 +++
 Numeric
@@ -40,7 +40,7 @@ Numeric
 :::{grid-item-card} Scipy
 :columns: 3
 :img-top: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://scipy.org/
 +++
 Signal processing
@@ -49,7 +49,7 @@ Signal processing
 :::{grid-item-card} Matplotlib
 :columns: 3
 :img-top: https://matplotlib.org/stable/_images/sphx_glr_logos2_001.png
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://matplotlib.org/
 +++
 Plots
@@ -64,7 +64,7 @@ Plots
 :::{grid-item-card} Pandas
 :columns: 3
 :img-top: https://pandas.pydata.org/static/img/pandas_mark.svg
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://pandas.pydata.org/
 +++
 Tables (csv)
@@ -73,7 +73,7 @@ Tables (csv)
 :::{grid-item-card} Scikit-learn
 :columns: 3
 :img-top: https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo.svg?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://scikit-learn.org/stable/
 
 +++
@@ -83,7 +83,7 @@ Machine Learning
 :::{grid-item-card} OS
 :columns: 3
 :img-top: https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://docs.python.org/3/library/os.html
 +++
 Operating System (path, files)
@@ -99,7 +99,7 @@ Operating System (path, files)
 
 :::{card} NiLearn
 :img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://nilearn.github.io/stable/index.html
 +++
 fMRI Analysis (ICA, GLM, Decoding)
@@ -107,7 +107,7 @@ fMRI Analysis (ICA, GLM, Decoding)
 
 :::{card} MNE-python
 :img-top: https://github.com/mne-tools/mne-python/blob/main/doc/_static/mne_logo.svg?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://mne.tools/stable/index.html#
 +++
 M/EEG - Intra - fNIRS 
@@ -121,7 +121,7 @@ fMRI Preprocessing
 
 :::{card} dabest
 :img-top: https://github.com/ACCLAB/DABEST-python/blob/master/nbs/images/DABEST-square-outline.svg?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://acclab.github.io/DABEST-python/
 +++
 Estimation Statistics
@@ -130,7 +130,7 @@ Estimation Statistics
 
 :::{card} Nipype
 :img-top: https://github.com/nipy/nipype/blob/master/doc/_static/nipype-banner-bg.png?raw=true
-:class-img-top: sd-avatar-lg
+:class-img-top: sd-avatar-xl
 :link: https://nipype.readthedocs.io/en/latest/index.html
 +++
 Neuroimaging pipelines
