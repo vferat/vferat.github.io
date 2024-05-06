@@ -158,6 +158,21 @@ Neuroimaging pipelines
 
 ## Environment manager
 
+```bash
+>>> pip freeze
+graphviz==0.20.3
+joblib==1.4.2
+numpy==1.26.4
+packaging==24.0
+pipdeptree==2.19.1
+scikit-learn==1.4.2
+scipy==1.13.0
+setuptools==68.2.2
+threadpoolctl==3.5.0
+wheel==0.43.0
+```
+
+
 ### Why using a environment manager ?
 
 API changes:
@@ -166,7 +181,7 @@ API changes:
 
 :::{tab-item} Numpy '1.26.4'
 
-```
+```python
 >>> import numpy as np
 >>> np.__version__
 '1.26.4'
@@ -178,7 +193,7 @@ API changes:
 
 :::{tab-item} Numpy '1.21.0'
 
-```
+```python
 >>> import numpy as np
 >>> np.__version__
 '1.21.0'
@@ -201,7 +216,7 @@ API changes:
 
 :::{tab-item} Numpy '1.23.0'
 
-```
+```python
 >>> import numpy as np
 >>> np.__version__
 '1.23.0'
@@ -213,7 +228,7 @@ array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)
 
 :::{tab-item} Numpy '1.26.4'
 
-```
+```python
 >>> import numpy as np
 >>> np.__version__
 '1.26.4'
