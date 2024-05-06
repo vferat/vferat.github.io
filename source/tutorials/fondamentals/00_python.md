@@ -68,7 +68,8 @@ Tables (csv)
 
 :::{grid-item-card} Scikit-learn
 :columns: 3
-:img-top: https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo.svg
+
+:img-top: https://github.com/scikit-learn/scikit-learn/blob/main/doc/logos/scikit-learn-logo.svg?raw=true
 :link: https://scikit-learn.org/stable/
 +++
 Machine Learning
@@ -91,14 +92,14 @@ Operating System (path, files)
 ::::{card-carousel} 2
 
 :::{card} NiLearn
-:img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png
+:img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png?raw=true
 :link: https://nilearn.github.io/stable/index.html
 +++
 fMRI Analysis (ICA, GLM, Decoding)
 :::
 
 :::{card} MNE-python
-:img-top: https://github.com/mne-tools/mne-python/blob/main/doc/_static/mne_logo.svg
+:img-top: https://github.com/mne-tools/mne-python/blob/main/doc/_static/mne_logo.svg?raw=true
 :link: https://mne.tools/stable/index.html#
 +++
 M/EEG - Intra - fNIRS 
@@ -111,7 +112,7 @@ fMRI Preprocessing
 :::
 
 :::{card} dabest
-:img-top: https://github.com/ACCLAB/DABEST-python/blob/master/nbs/images/DABEST-square-outline.svg
+:img-top: https://github.com/ACCLAB/DABEST-python/blob/master/nbs/images/DABEST-square-outline.svg?raw=true
 :link: https://acclab.github.io/DABEST-python/
 +++
 Estimation Statistics
@@ -119,7 +120,7 @@ Estimation Statistics
 
 
 :::{card} Nipype
-:img-top: https://github.com/nipy/nipype/blob/master/doc/_static/nipype-banner-bg.png
+:img-top: https://github.com/nipy/nipype/blob/master/doc/_static/nipype-banner-bg.png?raw=true
 :link: https://nipype.readthedocs.io/en/latest/index.html
 +++
 Neuroimaging pipelines
