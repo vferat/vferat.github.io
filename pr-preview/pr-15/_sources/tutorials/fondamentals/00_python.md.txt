@@ -102,9 +102,11 @@ Operating System (path, files)
 
 API changes:
 
-````{tab-set-code}
+::::{tab-set}
 
-```{code-block} Numpy '1.26.4'
+:::{tab-item} Numpy '1.26.4'
+
+```
 :language: python
 >>> import numpy as np
 >>> np.__version__
@@ -113,8 +115,11 @@ API changes:
 2.9
 ```
 
-```{code-block} Numpy '1.21.0'
-:language: python
+:::
+
+:::{tab-item} Numpy '1.21.0'
+
+```
 >>> import numpy as np
 >>> np.__version__
 '1.21.0'
@@ -125,7 +130,9 @@ File "<__array_function__ internals>", line 4, in percentile
 TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
 ```
 
-````
+:::
+
+::::
 
 
 API changes:
