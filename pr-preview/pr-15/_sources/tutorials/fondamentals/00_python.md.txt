@@ -18,7 +18,8 @@ Integration with Other Environments and Tools
 ### For education
 
 Python's simplicity and readability (high-level) make it an ideal programming language for educational purposes.
-License-Free and Open-Source
+License-Free and Open-Source.
+Students doesn't need to buy a license/software neither to be on a school network to use Python.
 
 ### For research
 
@@ -91,6 +92,12 @@ Path, Files
 
 :::
 ::::
+
+### For Developpers
+
+Because Python doesn't reauires a license software, it makes it way easier to work with in remote environments. This includes:
+HPC: 
+Workers ( such a github workers): Workers are 
 
 
 ### A lot of libraries
