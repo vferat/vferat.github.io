@@ -7,24 +7,49 @@ Python is a high-level, object oriented, interpreted programming language {footc
 - object oriented: a programming paradigm based on the concept of "objects," which can contain data (attributes) and code (methods) to manipulate that data.
 The object 'apple' does not only have a weight apple.weight but can also change itself apple.fall()
 
-## The choice of python for neuroimaging
+## About Python
 
-simplicity and readability
-multipurpose
-Portability 
-License-Free and Open-Source
-Integration with Other Environments and Tools
+**Simplicity and readability:** Python is a high-level programming language, which means its syntax is closer to human language and thus easier to understand. It also allows for more focus on the problem-solving aspects of programming for neuroimaging, rather than getting bogged down in complex syntax.
 
-### For education
+**Multipurpose:** Python is a general-purpose programming language, meaning it can be used for a wide variety of tasks. In the context of neuroscience research, Python can be used for data analysis, machine learning, image processing, and even creating interactive visualizations of neuroimaging data. Beyond neuroscience, Python is used in web development, game development (with game engines like Pygame), and much more.
 
-Python's simplicity and readability (high-level) make it an ideal programming language for educational purposes.
-License-Free and Open-Source.
-Students doesn't need to buy a license/software neither to be on a school network to use Python.
+**Portability:** Python is a portable language. It can run on various operating systems like Windows, Mac OS, and Linux. This means that Python scripts written on one system can typically be run on another without requiring modification.
 
-### For research
+**License-Free and Open-Source:** Python is both license-free and open-source. You do not need to pay to use or distribute Python. Its open-source nature means that its source code is freely available. This allows for a large community of developers to contribute to its development, resulting in a robust language with a wide array of libraries and modules.
 
-This openness promotes collaboration, reproducibility, and transparency in neuroimaging research, as code and tools can be shared and scrutinized by the community.
+**Integration with Other Environments and Tools:** Python can easily integrate with other software and tools, making it a versatile choice for neuroimaging research. It can interface with C/C++ libraries, can be embedded in applications, and can interact with other programming languages.
 
+## The choice of Python for neuroimaging
+
+### For Education
+
+Python's simplicity and readability make it an ideal programming language for educational purposes. Its high-level syntax is closer to human language, making it more accessible for beginners. Python is also license-free and open-source, which means students don't need to purchase a license or software, nor do they need to be on a school network to use Python. This makes Python a cost-effective and flexible choice for both educational institutions and students.
+
+### For Developers
+
+Python's lack of licensing requirements makes it a convenient choice for working in remote environments. This includes:
+
+- High-Performance Computing (HPC): HPC are remote computing environment usedto run complexe scripts that usually requires a lot of computational resources.
+- Workers (such as GitHub Workers) Workers are background processes that handle tasks like sending notifications, executing long-running scripts
+
+### For Researchers
+
+Python's open-source nature promotes collaboration, reproducibility, and transparency in neuroimaging research. Code and tools can be freely shared and scrutinized by the community, fostering a collaborative environment. This openness also aids in the reproducibility of research, as other researchers can easily access, understand, and validate the code used in neuroimaging studies.
+
+
+### Python's Core Functionalities and External Libraries
+
+Python, as a programming language, provides a set of core functionalities that are sufficient for basic programming tasks. These include data types, control flow structures, and basic input/output operations. However, one of the strengths of Python lies in its extensibility through external libraries.
+
+External libraries in Python are additional packages that can be imported into your Python environment to provide extra functionality. These libraries can range from those that provide mathematical functions (like NumPy), to those that provide machine learning capabilities (like scikit-learn), to those that provide neuroimaging-specific tools (like MNE and Nilearn).
+
+These libraries are maintained by a variety of entities. Some are maintained by large institutions or companies, such as SciPy (maintained by a community of volunteers and managed by NumFOCUS, a non-profit), or TensorFlow (maintained by Google). Others are maintained by individual developers or small teams, contributing their expertise to the Python community.
+
+This ecosystem of libraries greatly extends the capabilities of Python, allowing it to be used for an almost infinite range of tasks. It also means that Python can be as lightweight or as feature-rich as you need it to be, depending on which libraries you choose to use.
+
+### Most important python librairies for data sciences
+
+Although there are thousands of libraries, some are used much more than others. For data and time series analysis, which are key in neuroscience, it is important to familiarize yourself with the main ones:
 
 ::::{grid} 3
 :gutter: 1
@@ -93,14 +118,7 @@ Path, Files
 :::
 ::::
 
-### For Developpers
-
-Because Python doesn't reauires a license software, it makes it way easier to work with in remote environments. This includes:
-HPC: 
-Workers ( such a github workers): Workers are 
-
-
-### A lot of libraries
+### Neuroimaging libraires
 
 ::::{card-carousel} 2
 
@@ -156,14 +174,23 @@ Neuroimaging pipelines
 ::::
 
 
-## Package managers
+## Package Managers
 
+Package managers are tools that help you install and manage software libraries and dependencies. In Python, the two most common package managers are **PyPI** and **Conda**.
 
-### Pypi
+### PyPI
 
-### conda
+PyPI, or the Python Package Index, is a repository of software for the Python programming language. It helps you find and install software developed and shared by the Python community. You can use pip, a package installer for Python, to install packages from PyPI.
 
-## Environment manager
+### Conda
+
+Conda is a package manager that works with any language but is particularly popular with Python and R projects. It can manage environments, install packages, and more. Conda is included in Anaconda and Miniconda.
+
+## Environment Managers
+
+An environment manager is a tool that allows you to maintain separate environments, each with its own set of packages and dependencies. This is particularly useful when different projects require different versions of the same package.
+
+For example, running `pip freeze` in your terminal will display a list of all the Python packages installed in your current environment, along with their versions:
 
 ```bash
 >>> pip freeze
@@ -179,10 +206,9 @@ threadpoolctl==3.5.0
 wheel==0.43.0
 ```
 
-
 ### Why using a environment manager ?
 
-API changes:
+Different versions of the same package can have different APIs. For example, consider the following two versions of NumPy:
 
 ::::{tab-set}
 
@@ -215,6 +241,7 @@ TypeError: _percentile_dispatcher() got an unexpected keyword argument 'method'
 
 ::::
 
+As you can see, the `percentile` function in NumPy version 1.26.4 accepts a `method` argument, but the same function in version 1.21.0 does not. This can lead to errors if your code depends on a specific version of a package. By using an environment manager, you can ensure that your project has exactly the right versions of its dependencies.
 
 API changes:
 
@@ -250,71 +277,75 @@ array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,
 
 ::::
 
+On the second example, the same operation results in an overflow warning and an array of the minimum possible 32-bit integers instead of an array of zeros.. the behavior of the floor division operation has changed between these two versions of NumPy. This is a clear example of why it's important to manage your project's dependencies carefully, as changes in package versions can lead to unexpected results.
 
-#### Managing dependencies conflicts
+### Managing dependencies conflicts
 
-
-
-#### Reproducibility
-
+Managing your project's environment is a crucial aspect of any programming project, and this is especially true when working with Python. Conda is a popular tool for environment management in Python. It allows you to create isolated environments, each with their own installed packages, which can help prevent conflicts between package versions.
 
 
+## Installing Python
 
-## Installing python
+### Installing Miniconda
 
-### install miniconda
+Miniconda is a free minimal installer for conda, a package management and environment management system for Python and R. It's a lightweight version of the comprehensive Anaconda distribution.
 
-https://docs.anaconda.com/free/miniconda/index.html
+To install Miniconda, follow these steps:
 
-use the latest stable version
-
+1. Visit the [Miniconda download page](https://docs.anaconda.com/free/miniconda/index.html).
+2. Download the installer for your operating system. Make sure to choose the latest stable version.
+3. Run the installer and follow the prompts on the screen.
 
 ``````{note}
-On windows, if you want to use cmd instead of the anaconda shell ( no recommended), you might need to initialize (only once) conda for cmd. for that, start the anaconda shell, find conda location using "where conda".
+If you're using Windows and prefer to use the Command Prompt (cmd) instead of the Anaconda shell (not recommended), you'll need to initialize conda for cmd. This only needs to be done once.
 
-```
+To do this, start the Anaconda shell and find the location of conda using the `where conda` command:
+
+```bash
 (base) C:\>where conda
 C:\Users\ferat\AppData\Local\miniconda3\Library\bin\conda.bat
 C:\Users\ferat\AppData\Local\miniconda3\Scripts\conda.exe
 C:\Users\ferat\AppData\Local\miniconda3\condabin\conda.bat
 ```
 
-Now, on your cmd, use the path of conda.exe to run the following conda script:
+Then, in your cmd, use the path of `conda.exe` to run the following conda script:
 
-```
+```bash
 C:\Users\ferat\AppData\Local\miniconda3\Scripts\conda.exe init cmd.exe
 ```
 
+This will initialize conda for the Command Prompt, allowing you to use conda commands directly from cmd.
 ``````
 
+### Environment Management with Conda
 
+To view a list of all your existing conda environments, you can use the following command:
 
-
-### environment managment
-
+```bash
 conda env list
+```
 
-conda create -n python=
+This will display a list of all your environments, along with their locations on your system.
 
-conda activate
+To create a new environment, you can use the `conda create` command. This command takes two arguments: the name of the new environment (`{environment_name}`), and the version of Python you want to use in that environment (`{python_version}`):
 
+```bash
+conda create -n {environment_name} python={python_version}
+```
 
+Once you've created an environment, you'll need to activate it before you can use it. You can do this with the `conda activate` command:
 
-``````{note}
-conda can also be used to manage R environments
-https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/
+```bash
+conda activate {environment_name}
+```
 
-``````
+After activating an environment, your terminal will typically display the name of the current environment at the beginning of the line, usually in parentheses. This helps you keep track of which environment you're currently working in.
 
+Once an environment is activated, all subsequent commands you run will use the Python executables and libraries installed in that environment. This isolation is what allows you to have different environments with different versions of the same package installed.
 
-### Code editors
-
-#### Spider
-
-#### Jupyter
-
-
-
+```{note}
+Conda isn't just for Python - it can also be used to manage environments for the R programming language. You can learn more about this in the [Conda documentation](https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/).
+```
 
 ```{footbibliography}
 ```
