@@ -1,13 +1,13 @@
 # Tutorials
 
-tutorial section
+Tutorial section
 
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
 
-fondamentals/index
+basics/index
 neuroimaging/index
 
 ```
