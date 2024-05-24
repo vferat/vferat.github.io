@@ -1,8 +1,10 @@
 # Python
 
+Basic python tutorials:
+
 ```{toctree}
 :maxdepth: 2
-:hidden:
+
 
 00_about
 01_installation
