@@ -92,7 +92,7 @@ Additionally, you can access powerful computational resources by starting a Jupy
 
 ## Visual Studio Code (VS Code)
 <p align="center">
-<img src="./vscode.png" alt="fishy" class="bg-primary mb-1" width="400px">
+<img src="../../_static/images/vscode.png" alt="fishy" class="bg-primary mb-1" width="400px">
 </p>
 
 Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.
@@ -103,7 +103,6 @@ Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellen
 - **Multi-language Support**: VS Code is not limited to Python. It supports numerous programming languages such as JavaScript, C++, Java, and more, through its extensive marketplace of extensions.
 - **Marketplace Extensions**: The VS Code marketplace allows you to install extensions tailored to your specific needs. Whether you need tools for debugging, version control, or integrating cloud services, there is an extension available.
 - **Jupyter Notebooks Integration**: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a `.ipynb` file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.
-
 
 
 As VScode is developed by Microsoft, it integrates exceptionally well with other Microsoft tools:
