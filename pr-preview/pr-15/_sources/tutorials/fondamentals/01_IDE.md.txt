@@ -18,7 +18,7 @@ While this workflow is entirely functional, developers have created tools to fac
 ## Spyder
 
 <p align="center">
-<img src="https://github.com/spyder-ide/spyder/blob/master/img_src/screenshot.png?raw=true" alt="fishy" class="bg-primary mb-1" width="400px">
+<img src="https://github.com/spyder-ide/spyder/blob/master/img_src/screenshot.png?raw=true" alt="Spyder" class="bg-primary mb-1" width="800px">
 </p>
 
 Spyder is a free and open-source scientific environment for Python, which is also written in Python. It is designed to meet the needs of scientists, engineers, and data analysts when working with Python. Its graphical interface has many similarities with MATLAB, making it an excellent choice for those transitioning from MATLAB to Python. However, for others, there might be alternative tools that offer more features.
@@ -37,7 +37,7 @@ spyder
 
 ## Jupyter Notebook / JupyterLab
 <p align="center">
-<img src="https://jupyter-notebook.readthedocs.io/en/stable/_images/notebook-running-code.png" alt="fishy" class="bg-primary mb-1" width="400px">
+<img src="https://jupyter-notebook.readthedocs.io/en/stable/_images/notebook-running-code.png" alt="Jupyter" class="bg-primary mb-1" width="800px">
 </p>
 
 Jupyter Notebook and JupyterLab are powerful, interactive coding environments that facilitate data analysis and visualization. They operate as server-client applications. When you start a Jupyter server, a webpage is opened in your default web browser, allowing you to interact with interactive Python notebooks (`.ipynb`). These interfaces offer two main benefits:
@@ -92,7 +92,7 @@ Additionally, you can access powerful computational resources by starting a Jupy
 
 ## Visual Studio Code (VS Code)
 <p align="center">
-<img src="../../_static/images/vscode.png" alt="fishy" class="bg-primary mb-1" width="400px">
+<img src="../../_static/images/vscode.png" alt="VS code" class="bg-primary mb-1" width="800px">
 </p>
 
 Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.
