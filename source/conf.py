@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'sphinx-blog-page'
-copyright = '2023, Victor Férat'
+copyright = '2024, Victor Férat'
 author = 'Victor Férat'
 release = '0.0.1'
 
@@ -82,6 +82,10 @@ html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
+                 'tutorials/**': [],
+                 'tutorials/index': ["sidebar-nav-bs.html"],
+                 'tutorials/fondamentals/index': ["sidebar-nav-bs.html"],
+                 'tutorials/neuroimaging/index': ["sidebar-nav-bs.html"],
                  'blog': ['ablog/tagcloud.html', 'ablog/archives.html'],
                  'blog/**': ['ablog/tagcloud.html', 'ablog/archives.html'],}
 
@@ -104,7 +108,7 @@ blog_languages = {
 }
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib', 'tutorials/fondamentals/00_bibliography.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
@@ -150,3 +154,8 @@ html_extra_path = ['../.nojekyll', 'extra']
 html_theme_options["analytics"] = {
     "google_analytics_id": "G-FCG0LMTFDL",
 }
+
+# -- Referencing --
+extensions += ['sphinx_sitemap']
+html_baseurl = 'https://vferat.github.io'
+html_extra_path += ["extra"]
