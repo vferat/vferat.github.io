@@ -118,7 +118,11 @@ To start using VS Code for Python and Jupyter Notebooks:
 1. **Download and Install**: Download VS Code from the [official website](https://code.visualstudio.com/).
 2. **Install Extensions**: Install the Python extension and Jupyter extension from the VS Code marketplace.
 3. **Open or Create Projects**: Open your Python scripts or Jupyter Notebooks directly in VS Code. For Jupyter Notebooks, the server will start automatically or connect to an existing one.
+4. Make sure to install ipykernel in each environment you want to use with VS code
 
+```bash
+pip install ipykernel
+```
 
 ```{note}
 VS Code is also a server-client application and can be integrated into web platforms. GitHub Codespaces ([https://github.com/features/codespaces](https://github.com/features/codespaces)) allows you to start a VS Code server and access it from your web browser.
