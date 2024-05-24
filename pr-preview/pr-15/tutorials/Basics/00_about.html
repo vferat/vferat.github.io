@@ -65,14 +65,12 @@
                 gtag('js', new Date());
                 gtag('config', 'G-FCG0LMTFDL');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/fondamentals/00_python';</script>
-    <link rel="canonical" href="https://vferat.github.io/tutorials/fondamentals/00_python.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/Basics/00_about';</script>
+    <link rel="canonical" href="https://vferat.github.io/tutorials/Basics/00_about.html" />
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Integrated development environment" href="01_IDE.html" />
-    <link rel="prev" title="Python for Neurosciences" href="index.html" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -184,7 +182,7 @@
                     </li>
                 
 
-                    <li class="nav-item current active">
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../index.html">
                         Tutorials
                       </a>
@@ -352,7 +350,7 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item current active">
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../index.html">
                         Tutorials
                       </a>
@@ -474,12 +472,6 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
-    
-    
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Python for Neurosciences</a></li>
-    
     <li class="breadcrumb-item active" aria-current="page">Introduction...</li>
   </ul>
 </nav>
@@ -500,7 +492,7 @@ document.write(`
                   
 <section id="introduction-to-python">
 <h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Link to this heading">#</a></h1>
-<p>Python is a high-level, object oriented, interpreted programming language <a class="footnote-reference brackets" href="#footcite-pythonabout" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>Python is a high-level, object oriented, interpreted programming language </p>
 <ul class="simple">
 <li><p>high-level: code closely resembles human language and logic: users can focus more on the problem they are trying to solve rather than the intricacies of how the computer executes the code (i.e. how memory is allocated, pointers, types)</p></li>
 <li><p>interpreted: the code is executed line by line by an interpreter software (on-the-fly), rather than being compiled into machine code before execution. This allows for Dynamic Typing, Interactivity, Portability</p></li>
@@ -785,66 +777,6 @@ Numpy ‘1.26.4’</label><div class="sd-tab-content docutils">
 <p>Managing your project’s environment is a crucial aspect of any programming project, and this is especially true when working with Python. Conda is a popular tool for environment management in Python. It allows you to create isolated environments, each with their own installed packages, which can help prevent conflicts between package versions.</p>
 </section>
 </section>
-<section id="installing-python">
-<h2>Installing Python<a class="headerlink" href="#installing-python" title="Link to this heading">#</a></h2>
-<section id="installing-miniconda">
-<h3>Installing Miniconda<a class="headerlink" href="#installing-miniconda" title="Link to this heading">#</a></h3>
-<p>Miniconda is a free minimal installer for conda, a package management and environment management system for Python and R. It’s a lightweight version of the comprehensive Anaconda distribution.</p>
-<p>To install Miniconda, follow these steps:</p>
-<ol class="arabic simple">
-<li><p>Visit the <a class="reference external" href="https://docs.anaconda.com/free/miniconda/index.html">Miniconda download page</a>.</p></li>
-<li><p>Download the installer for your operating system. Make sure to choose the latest stable version.</p></li>
-<li><p>Run the installer and follow the prompts on the screen.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you’re using Windows and prefer to use the Command Prompt (cmd) instead of the Anaconda shell (not recommended), you’ll need to initialize conda for cmd. This only needs to be done once.</p>
-<p>To do this, start the Anaconda shell and find the location of conda using the <code class="docutils literal notranslate"><span class="pre">where</span> <span class="pre">conda</span></code> command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>base<span class="o">)</span><span class="w"> </span>C:<span class="se">\&gt;</span>where<span class="w"> </span>conda
-C:<span class="se">\U</span>sers<span class="se">\f</span>erat<span class="se">\A</span>ppData<span class="se">\L</span>ocal<span class="se">\m</span>iniconda3<span class="se">\L</span>ibrary<span class="se">\b</span>in<span class="se">\c</span>onda.bat
-C:<span class="se">\U</span>sers<span class="se">\f</span>erat<span class="se">\A</span>ppData<span class="se">\L</span>ocal<span class="se">\m</span>iniconda3<span class="se">\S</span>cripts<span class="se">\c</span>onda.exe
-C:<span class="se">\U</span>sers<span class="se">\f</span>erat<span class="se">\A</span>ppData<span class="se">\L</span>ocal<span class="se">\m</span>iniconda3<span class="se">\c</span>ondabin<span class="se">\c</span>onda.bat
-</pre></div>
-</div>
-<p>Then, in your cmd, use the path of <code class="docutils literal notranslate"><span class="pre">conda.exe</span></code> to run the following conda script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>C:<span class="se">\U</span>sers<span class="se">\f</span>erat<span class="se">\A</span>ppData<span class="se">\L</span>ocal<span class="se">\m</span>iniconda3<span class="se">\S</span>cripts<span class="se">\c</span>onda.exe<span class="w"> </span>init<span class="w"> </span>cmd.exe
-</pre></div>
-</div>
-<p>This will initialize conda for the Command Prompt, allowing you to use conda commands directly from cmd.</p>
-</div>
-</section>
-<section id="environment-management-with-conda">
-<h3>Environment Management with Conda<a class="headerlink" href="#environment-management-with-conda" title="Link to this heading">#</a></h3>
-<p>To view a list of all your existing conda environments, you can use the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>list
-</pre></div>
-</div>
-<p>This will display a list of all your environments, along with their locations on your system.</p>
-<p>To create a new environment, you can use the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> command. This command takes two arguments: the name of the new environment (<code class="docutils literal notranslate"><span class="pre">{environment_name}</span></code>), and the version of Python you want to use in that environment (<code class="docutils literal notranslate"><span class="pre">{python_version}</span></code>):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="o">{</span>environment_name<span class="o">}</span><span class="w"> </span><span class="nv">python</span><span class="o">={</span>python_version<span class="o">}</span>
-</pre></div>
-</div>
-<p>Once you’ve created an environment, you’ll need to activate it before you can use it. You can do this with the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>environment_name<span class="o">}</span>
-</pre></div>
-</div>
-<p>After activating an environment, your terminal will typically display the name of the current environment at the beginning of the line, usually in parentheses. This helps you keep track of which environment you’re currently working in.</p>
-<p>Once an environment is activated, all subsequent commands you run will use the Python executables and libraries installed in that environment. This isolation is what allows you to have different environments with different versions of the same package installed.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Conda isn’t just for Python - it can also be used to manage environments for the R programming language. You can learn more about this in the <a class="reference external" href="https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/">Conda documentation</a>.</p>
-</div>
-<div class="docutils container" id="id2">
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="footcite-pythonabout" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Python.org. URL: <a class="reference external" href="https://www.python.org/about/">https://www.python.org/about/</a>.</p>
-</aside>
-</aside>
-</div>
-<hr class="footnotes docutils" />
-</section>
-</section>
 </section>
 
 <div class="section ablog__blog_comments">
@@ -916,11 +848,6 @@ main.appendChild(script);
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-dependencies-conflicts">Managing dependencies conflicts</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-python">Installing Python</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-miniconda">Installing Miniconda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-management-with-conda">Environment Management with Conda</a></li>
-</ul>
-</li>
 </ul>
   </nav></div>
 
@@ -928,7 +855,7 @@ main.appendChild(script);
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/tutorials/fondamentals/00_python.md">
+    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/tutorials/Basics/00_about.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -943,7 +870,7 @@ main.appendChild(script);
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/tutorials/fondamentals/00_python.md.txt">
+    <a href="../../_sources/tutorials/Basics/00_about.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
