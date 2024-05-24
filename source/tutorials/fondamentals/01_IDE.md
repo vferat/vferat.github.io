@@ -86,7 +86,6 @@ Additionally, you can access powerful computational resources by starting a Jupy
 Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.
 
 **Jupyter Notebooks Integration**: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a `.ipynb` file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.
-- 
 
 
 - **Multi-language Support**: VS Code is not limited to Python. It supports numerous programming languages such as JavaScript, C++, Java, and more, through its extensive marketplace of extensions.
@@ -110,7 +109,7 @@ To start using VS Code for Python and Jupyter Notebooks:
 3. **Open or Create Projects**: Open your Python scripts or Jupyter Notebooks directly in VS Code. For Jupyter Notebooks, the server will start automatically or connect to an existing one.
 
 
-```note
+```{note}
 VS Code is also a server-client application and can be integrated into web platforms. GitHub Codespaces ([https://github.com/features/codespaces](https://github.com/features/codespaces)) allows you to start a VS Code server and access it from your web browser.
 
 As with Jupyter Notebooks, a VS Code server can also be started on another computer within your network, a virtual machine on your own computer (Docker/Windows Subsystem for Linux (WSL)), and the UNIGE HPC.
