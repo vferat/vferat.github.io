@@ -17,6 +17,10 @@ While this workflow is entirely functional, developers have created tools to fac
 
 ## Spyder
 
+<p align="center">
+<img src="https://github.com/spyder-ide/spyder/blob/master/img_src/screenshot.png?raw=true" alt="fishy" class="bg-primary mb-1" width="400px">
+</p>
+
 Spyder is a free and open-source scientific environment for Python, which is also written in Python. It is designed to meet the needs of scientists, engineers, and data analysts when working with Python. Its graphical interface has many similarities with MATLAB, making it an excellent choice for those transitioning from MATLAB to Python. However, for others, there might be alternative tools that offer more features.
 
 I recommended to install `Spyder` in each conda environment using `pip`. This ensures that `Spyder` is configured to work within your current environment:
@@ -32,11 +36,16 @@ spyder
 ```
 
 ## Jupyter Notebook / JupyterLab
+<p align="center">
+<img src="https://jupyter-notebook.readthedocs.io/en/stable/_images/notebook-running-code.png" alt="fishy" class="bg-primary mb-1" width="400px">
+</p>
 
 Jupyter Notebook and JupyterLab are powerful, interactive coding environments that facilitate data analysis and visualization. They operate as server-client applications. When you start a Jupyter server, a webpage is opened in your default web browser, allowing you to interact with interactive Python notebooks (`.ipynb`). These interfaces offer two main benefits:
 
 - **Interactive Execution**: Code is written in cells, which can be executed independently while retaining the state of the entire session. This allows for interactive experimentation without needing to rerun the entire script.
 - **Rich Media Integration**: Embed text (Markdown), plots, images, videos, and other rich media directly into the notebook. This feature is especially useful for documenting data analysis workflows and sharing results.
+
+
 
 JupyterLab is an enhanced interface for Jupyter Notebooks, offering additional features like an integrated file browser and support for multiple panels. While it can be more handy and versatile, it retains all the core functionalities of Jupyter Notebook.
 
@@ -82,6 +91,9 @@ Additionally, you can access powerful computational resources by starting a Jupy
 ```
 
 ## Visual Studio Code (VS Code)
+<p align="center">
+<img src="./vscode.png" alt="fishy" class="bg-primary mb-1" width="400px">
+</p>
 
 Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.
 
