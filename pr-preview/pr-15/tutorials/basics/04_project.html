@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Integrated development environment &#8212; vferat</title>
+    <title>New python project Cheatsheet &#8212; vferat</title>
   
   
   
@@ -65,12 +65,14 @@
                 gtag('js', new Date());
                 gtag('config', 'G-FCG0LMTFDL');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/Basics/02_IDE';</script>
-    <link rel="canonical" href="https://vferat.github.io/tutorials/Basics/02_IDE.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/basics/04_project';</script>
+    <link rel="canonical" href="https://vferat.github.io/tutorials/basics/04_project.html" />
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Advanced VS code setup" href="05_vscode.html" />
+    <link rel="prev" title="Git(hub)" href="03_github.html" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,7 +184,7 @@
                     </li>
                 
 
-                    <li class="nav-item">
+                    <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../index.html">
                         Tutorials
                       </a>
@@ -350,7 +352,7 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item">
+                    <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../index.html">
                         Tutorials
                       </a>
@@ -472,7 +474,13 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Integrated...</li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Python</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">New python...</li>
   </ul>
 </nav>
 </div>
@@ -490,111 +498,119 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-<section id="integrated-development-environment">
-<h1>Integrated development environment<a class="headerlink" href="#integrated-development-environment" title="Link to this heading">#</a></h1>
-<p>Python scripts are essentially text files. You could use any basic text editor such as Notepad or Notepad++ to write them. For instance, you could create a simple text file <code class="docutils literal notranslate"><span class="pre">hello.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
-</pre></div>
+<section id="new-python-project-cheatsheet">
+<h1>New python project Cheatsheet<a class="headerlink" href="#new-python-project-cheatsheet" title="Link to this heading">#</a></h1>
+<section id="create-a-new-github-repository">
+<h2>Create a new Github repository<a class="headerlink" href="#create-a-new-github-repository" title="Link to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<section id="create-a-new-python-environment">
+<h2>Create a new python environment<a class="headerlink" href="#create-a-new-python-environment" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>NO pity for people using the (base) environment.</p>
 </div>
-<p>Then, you can use Python to execute it:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>hello.py
-</pre></div>
-</div>
-<p>While this workflow is entirely functional, developers have created tools to facilitate script development and data exploration. These tools are known as <strong>Integrated Development Environments (IDEs)</strong>. IDEs are applications that provide comprehensive facilities for coding. They often include features like syntax highlighting, autocompletion, and debugging tools, which can significantly enhance productivity and code quality. Moreover, many modern IDEs allow you to run your code interactively within the IDE itself, further enhancing the development and data exploration experience.</p>
-<section id="spyder">
-<h2>Spyder<a class="headerlink" href="#spyder" title="Link to this heading">#</a></h2>
-<p align="center">
-<img src="https://github.com/spyder-ide/spyder/blob/master/img_src/screenshot.png?raw=true" alt="Spyder" class="bg-primary mb-1" width="800px">
-</p>
-<p>Spyder is a free and open-source scientific environment for Python, which is also written in Python. It is designed to meet the needs of scientists, engineers, and data analysts when working with Python. Its graphical interface has many similarities with MATLAB, making it an excellent choice for those transitioning from MATLAB to Python. However, for others, there might be alternative tools that offer more features.</p>
-<p>I recommended to install <code class="docutils literal notranslate"><span class="pre">Spyder</span></code> in each conda environment using <code class="docutils literal notranslate"><span class="pre">pip</span></code>. This ensures that <code class="docutils literal notranslate"><span class="pre">Spyder</span></code> is configured to work within your current environment:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>spyder
-</pre></div>
-</div>
-<p>To start Spyder, simply type:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>spyder
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span><span class="w"> </span><span class="nv">python</span><span class="o">={</span>python_version<span class="o">}</span>
 </pre></div>
 </div>
 </section>
-<section id="jupyter-notebook-jupyterlab">
-<h2>Jupyter Notebook / JupyterLab<a class="headerlink" href="#jupyter-notebook-jupyterlab" title="Link to this heading">#</a></h2>
-<p align="center">
-<img src="https://jupyter-notebook.readthedocs.io/en/stable/_images/notebook-running-code.png" alt="Jupyter" class="bg-primary mb-1" width="800px">
-</p>
-<p>Jupyter Notebook and JupyterLab are powerful, interactive coding environments that facilitate data analysis and visualization. They operate as server-client applications. When you start a Jupyter server, a webpage is opened in your default web browser, allowing you to interact with interactive Python notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>). These interfaces offer two main benefits:</p>
+<section id="setup-your-ide">
+<h2>Setup your IDE<a class="headerlink" href="#setup-your-ide" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Interactive Execution</strong>: Code is written in cells, which can be executed independently while retaining the state of the entire session. This allows for interactive experimentation without needing to rerun the entire script.</p></li>
-<li><p><strong>Rich Media Integration</strong>: Embed text (Markdown), plots, images, videos, and other rich media directly into the notebook. This feature is especially useful for documenting data analysis workflows and sharing results.</p></li>
+<li><p>Spyder:</p></li>
 </ul>
-<p>JupyterLab is an enhanced interface for Jupyter Notebooks, offering additional features like an integrated file browser and support for multiple panels. While it can be more handy and versatile, it retains all the core functionalities of Jupyter Notebook.</p>
-<section id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h3>
-<p>To install Jupyter Notebook, use <code class="docutils literal notranslate"><span class="pre">pip</span></code> in your current conda environment:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyter
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span>
+pip<span class="w"> </span>install<span class="w"> </span>spyder
 </pre></div>
 </div>
-<p>To start Jupyter Notebook, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>notebook
-</pre></div>
-</div>
-<p>For JupyterLab, install it using:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
-</pre></div>
-</div>
-<p>and run it using:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Because Jupyter Notebook and JupyterLab are server-client applications, they can be easily integrated into web platforms. Instead of running the Jupyter server on your own computer, the server can be run on a remote machine. This feature is utilized by several cloud services, such as:</p>
 <ul class="simple">
-<li><p><strong>Google Colab</strong>: An online Jupyter Notebook environment hosted by Google, which allows you to write and execute Python code in your browser with zero configuration required.
-<a class="reference external" href="https://colab.research.google.com/">Google Colab</a></p></li>
-<li><p><strong>Binder</strong>: A service that lets you create sharable, interactive computing environments from GitHub repositories. It enables you to run Jupyter Notebooks without needing to install any software locally.
-<a class="reference external" href="https://mybinder.org/">Binder</a></p></li>
+<li><p>Jupyter:</p></li>
 </ul>
-<p>This feature can also be used to run code on another computer within your network and/or a virtual machine on your own computer (docker/ Windows subsystem for Linux (WSL))</p>
-<p>Additionally, you can access powerful computational resources by starting a Jupyter server on the High-Performance Computing (HPC) cluster. This is particularly useful for running resource-intensive analyses that wouldn’t run efficiently on your personal computer. For more details on how to use Jupyter servers on HPC, check this link:
-<a class="reference external" href="https://doc.eresearch.unige.ch/hpc/how_to_use_openondemand">Using Jupyter on HPC</a></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span>
+pip<span class="w"> </span>install<span class="w"> </span>jupyter
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>VS code:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span>
+pip<span class="w"> </span>install<span class="w"> </span>ipykernel
+</pre></div>
 </div>
 </section>
-</section>
-<section id="visual-studio-code-vs-code">
-<h2>Visual Studio Code (VS Code)<a class="headerlink" href="#visual-studio-code-vs-code" title="Link to this heading">#</a></h2>
-<p align="center">
-<img src="../../_static/images/vscode.png" alt="VS code" class="bg-primary mb-1" width="800px">
-</p>
-<p>Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.</p>
-<p><strong>Jupyter Notebooks Integration</strong>: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.</p>
-<ul class="simple">
-<li><p><strong>Multi-language Support</strong>: VS Code is not limited to Python. It supports numerous programming languages such as JavaScript, C++, Java, and more, through its extensive marketplace of extensions.</p></li>
-<li><p><strong>Marketplace Extensions</strong>: The VS Code marketplace allows you to install extensions tailored to your specific needs. Whether you need tools for debugging, version control, or integrating cloud services, there is an extension available.</p></li>
-<li><p><strong>Jupyter Notebooks Integration</strong>: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.</p></li>
-</ul>
-<p>As VScode is developed by Microsoft, it integrates exceptionally well with other Microsoft tools:</p>
-<ul class="simple">
-<li><p><strong>GitHub Integration</strong>: VS Code has built-in support for Git and GitHub, allowing you to manage your repositories directly within the IDE. You can commit changes, push to repositories, and review pull requests seamlessly.</p></li>
-<li><p><strong>GitHub Copilot</strong>: Students and educators can access GitHub Copilot, an AI-powered code completion tool that provides “Chat GPT in the IDE” experience. Copilot assists you by suggesting whole lines or blocks of code as you type, significantly enhancing productivity.</p></li>
-</ul>
-<section id="getting-started">
-<h3>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h3>
-<p>To start using VS Code for Python and Jupyter Notebooks:</p>
-<ol class="arabic simple">
-<li><p><strong>Download and Install</strong>: Download VS Code from the <a class="reference external" href="https://code.visualstudio.com/">official website</a>.</p></li>
-<li><p><strong>Install Extensions</strong>: Install the Python extension and Jupyter extension from the VS Code marketplace.</p></li>
-<li><p><strong>Open or Create Projects</strong>: Open your Python scripts or Jupyter Notebooks directly in VS Code. For Jupyter Notebooks, the server will start automatically or connect to an existing one.</p></li>
-<li><p>Make sure to install ipykernel in each environment you want to use with VS code</p></li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ipykernel
+<section id="install-your-libraries">
+<h2>Install your libraries<a class="headerlink" href="#install-your-libraries" title="Link to this heading">#</a></h2>
+<p>Libraries can be installed whenever you want.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to activate the environment you want to work with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span>
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>VS Code is also a server-client application and can be integrated into web platforms. GitHub Codespaces (<a class="github reference external" href="https://github.com/features/codespaces">features/codespaces</a>) allows you to start a VS Code server and access it from your web browser.</p>
-<p>As with Jupyter Notebooks, a VS Code server can also be started on another computer within your network, a virtual machine on your own computer (Docker/Windows Subsystem for Linux (WSL)), and the UNIGE HPC.</p>
+<p>before using any of the following commands</p>
+</div>
+<ul class="simple">
+<li><p>Using pip</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="o">{</span>library_name<span class="o">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Using conda</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span><span class="o">{</span>library_name<span class="o">}</span>
+</pre></div>
+</div>
+<p>You can specify the library version using <code class="docutils literal notranslate"><span class="pre">==</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="o">{</span>library_name<span class="o">}=={</span>library_version<span class="o">}</span>
+conda<span class="w"> </span>install<span class="w"> </span><span class="o">{</span>library_name<span class="o">}=={</span>library_version<span class="o">}</span>
+</pre></div>
+</div>
+<p><strong>Recommendend:</strong> create a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file to keep track of all package your are installing, so you can easily share or recreate you environment:</p>
+<div class="highlight-txt notranslate"><div class="highlight"><pre><span></span>pandas
+seaborn
+nilearn==1.2
+statsmodels
+</pre></div>
+</div>
+<p>You can then install all packages listed in the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
 </div>
 </section>
+<section id="start-coding">
+<h2>Start coding<a class="headerlink" href="#start-coding" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to activate the environment you want to work with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span><span class="o">{</span>env_name<span class="o">}</span>
+</pre></div>
+</div>
+<p>before using any of the following commands</p>
+</div>
+<ul class="simple">
+<li><p>Spyder:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>spyder
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Jupyter:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>jupyter<span class="w"> </span>notebook
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>jupyter<span class="w"> </span>lab
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>VS code:</p></li>
+</ul>
+<p>Open a new VS code folder: <kbd>File</kbd> -&gt; <kbd>Open Folder</kbd>:
+- create a new <code class="docutils literal notranslate"><span class="pre">.py</span></code> file, on the bottom right corner, next to <code class="docutils literal notranslate"><span class="pre">python</span></code> choose your <code class="docutils literal notranslate"><span class="pre">{env_name}</span></code> environment.
+- create a new <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> file, on the top right corner, click <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">kernel</span></code> and select your <code class="docutils literal notranslate"><span class="pre">{env_name}</span></code> environment</p>
+<p>VS code save your kernel choices so you don’t have to do it every time you open your project.</p>
 </section>
 </section>
 
@@ -647,15 +663,11 @@ main.appendChild(script);
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spyder">Spyder</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-notebook-jupyterlab">Jupyter Notebook / JupyterLab</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code-vs-code">Visual Studio Code (VS Code)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting Started</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-github-repository">Create a new Github repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-new-python-environment">Create a new python environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-your-ide">Setup your IDE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-your-libraries">Install your libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-coding">Start coding</a></li>
 </ul>
   </nav></div>
 
@@ -663,7 +675,7 @@ main.appendChild(script);
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/tutorials/Basics/02_IDE.md">
+    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/tutorials/basics/04_project.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -678,7 +690,7 @@ main.appendChild(script);
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/tutorials/Basics/02_IDE.md.txt">
+    <a href="../../_sources/tutorials/basics/04_project.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
