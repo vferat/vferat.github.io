@@ -21,7 +21,7 @@ During this on-going study, participants are trained to both upregulate and down
 
 ## Bibliography
 
-```{bibliography} posts/2023/2023-01-03.bib
+```{bibliography} 2024-06-17.bib
 :all:
 :list: bullet
 ```
