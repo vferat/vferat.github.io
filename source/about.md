@@ -19,6 +19,10 @@ Geneva
 :::{grid-item-card}   Post doctoral researcher (70%)
 :columns: 9
 
+- Develop a home-based EEG neurofeedback software, including real-time data acquisition, artifact correction, and signal processing.
+- Design a cloud-based data management and analysis solution for remote monitoring.
+- Support research labs in data management, curation, and the analysis of large-scale datasets from various neuroimaging modalities (MEG, EEG, fMRI).
+
 
 :::
 ::::
@@ -52,7 +56,9 @@ Geneva
 :::
 :::{grid-item-card}  PhD researcher Assistant (70%)
 :columns: 9
-Ongoing PhD research on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.
+PhD research project on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.
+
+- Designed and conducted a clinical trial to evaluate the feasibility of a novel EEG microstate-based neurofeedback protocol.
 
 :::
 ::::
@@ -86,6 +92,7 @@ Geneva
 :columns: 9
 Support neuroscience researchers of the Functional Brain Mapping Lab at Campus Biotech
 
+- Developed combined EEG/MRI analysis pipeline for EEG source reconstruction.
 :::
 ::::
 
@@ -101,7 +108,7 @@ Geneva
 :::{grid-item-card} Software Development & Data analysis Intern – EEG
 :columns: 9
 
-- Develop user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
+- Developed user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
 processing, interpolation, referencing...
 - In depth study of artefact cleaning algorithm by mean of large-scale EEG simulation.
 
@@ -122,10 +129,7 @@ Paris (FR)
 
 - Setting up a neurofeedback paradigm for tinnitus treatment (real time):
 - Creation and optimization of bad channel interpolation and artefact rejection algorithms (ICA)
-- Scientific data analysis of tinnitus related EEG (offline):
-  - Source estimation
-  - Statistical Data analysis
-
+- Offline EEG  data analysis of tinnitus related EEG (offline):
 :::
 ::::
 
