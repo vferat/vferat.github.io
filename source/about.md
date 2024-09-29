@@ -1,6 +1,6 @@
 # About Me
 
-I am a French engineer who started a PhD in neuroscience. I work at the [Functional Brain Mapping Lab](https://www.campusbiotech.ch/en/node/326) where I study brain wave (EEG). As a researcher, I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
+I am a French engineer and post-doctoral research. I recently defended my PhD project during which I studied brain wave (EEG). As a researcher, I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
 currently develop a framework for using these biomarkers as targets for neurofeedback therapies, with a special focus on attention deficit and hyperactivity 
 disorder.
 
