@@ -15,6 +15,9 @@ ferat2022beyond
 ```{bibliography}
 :filter: False
 :list: bullet
+latreche18safety
+latreche2024using
+ros2023innovating
 guedj2023self
 iftimovici2023eeg
 terpou2022spectral
