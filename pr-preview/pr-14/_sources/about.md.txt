@@ -9,7 +9,7 @@ My work is shaped by collaborations with four different labs, allowing me to pus
 
 In collaboration with [Dr. Tomas Ros](https://cibm.ch/community/tomas-ros/) as well as the [Laboratory for Behavioral Neurology and Imaging of Cognition](https://neurocenter-unige.ch/research-groups/patrik-vuilleumier/) (Prof. Patrik Vuilleumier), I continue developing EEG neurofeedback paradigms. Pursuing my PhD work, I'm designing clinical trials to test the feasibility and efficacy of new home-based EEG neurofeedback paradigms.
 
-A core part of my mission is to make the tools and techniques I develop accessible to as many people as possible. I firmly believe that democratizing access to research tools is key to advancing our understanding of the brain. This is why I contribute to the open-source Python ecosystem, working on libraries like [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), as well as creating my own libraries, [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+A core part of my mission is to make the tools and techniques I develop accessible to as many people as possible. I believe that democratizing access to research tools is key to advancing our understanding of the brain. This is why I contribute to the open-source Python ecosystem, working on libraries like [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), as well as creating and sharing my own libraries, [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
 
 
 ## Work Experiences
