@@ -1,10 +1,16 @@
 # About Me
 
-I am a French engineer and post-doctoral research. I recently defended my PhD project during which I studied brain wave (EEG). As a researcher, I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
-currently develop a framework for using these biomarkers as targets for neurofeedback therapies, with a special focus on attention deficit and hyperactivity 
-disorder.
+I am a passionate French engineer and post-doctoral researcher focused on transforming neuroscience research into practical solutions for society. I believe that achieving this requires scientific outputs to be reproducible and scalable, which drives my work in two key areas:
 
-As a researcher engineer, I try to play my part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+- **EEG Neurofeedback**: Leveraging EEG, the most affordable neuroimaging method, to develop neurofeedback interventions that could benefit both clinical and non-clinical populations.
+- **Reproducible and Scalable Neuroimaging Pipelines**: Building robust analysis pipelines to ensure reproducibility and scalability in neuroimaging research.
+
+My work is shaped by collaborations with four different labs, allowing me to push the boundaries in both fields. With the [Sleep and Cognition Neuroimaging Laboratory](https://neurocenter-unige.ch/research-groups/sophie-schwartz/) (Prof. Sophie Schwartz) for fMRI and the [Neuroling](https://neuroling.github.io/index.html) (Prof. Alexis Hervais-Adelman) for MEG, I develop and apply advanced analysis pipelines using industry-grade technologies such as Docker and GitHub integration.
+
+In collaboration with [Dr. Tomas Ros](https://cibm.ch/community/tomas-ros/) as well as the [Laboratory for Behavioral Neurology and Imaging of Cognition](https://neurocenter-unige.ch/research-groups/patrik-vuilleumier/) (Prof. Patrik Vuilleumier), I continue developing EEG neurofeedback paradigms. Pursuing my PhD work, I'm designing clinical trials to test the feasibility and efficacy of new home-based EEG neurofeedback paradigms.
+
+A core part of my mission is to make the tools and techniques I develop accessible to as many people as possible. I firmly believe that democratizing access to research tools is key to advancing our understanding of the brain. This is why I contribute to the open-source Python ecosystem, working on libraries like [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), as well as creating my own libraries, [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+
 
 ## Work Experiences
 ::::{grid} 2
@@ -39,7 +45,7 @@ Geneva
 :::{grid-item-card}   Software Engineer (30%)
 :columns: 9
 
-- Provide automated workflows for analyzing neuroimaging data.
+- Provide automated workflows for analyzing neuro-imaging data.
 - Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.
 
 :::
