@@ -82,10 +82,10 @@ html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
-                 'tutorials/**': [],
-                 'tutorials/index': ["sidebar-nav-bs.html"],
-                 'tutorials/fondamentals/index': ["sidebar-nav-bs.html"],
-                 'tutorials/neuroimaging/index': ["sidebar-nav-bs.html"],
+                 'wiki/**': [],
+                 'wiki/index': ["sidebar-nav-bs.html"],
+                 'wiki/basics/index': ["sidebar-nav-bs.html"],
+                 'wiki/neuroimaging/index': ["sidebar-nav-bs.html"],
                  'blog': ['ablog/tagcloud.html', 'ablog/archives.html'],
                  'blog/**': ['ablog/tagcloud.html', 'ablog/archives.html'],}
 
@@ -108,7 +108,7 @@ blog_languages = {
 }
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib', 'tutorials/fondamentals/00_bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib', 'wiki/basics/00_bibliography.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
