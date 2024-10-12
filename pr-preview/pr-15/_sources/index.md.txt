@@ -26,6 +26,6 @@ Victor
 about
 projects/index
 publications
-tutorials/index
+wiki/index
 blog
 ```

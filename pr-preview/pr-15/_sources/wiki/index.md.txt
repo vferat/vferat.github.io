@@ -1,6 +1,6 @@
-# Tutorials
+# Wiki
 
-Tutorial section
+Wiki section
 
 
 ```{toctree}
