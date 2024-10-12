@@ -20,9 +20,5 @@ During this on-going study, participants are trained to both upregulate and down
 ## Poster
 
 Click {download}`here <2023-01-03.pdf>` to download the poster as a PDF file.
-## Bibliography
 
-```{bibliography} 2023-01-03.bib
-:all:
-:list: bullet
-```
+

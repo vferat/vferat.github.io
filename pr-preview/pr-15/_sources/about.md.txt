@@ -1,12 +1,37 @@
 # About Me
 
-I am a French engineer who started a PhD in neuroscience. I work at the [Functional Brain Mapping Lab](https://www.campusbiotech.ch/en/node/326) where I study brain wave (EEG). As a researcher, I am particularly interested in EEG microstates for both their theoretical approach and their clinical application and 
-currently develop a framework for using these biomarkers as targets for neurofeedback therapies, with a special focus on attention deficit and hyperactivity 
-disorder.
+I am a passionate French engineer and post-doctoral researcher focused on transforming neuroscience research into practical solutions for society. I believe that achieving this requires scientific outputs to be reproducible and scalable, which drives my work in two key areas:
 
-As a researcher engineer, I try to play my part by making analysis tools and techniques accessible to the largest number of people. I have the deep conviction that this is the key element that will advance our knowledge about the brain. That is why I actively participate in the development of the open source python ecosystem: I contribute to libraries such as [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), and complement them with libraries I wrote such as [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+- **EEG Neurofeedback**: Leveraging EEG, the most affordable neuroimaging method, to develop neurofeedback interventions that could benefit both clinical and non-clinical populations.
+- **Reproducible and Scalable Neuroimaging Pipelines**: Building robust analysis pipelines to ensure reproducibility and scalability in neuroimaging research.
+
+My work is shaped by collaborations with four different labs, allowing me to push the boundaries in both fields. With the [Sleep and Cognition Neuroimaging Lab](https://neurocenter-unige.ch/research-groups/sophie-schwartz/) (Prof. Sophie Schwartz) for fMRI and the [Neuroling Lab](https://neuroling.github.io/index.html) (Prof. Alexis Hervais-Adelman) for MEG, I develop and apply advanced analysis pipelines using industry-grade technologies such as Docker and GitHub integration.
+
+In collaboration with [Dr. Tomas Ros](https://cibm.ch/community/tomas-ros/) as well as the [Laboratory for Behavioral Neurology and Imaging of Cognition](https://neurocenter-unige.ch/research-groups/patrik-vuilleumier/) (Prof. Patrik Vuilleumier), I continue developing EEG neurofeedback paradigms. Pursuing my PhD work, I'm designing clinical trials to test the feasibility and efficacy of new home-based EEG neurofeedback paradigms.
+
+A core part of my mission is to make the tools and techniques I develop accessible to as many people as possible. I believe that democratizing access to research tools is key to advancing our understanding of the brain. This is why I contribute to the open-source Python ecosystem, working on libraries like [nipype](https://nipype.readthedocs.io/en/latest/) and [MNE](https://mne.tools/stable/index.html), as well as creating and sharing my own libraries, [Pycartool](https://pycartool.readthedocs.io/en/latest) and [Pycrostates](https://pycrostates.readthedocs.io/en/latest/).
+
 
 ## Work Experiences
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2024 - today
+:columns: 3
+[@UNIGE](https://www.unige.ch/)
+
+Geneva
+:::
+:::{grid-item-card}   Post doctoral researcher (70%)
+:columns: 9
+
+- Develop a home-based EEG neurofeedback software, including real-time data acquisition, artifact correction, and signal processing.
+- Design a cloud-based data management and analysis solution for remote monitoring.
+- Support research labs in data management, curation, and the analysis of large-scale datasets from various neuroimaging modalities (MEG, EEG, fMRI).
+
+
+:::
+::::
 
 ::::{grid} 2
 :gutter: 1
@@ -20,7 +45,7 @@ Geneva
 :::{grid-item-card}   Software Engineer (30%)
 :columns: 9
 
-- Provide automated workflows for analyzing neurofimaging data.
+- Provide automated workflows for analyzing neuro-imaging data.
 - Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.
 
 :::
@@ -29,7 +54,7 @@ Geneva
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
@@ -37,7 +62,9 @@ Geneva
 :::
 :::{grid-item-card}  PhD researcher Assistant (70%)
 :columns: 9
-Ongoing PhD research on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.
+PhD research project on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.
+
+- Designed and conducted a clinical trial to evaluate the feasibility of a novel EEG microstate-based neurofeedback protocol.
 
 :::
 ::::
@@ -71,6 +98,7 @@ Geneva
 :columns: 9
 Support neuroscience researchers of the Functional Brain Mapping Lab at Campus Biotech
 
+- Developed combined EEG/MRI analysis pipeline for EEG source reconstruction.
 :::
 ::::
 
@@ -86,7 +114,7 @@ Geneva
 :::{grid-item-card} Software Development & Data analysis Intern – EEG
 :columns: 9
 
-- Develop user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
+- Developed user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
 processing, interpolation, referencing...
 - In depth study of artefact cleaning algorithm by mean of large-scale EEG simulation.
 
@@ -107,10 +135,7 @@ Paris (FR)
 
 - Setting up a neurofeedback paradigm for tinnitus treatment (real time):
 - Creation and optimization of bad channel interpolation and artefact rejection algorithms (ICA)
-- Scientific data analysis of tinnitus related EEG (offline):
-  - Source estimation
-  - Statistical Data analysis
-
+- Offline EEG  data analysis of tinnitus related EEG (offline):
 :::
 ::::
 
@@ -154,7 +179,7 @@ Regulated the production flow in a wheel manufacturing company.
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - today
+:::{grid-item-card} 2020 - 2023
 :columns: 3
 :::
 :::{grid-item-card}  PhD in Neuroscience
