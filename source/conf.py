@@ -108,7 +108,7 @@ blog_languages = {
 }
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib', 'posts/2023/2023-01-03.bib', 'wiki/basics/00_bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2024/2024-06-17.bib', 'wiki/basics/00_bibliography.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
