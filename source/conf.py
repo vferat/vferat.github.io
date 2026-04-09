@@ -14,7 +14,7 @@ release = '0.0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser']
+extensions = ['myst_nb']
 templates_path = ['_templates']
 
 myst_enable_extensions = [
@@ -30,17 +30,12 @@ myst_enable_extensions = [
     "smartquotes",
     "strikethrough",
     "substitution",
-    "tasklist",
+    "tasklist"
 ]
 
+nb_execution_mode = "auto"
+
 exclude_patterns = ['spelling_wordlist.txt']
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.txt': 'markdown',
-    '.md': 'markdown',
-}
 
 # -- Edit Theme -------------------------------------------------
 # https://pydata-sphinx-theme.readthedocs.io/en/v0.7.2/user_guide/configuring.html
@@ -50,7 +45,7 @@ html_theme_options = {
   "github_url": "https://github.com/vferat/",
   "icon_links": [
         {
-            "name": "Twitter",
+            "name": "Bluesky",
             "url": "https://twitter.com/ferat_victor",
             "icon": "fa-brands fa-twitter",
         },
@@ -82,12 +77,13 @@ html_sidebars = {'index': ['sidebar.html'],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
+                 'posts/**': [],
                  'wiki/**': [],
                  'wiki/index': ["sidebar-nav-bs.html"],
                  'wiki/basics/index': ["sidebar-nav-bs.html"],
                  'wiki/neuroimaging/index': ["sidebar-nav-bs.html"],
                  'blog': ['ablog/tagcloud.html', 'ablog/archives.html'],
-                 'blog/**': ['ablog/tagcloud.html', 'ablog/archives.html'],}
+                 'blog/**': [],}
 
 # -- Blog -------------------------------------------------
 extensions += ['ablog', 'sphinx.ext.intersphinx']
@@ -96,7 +92,7 @@ myst_update_mathjax = False
 blog_title = html_title
 blog_path = "blog"
 fontawesome_included = True
-blog_post_pattern = "posts/*/*.md"
+blog_post_pattern = ["posts/*/*.md", "posts/*/*.ipynb"]
 post_auto_image = 1 # Index of the image that will be displayed
 post_auto_excerpt = 1 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
 
@@ -108,13 +104,12 @@ blog_languages = {
 }
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
-bibtex_bibfiles = ['bibliography.bib', 'posts/2024/2024-06-17.bib', 'wiki/basics/00_bibliography.bib']
+bibtex_bibfiles = ['bibliography.bib', 'posts/2024/2024-06-17.bib', 'wiki/basics/00_bibliography.bib', 'posts/2026/2026-04-09.bib']
 
 # -- Markdown syntax extension -------------------------------------------------
 
 # Cards and grid
 extensions += ['sphinx_design']
-myst_enable_extensions = ["colon_fence"]
 
 # toggle
 extensions += ['sphinx_togglebutton']
