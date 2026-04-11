@@ -1,4 +1,5 @@
 sphinx
+ipython
 myst-nb
 pydata_sphinx_theme
 ablog
