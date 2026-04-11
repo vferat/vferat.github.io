@@ -29,7 +29,7 @@ Python's simplicity and readability make it an ideal programming language for ed
 
 Python's lack of licensing requirements makes it a convenient choice for working in remote environments. This includes:
 
-- High-Performance Computing (HPC): HPC are remote computing environment usedto run complexe scripts that usually requires a lot of computational resources.
+- High-Performance Computing (HPC): HPC are remote computing environment used to run complex scripts that usually requires a lot of computational resources.
 - Workers (such as GitHub Workers) Workers are background processes that handle tasks like sending notifications, executing long-running scripts
 
 ### For Researchers
@@ -47,7 +47,7 @@ These libraries are maintained by a variety of entities. Some are maintained by 
 
 This ecosystem of libraries greatly extends the capabilities of Python, allowing it to be used for an almost infinite range of tasks. It also means that Python can be as lightweight or as feature-rich as you need it to be, depending on which libraries you choose to use.
 
-### Most important python librairies for data sciences
+### Most important python libraries for data sciences
 
 Although there are thousands of libraries, some are used much more than others. For data and time series analysis, which are key in neuroscience, it is important to familiarize yourself with the main ones:
 
@@ -146,7 +146,7 @@ M/EEG - Intra - fNIRS
 :::{card} fMRIprep
 :link: https://fmriprep.org/en/stable/index.html
 +++
-fMRI Preprocessing
+fMRI Pre-processing
 :::
 
 :::{card} dabest
