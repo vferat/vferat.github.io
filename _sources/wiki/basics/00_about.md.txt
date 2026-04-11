@@ -80,8 +80,6 @@ Signal processing
 +++
 Plots
 :::
-
-:::
 ::::
 
 ::::{grid} 3
@@ -113,8 +111,6 @@ Machine Learning
 :link: https://docs.python.org/3/library/os.html
 +++
 Path, Files
-:::
-
 :::
 ::::
 
