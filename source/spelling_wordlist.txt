@@ -1,6 +1,7 @@
 neuroimaging
 microstates
 fNIRS
+neurofeedback
 
 conda
 Miniconda
@@ -9,6 +10,8 @@ Cartool
 Freesurfer
 VScode
 Github
+Codespaces
+Cheatsheet
 
 Pygame
 scikit
