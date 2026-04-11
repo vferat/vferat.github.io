@@ -70,7 +70,7 @@ conda install {library_name}=={library_version}
 
 **Recommendend:** create a `requirements.txt` file to keep track of all package your are installing, so you can easily share or recreate you environment:
 
-```txt
+```text
 pandas
 seaborn
 nilearn==1.2
