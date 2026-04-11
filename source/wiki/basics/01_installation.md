@@ -55,8 +55,8 @@ conda activate {environment_name}
 
 After activating an environment, your terminal will typically display the name of the current environment at the beginning of the line, usually in parentheses. This helps you keep track of which environment you're currently working in.
 
-Once an environment is activated, all subsequent commands you run will use the Python executables and libraries installed in that environment. This isolation is what allows you to have different environments with different versions of the same package installed.
+Once an environment is activated, all subsequent commands you run will use the Python runtimes and libraries installed in that environment. This isolation is what allows you to have different environments with different versions of the same package installed.
 
 ```{note}
-Conda isn't just for Python - it can also be used to manage environments for the R programming language. You can learn more about this in the [Conda documentation](https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/).
+Conda is not just for Python - it can also be used to manage environments for the R programming language. You can learn more about this in the [Conda documentation](https://docs.anaconda.com/free/working-with-conda/packages/using-r-language/).
 ```
