@@ -17,10 +17,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Setup Python 3.9
-        uses: actions/setup-python@v4
+      - name: Setup Python 3.13
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.9'
+          python-version: '3.12'
           architecture: 'x64'
       - name: Install dependencies
         run: |
@@ -30,6 +30,6 @@ jobs:
         run: |
           sphinx-build -b html source build
       - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1.4.4
+        uses: rossjrw/pr-preview-action@v1.8
         with:
           source-dir: ./build
