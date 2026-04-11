@@ -12,7 +12,7 @@ Then, you can use Python to execute it:
 python hello.py
 ```
 
-While this workflow is entirely functional, developers have created tools to facilitate script development and data exploration. These tools are known as **Integrated Development Environments (IDEs)**. IDEs are applications that provide comprehensive facilities for coding. They often include features like syntax highlighting, autocompletion, and debugging tools, which can significantly enhance productivity and code quality. Moreover, many modern IDEs allow you to run your code interactively within the IDE itself, further enhancing the development and data exploration experience.
+While this workflow is entirely functional, developers have created tools to facilitate script development and data exploration. These tools are known as **Integrated Development Environments (IDEs)**. IDEs are applications that provide comprehensive facilities for coding. They often include features like syntax highlighting, auto completion, and debugging tools, which can significantly enhance productivity and code quality. Moreover, many modern IDEs allow you to run your code interactively within the IDE itself, further enhancing the development and data exploration experience.
 
 
 ## Spyder
@@ -81,12 +81,12 @@ Because Jupyter Notebook and JupyterLab are server-client applications, they can
 - **Google Colab**: An online Jupyter Notebook environment hosted by Google, which allows you to write and execute Python code in your browser with zero configuration required.
   [Google Colab](https://colab.research.google.com/)
 
-- **Binder**: A service that lets you create sharable, interactive computing environments from GitHub repositories. It enables you to run Jupyter Notebooks without needing to install any software locally.
+- **Binder**: A service that lets you create shareable, interactive computing environments from GitHub repositories. It enables you to run Jupyter Notebooks without needing to install any software locally.
   [Binder](https://mybinder.org/)
 
 This feature can also be used to run code on another computer within your network and/or a virtual machine on your own computer (docker/ Windows subsystem for Linux (WSL))
 
-Additionally, you can access powerful computational resources by starting a Jupyter server on the High-Performance Computing (HPC) cluster. This is particularly useful for running resource-intensive analyses that wouldn't run efficiently on your personal computer. For more details on how to use Jupyter servers on HPC, check this link:
+Additionally, you can access powerful computational resources by starting a Jupyter server on the High-Performance Computing (HPC) cluster. This is particularly useful for running resource-intensive analyses that would not run efficiently on your personal computer. For more details on how to use Jupyter servers on HPC, check this link:
 [Using Jupyter on HPC](https://doc.eresearch.unige.ch/hpc/how_to_use_openondemand)
 ```
 
