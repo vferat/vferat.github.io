@@ -15,7 +15,7 @@ jobs:
         requirements_path: './requirements.txt'
         publish: false
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v5
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: ${{ steps.build_and_commit.outputs.artifact }}
         clean-exclude: pr-preview
