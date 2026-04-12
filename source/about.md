@@ -158,6 +158,21 @@ Regulated the production flow in a wheel manufacturing company.
 
 ## Education
 
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2026 - PRESENT
+:columns: 3
+:::
+:::{grid-item-card} Certificate of advanced studies in Data Stewardship 
+:columns: 9
+UNIL-EPFL formation continue
+:::
+
+::::
+
 ::::{grid} 2
 :gutter: 1
 
