@@ -3,6 +3,15 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('_ext'))
+
+# Register custom pybtex style
+from pybtex.plugin import register_plugin
+from bold_title_style import Style as BoldTitleStyle
+register_plugin('pybtex.style.formatting', 'bold_title_style', BoldTitleStyle)
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -105,6 +114,7 @@ blog_languages = {
 # -- Bibliography -------------------------------------------------
 extensions += ['sphinxcontrib.bibtex']
 bibtex_bibfiles = ['bibliography.bib', 'posts/2024/2024-06-17.bib', 'wiki/basics/00_bibliography.bib', 'posts/2026/2026-04-09.bib']
+bibtex_default_style = 'bold_title_style'
 
 # -- Markdown syntax extension -------------------------------------------------
 
