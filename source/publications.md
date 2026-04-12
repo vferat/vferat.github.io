@@ -1,11 +1,11 @@
 # Publications
 
-Here is a list of my publications
 
 ## First author
 ```{bibliography}
 :filter: False
 :list: bullet
+Frat2025
 pycrostates2022
 ferat2022electroencephalographic
 ferat2022beyond
@@ -15,6 +15,9 @@ ferat2022beyond
 ```{bibliography}
 :filter: False
 :list: bullet
+Moyal2026
+Ros2025
+MNE
 latreche18safety
 latreche2024using
 ros2023innovating

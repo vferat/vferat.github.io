@@ -13,10 +13,33 @@ A core part of my mission is to make the tools and techniques I develop accessib
 
 
 ## Work Experiences
+
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2024 - today
+:::{grid-item-card} 2023 - PRESENT
+:columns: 3
+[@Fondation campus biotech - M/EEG platform](https://campus-neuro.ch/en/meg/)
+
+Geneva
+:::
+:::{grid-item-card}   Research engineer
+:columns: 9
+
+Providing technical expertise and data support to academic research groups and industrial partners:
+- Translate researchers’ needs into technical solutions: protocol design,  data acquisition, quality control for neuro-physiological recordings.
+- Build end-to-end scalable and reproducible data solutions  (ingestion, curation, analysis, and archiving).
+- Develop, maintain and contribute to production-ready python libraries  for neuroimaging analysis. 
+- Design and conduct hypothesis-driven analyses, interpreting and communicating results to support clinical and research insights.
+- Supervise, train and work with interdisciplinary teams.
+
+:::
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2023 - 2025
 :columns: 3
 [@UNIGE](https://www.unige.ch/)
 
@@ -33,23 +56,6 @@ Geneva
 :::
 ::::
 
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2023 - today
-:columns: 3
-[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
-
-Geneva
-:::
-:::{grid-item-card}   Software Engineer (30%)
-:columns: 9
-
-- Provide automated workflows for analyzing neuro-imaging data.
-- Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.
-
-:::
-::::
 
 ::::{grid} 2
 :gutter: 1
@@ -72,48 +78,24 @@ PhD research project on Training spatio-temporally defined brain activity patter
 ::::{grid} 2
 :gutter: 1
 
-:::{grid-item-card} 2020 - 2022
+:::{grid-item-card} 2019 - 2025
 :columns: 3
+[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
+
 [@UNIGE](https://www.unige.ch/)
 
 Geneva
 :::
 :::{grid-item-card}  Software Development Engineer (30%)
 :columns: 9
-Development of open-source python libraries for EEG microstates analysis.
 
-:::
-::::
-
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card} 2019 - 2020
-:columns: 3
-[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
-
-Geneva
-:::
-:::{grid-item-card} Software Development Engineer – EEG/FMRI
-:columns: 9
-Support neuroscience researchers of the Functional Brain Mapping Lab at Campus Biotech
-
+**Software Development Engineer**
+- Development of open-source python libraries for EEG microstates analysis.
+- Support neuroscience researchers of the Functional Brain Mapping Lab at Campus Biotech
 - Developed combined EEG/MRI analysis pipeline for EEG source reconstruction.
-:::
-::::
 
-::::{grid} 2
-:gutter: 1
 
-:::{grid-item-card} 2019
-:columns: 3
-[@Fondation campus biotech - HNP](https://www.campusbiotech.ch/en/node/402)
-
-Geneva
-:::
-:::{grid-item-card} Software Development & Data analysis Intern – EEG
-:columns: 9
-
+**Software Development & Data analysis Intern – EEG**
 - Developed user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA 
 processing, interpolation, referencing...
 - In depth study of artefact cleaning algorithm by mean of large-scale EEG simulation.
@@ -175,6 +157,21 @@ Regulated the production flow in a wheel manufacturing company.
 ::::
 
 ## Education
+
+::::
+
+::::{grid} 2
+:gutter: 1
+
+:::{grid-item-card} 2026 - PRESENT
+:columns: 3
+:::
+:::{grid-item-card} Certificate of advanced studies in Data Stewardship 
+:columns: 9
+UNIL-EPFL formation continue
+:::
+
+::::
 
 ::::{grid} 2
 :gutter: 1
