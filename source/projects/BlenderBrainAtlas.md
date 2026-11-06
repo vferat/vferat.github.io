@@ -8,7 +8,7 @@
 :align: right
 :width: 200
 ```
-BlenderBrainAtlas is a script to create 3D objects from a MRI segmentation file (usually preprocessed thanks to Freesurfer). It generates a single 3D object (outer shell) for each brain's region of interest contained in the MRI file.
+BlenderBrainAtlas is a script that creates 3D objects from an MRI segmentation file (usually preprocessed with FreeSurfer). It generates a single 3D object (outer shell) for each brain region of interest in the MRI file.
 +++
 [https://github.com/vferat/BlenderBrainAtlas](https://github.com/vferat/BlenderBrainAtlas)
 :::

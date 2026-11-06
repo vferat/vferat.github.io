@@ -1,6 +1,6 @@
 # Blog
 
-It is here that I will present to you, at a more or less regular basis, my works and personal projects.
+This is where I share my work and personal projects, on a more or less regular basis.
 
 ```{toctree}
 :hidden:

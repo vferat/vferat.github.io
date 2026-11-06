@@ -1,47 +1,562 @@
-@import "basic.css";
+/* vferat.github.io theme: black and green, on top of pydata_sphinx_theme.
+   Colors live in the token blocks below. Everything else reads from them. */
 
-/* Bio area */
+/* -- Fonts (self-hosted, see fonts/README.txt) ------------------------------- */
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/inter-latin.woff2") format("woff2");
+    font-weight: 100 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("fonts/space-grotesk-latin.woff2") format("woff2");
+    font-weight: 300 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/jetbrains-mono-latin.woff2") format("woff2");
+    font-weight: 100 800;
+    font-display: swap;
+}
+
+/* -- Tokens ----------------------------------------------------------------- */
+html {
+    --pst-font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --pst-font-family-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+    --pst-font-family-monospace: "JetBrains Mono", ui-monospace, Consolas, monospace;
+    --vf-radius: 14px;
+    --vf-radius-sm: 8px;
+}
+
+html[data-theme="dark"] {
+    --vf-bg: #070a08;
+    --vf-surface: #0e1411;
+    --vf-surface-2: #151e19;
+    --vf-border: #24332a;
+    --vf-text: #e4ebe6;
+    --vf-muted: #98aa9f;
+    --vf-accent: #3ee07f;
+    --vf-accent-hover: #86f2b0;
+    --vf-accent-soft: rgba(62, 224, 127, 0.12);
+    --vf-on-accent: #04130a;
+    --vf-header: rgba(7, 10, 8, 0.78);
+}
+
+html[data-theme="light"] {
+    --vf-bg: #f6f9f6;
+    --vf-surface: #ffffff;
+    --vf-surface-2: #ecf3ee;
+    --vf-border: #d3dfd7;
+    --vf-text: #0e1a13;
+    --vf-muted: #4b5d52;
+    --vf-accent: #0a7541;
+    --vf-accent-hover: #06552f;
+    --vf-accent-soft: rgba(10, 117, 65, 0.1);
+    --vf-on-accent: #ffffff;
+    --vf-header: rgba(246, 249, 246, 0.82);
+}
+
+html[data-theme="dark"],
+html[data-theme="light"] {
+    --pst-color-primary: var(--vf-accent);
+    --pst-color-primary-bg: var(--vf-accent-soft);
+    --pst-color-secondary: var(--vf-accent);
+    --pst-color-secondary-bg: var(--vf-accent-soft);
+    --pst-color-accent: var(--vf-accent);
+    --pst-color-accent-bg: var(--vf-accent-soft);
+    --pst-color-info: var(--vf-accent);
+    --pst-color-info-bg: var(--vf-accent-soft);
+    --pst-color-background: var(--vf-bg);
+    --pst-color-on-background: var(--vf-surface);
+    --pst-color-surface: var(--vf-surface-2);
+    --pst-color-on-surface: var(--vf-text);
+    --pst-color-text-base: var(--vf-text);
+    --pst-color-text-muted: var(--vf-muted);
+    --pst-color-heading: var(--vf-text);
+    --pst-color-border: var(--vf-border);
+    --pst-color-border-muted: var(--vf-border);
+    --pst-color-shadow: transparent;
+    --pst-color-link: var(--vf-accent);
+    --pst-color-link-hover: var(--vf-accent-hover);
+    --pst-color-link-higher-contrast: var(--vf-accent);
+    --pst-color-inline-code: var(--vf-accent);
+    --pst-color-inline-code-links: var(--vf-accent);
+    --pst-color-target: var(--vf-accent-soft);
+    --pst-color-table-heading-bg: var(--vf-surface-2);
+    --pst-color-table-inner-border: var(--vf-border);
+    --pst-color-table-outer-border: var(--vf-border);
+    --pst-color-table-row-hover-bg: var(--vf-accent-soft);
+    --sd-color-card-background: var(--vf-surface);
+    --sd-color-card-border: var(--vf-border);
+    --sd-color-card-border-hover: var(--vf-accent);
+    --sd-color-card-text: var(--vf-text);
+    --sd-color-card-header: var(--vf-surface);
+    --sd-color-card-footer: var(--vf-surface);
+    --sd-color-tabs-label-active: var(--vf-accent);
+    --sd-color-tabs-label-hover: var(--vf-accent-hover);
+    --sd-color-tabs-underline-active: var(--vf-accent);
+    --sd-color-tabs-underline-hover: var(--vf-accent-hover);
+}
+
+::selection {
+    background: var(--vf-accent);
+    color: var(--vf-on-accent);
+}
+
+/* -- Typography ------------------------------------------------------------- */
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.bd-article h1 {
+    font-size: clamp(2.1rem, 1.6rem + 2vw, 3rem);
+    margin-bottom: 1.25rem;
+}
+
+.bd-article h2 {
+    font-size: clamp(1.45rem, 1.3rem + 0.7vw, 1.8rem);
+    margin-top: 3rem;
+}
+
+.bd-article a:not(.sd-stretched-link, .headerlink, .vf-btn) {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+:not(pre) > code,
+code.literal {
+    background: var(--vf-accent-soft);
+    border: 0;
+    border-radius: 5px;
+    padding: 0.1em 0.35em;
+}
+
+/* -- Header ----------------------------------------------------------------- */
+.bd-header {
+    background: var(--vf-header) !important;
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--vf-border);
+    box-shadow: none;
+}
+
+.navbar-brand {
+    align-items: center;
+}
+
+.navbar-brand .logo__title {
+    font-family: var(--pst-font-family-monospace);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--vf-text);
+}
+
+.navbar-brand .logo__title::before {
+    content: "~/";
+    color: var(--vf-accent);
+}
+
+.bd-header .navbar-nav li a.nav-link {
+    color: var(--vf-muted);
+    font-weight: 500;
+}
+
+.bd-header .navbar-nav li a.nav-link:hover,
+.bd-header .navbar-nav li.current > a.nav-link {
+    color: var(--vf-accent);
+}
+
+.search-button-field {
+    background: var(--vf-surface);
+    border-color: var(--vf-border);
+}
+
+/* -- Sidebar bio ------------------------------------------------------------ */
+.bd-sidebar-primary {
+    background: transparent;
+    border-right: 1px solid var(--vf-border);
+}
+
 div.profile-pic {
     margin-top: 1em;
 }
 
 div.profile-pic img {
+    aspect-ratio: 1;
+    border: 2px solid var(--vf-accent);
     border-radius: 50%;
-    width: 200px;
-    height: 100%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 4px;
+    width: 170px;
 }
 
-.title {
-    margin: 1em auto;
-    max-width: 220px;
+.bio .name {
+    font-family: var(--pst-font-family-heading);
+    font-size: 1.35em;
+    font-weight: 600;
+    margin-top: 0.75em;
     text-align: center;
 }
 
-.name {
-    font-size: 1.5em;
+.bio .title {
+    color: var(--vf-muted);
+    font-family: var(--pst-font-family-monospace);
+    font-size: 0.8rem;
+    margin: 0.35em auto 1em;
     text-align: center;
 }
 
-/* Theme */
-/* https://pydata-sphinx-theme.readthedocs.io/en/v0.7.2/user_guide/customizing.html */
-
-html[data-theme="light"] {
-    --pst-color-primary: rgb(0, 128, 117);
-    --pst-color-text-base: rgb(34, 9, 9);
-
-    --pst-color-link:  rgb(153, 56, 0);
-    --pst-color-link-hover:  rgb(223, 166, 62);
-    --pst-color-headerlink:  rgb(32, 0, 73);
-    --pst-color-headerlink-hover:  rgb(95, 1, 107);
-    --pst-color-preformatted-text:  rgb(117, 1, 69);
-    --pst-color-preformatted-background:  rgb(255, 255, 255);
-    --pst-color-inline-code:  rgba(250, 204, 0, 0.788);
-  
+/* -- Cards ------------------------------------------------------------------ */
+.sd-card {
+    border-radius: var(--vf-radius);
+    box-shadow: none !important;
+    transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
-html[data-theme="dark"] {
-    --pst-color-primary: rgb(0, 128, 117);
-    --pst-color-text-base: rgb(248, 248, 248);
+.sd-card-hover:hover {
+    transform: translateY(-3px);
+}
+
+.sd-card-footer {
+    border-top-color: var(--vf-border);
+}
+
+/* Library logos are made for white pages, so they keep a white tile. */
+.sd-card img.sd-avatar-xl {
+    background: #fff;
+    border-radius: var(--vf-radius-sm);
+    object-fit: contain;
+    padding: 6px;
+}
+
+/* -- Timeline (About page) -------------------------------------------------- */
+.vf-timeline .sd-col:first-child > .sd-card {
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.vf-timeline .sd-col:first-child .sd-card-body {
+    padding: 0.75rem 0.5rem;
+}
+
+.vf-timeline .sd-col:first-child .sd-card-title {
+    color: var(--vf-accent);
+    font-family: var(--pst-font-family-monospace);
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem !important;
+}
+
+.vf-timeline .sd-col:first-child p {
+    color: var(--vf-muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}
+
+.vf-timeline .sd-col:last-child > .sd-card {
+    border-left: 2px solid var(--vf-accent);
+}
+
+/* -- Content blocks --------------------------------------------------------- */
+div.highlight,
+div.literal-block-wrapper {
+    border-radius: var(--vf-radius-sm);
+}
+
+div.highlight pre,
+pre {
+    background: var(--vf-surface);
+    border: 1px solid var(--vf-border);
+    border-radius: var(--vf-radius-sm);
+    box-shadow: none;
+}
+
+.admonition,
+div.admonition {
+    border-radius: var(--vf-radius-sm);
+    box-shadow: none;
+}
+
+.bd-article ul.bibliography > li,
+.bibliography li {
+    margin-bottom: 0.9rem;
+}
+
+.bd-article li::marker {
+    color: var(--vf-accent);
+}
+
+.bd-sidebar-secondary {
+    background: transparent;
+}
+
+/* Radar charts in the data steward post. They stay dark in both themes. */
+.vf-radar-grid {
+    display: grid;
+    gap: 1rem;
+    /* auto-fill, not auto-fit: Plotly measures each chart while the grid is still filling up. */
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.bd-content div.cell div.cell_output,
+.bd-content div.cell div.cell_output .output {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.vf-radar-grid > div {
+    border-radius: var(--vf-radius);
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* -- Blog ------------------------------------------------------------------- */
+ul.postlist {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.postlist > li {
+    border-bottom: 1px solid var(--vf-border);
+    margin: 0;
+    padding: 0.8rem 0;
+}
+
+ul.postlist > li:last-child {
+    border-bottom: 0;
+}
+
+ul.postlist p {
+    margin: 0;
+}
+
+/* Line the comments up with the article text. */
+.bd-article-container > .giscus {
+    box-sizing: border-box;
+    padding-inline: var(--vf-article-inset, 2rem);
+}
+
+@media (max-width: 960px) {
+    html {
+        --vf-article-inset: 0;
+    }
+}
+
+/* -- Footer ----------------------------------------------------------------- */
+.bd-footer {
+    border-top: 1px solid var(--vf-border);
+    color: var(--vf-muted);
+    font-size: 0.8rem;
+}
+
+/* -- Home ------------------------------------------------------------------- */
+.vf-home .bd-article > section > h1 {
+    display: none; /* the hero carries the page title */
+}
+
+.vf-home .bd-main .bd-content {
+    justify-content: center;
+}
+
+.vf-home .bd-main .bd-content .bd-article-container {
+    max-width: 68rem;
+    width: 100%;
+}
+
+.vf-home .bd-main .bd-content .bd-article-container .bd-article {
+    padding: 1rem 0 0;
+}
+
+.vf-home .bd-main .bd-content .bd-article-container {
+    padding-inline: 1.5rem;
+}
+
+.vf-home .sd-container-fluid {
+    padding-inline: 0;
+}
+
+.vf-home .sd-container-fluid > .sd-row {
+    margin-inline: calc(-0.5 * var(--sd-gutter-x, 1rem));
+}
+
+.vf-hero {
+    background:
+        radial-gradient(60rem 26rem at 85% 0%, var(--vf-accent-soft), transparent 70%),
+        var(--vf-bg);
+    border-bottom: 1px solid var(--vf-border);
+    overflow: hidden;
+    position: relative;
+}
+
+.vf-hero__signal {
+    inset: 0;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 75%, transparent);
+    opacity: 0.3;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+.vf-hero__signal::before {
+    animation: vf-sweep 60s linear infinite;
+    background: var(--vf-accent);
+    content: "";
+    inset: 0 auto 0 0;
+    -webkit-mask: url("eeg-traces.svg") left center / 1600px 100% repeat-x;
+    mask: url("eeg-traces.svg") left center / 1600px 100% repeat-x;
+    position: absolute;
+    width: calc(100% + 1600px);
+    will-change: transform;
+}
+
+@keyframes vf-sweep {
+    to {
+        transform: translateX(-1600px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .vf-hero__signal::before {
+        animation: none;
+    }
+
+    .sd-card {
+        transition: none;
+    }
+
+    .sd-card-hover:hover {
+        transform: none;
+    }
+}
+
+.vf-hero__inner {
+    align-items: center;
+    display: flex;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 68rem;
+    padding: clamp(3rem, 8vw, 6.5rem) 1.5rem;
+    position: relative;
+}
+
+.vf-hero__eyebrow {
+    color: var(--vf-accent);
+    font-family: var(--pst-font-family-monospace);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+}
+
+.vf-hero h1 {
+    color: var(--vf-text);
+    font-size: clamp(2.8rem, 2rem + 4.5vw, 5rem);
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    margin: 0 0 1.25rem;
+}
+
+.vf-hero__lead {
+    color: var(--vf-text);
+    font-size: clamp(1.05rem, 1rem + 0.4vw, 1.25rem);
+    line-height: 1.55;
+    margin-bottom: 2rem;
+    max-width: 36rem;
+}
+
+.vf-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.vf-btn {
+    background: var(--vf-surface);
+    border: 1px solid var(--vf-border);
+    border-radius: 999px;
+    color: var(--vf-text);
+    font-weight: 500;
+    padding: 0.6rem 1.25rem;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.vf-btn:hover {
+    border-color: var(--vf-accent);
+    color: var(--vf-text);
+}
+
+.vf-btn--primary {
+    background: var(--vf-accent);
+    border-color: var(--vf-accent);
+    color: var(--vf-on-accent);
+}
+
+.vf-btn--primary:hover {
+    background: var(--vf-accent-hover);
+    border-color: var(--vf-accent-hover);
+    color: var(--vf-on-accent);
+}
+
+.vf-hero__photo {
+    aspect-ratio: 1;
+    border: 2px solid var(--vf-accent);
+    border-radius: 50%;
+    flex: 0 0 auto;
+    height: auto;
+    object-fit: cover;
+    padding: 6px;
+    width: clamp(180px, 24vw, 280px);
+}
+
+@media (max-width: 720px) {
+    .vf-hero__inner {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .vf-hero__photo {
+        width: 132px;
+    }
+}
+
+/* -- Tabs (sphinx-tabs) ----------------------------------------------------- */
+.sphinx-tabs [role="tablist"] {
+    border-bottom-color: var(--vf-border);
+}
+
+.sphinx-tabs-tab {
+    background: transparent;
+    border-color: transparent;
+    color: var(--vf-muted);
+}
+
+.sphinx-tabs-tab[aria-selected="true"] {
+    background: var(--vf-surface);
+    border-color: var(--vf-border);
+    border-bottom-color: var(--vf-surface);
+    color: var(--vf-accent);
+}
+
+.sphinx-tabs-panel {
+    background: var(--vf-surface);
+    border-color: var(--vf-border);
+    color: var(--vf-text);
+}
+
+ul.postlist p,
+ul.postlist p * {
+    font-size: 1.02rem;
 }

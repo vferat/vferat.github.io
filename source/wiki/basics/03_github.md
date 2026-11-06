@@ -1,3 +1,3 @@
 # Git(hub)
 
-Git & Github
+Git & GitHub

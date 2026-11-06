@@ -16,7 +16,7 @@ register_plugin('pybtex.style.formatting', 'bold_title_style', BoldTitleStyle)
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'sphinx-blog-page'
-copyright = '2024, Victor Férat'
+copyright = '2022–2026, Victor Férat'
 author = 'Victor Férat'
 release = '0.0.1'
 
@@ -54,7 +54,7 @@ html_theme_options = {
   "github_url": "https://github.com/vferat/",
   "icon_links": [
         {
-            "name": "Bluesky",
+            "name": "Twitter",
             "url": "https://twitter.com/ferat_victor",
             "icon": "fa-brands fa-twitter",
         },
@@ -71,6 +71,10 @@ html_theme_options = {
         ],
   "search_bar_text": "Search this site...",
   "show_prev_next": False,
+  "secondary_sidebar_items": {
+      "**": ["page-toc", "edit-this-page", "sourcelink"],
+      "index": [],
+  },
 }
 
 html_favicon = "_static/favicon.ico"
@@ -82,7 +86,7 @@ html_css_files = [
 ]
 
 # -- Sidebar Options for HTML output -------------------------------------------------
-html_sidebars = {'index': ['sidebar.html'],
+html_sidebars = {'index': [],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
                  'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
@@ -138,6 +142,10 @@ extensions += ['sphinx_copybutton']
 
 # Spelling
 extensions += [ 'sphinxcontrib.spelling' ]
+# These pages are mostly author names from bibliographies.
+spelling_exclude_patterns = ['publications.md', 'posts/2024/2024-06-17.md']
+# The spelling builder cannot render notebook outputs; this does not affect the HTML.
+suppress_warnings = ['mystnb.mime_priority']
 
 # Inter sphinx
 extensions += ["sphinx.ext.intersphinx"]
@@ -149,6 +157,8 @@ html_context = {
     "github_repo": "vferat.github.io",
     "github_version": "main",
     "doc_path": "./source/",
+    # Dark by default; visitors can still switch with the theme button.
+    "default_mode": "dark",
 }
 html_theme_options["use_edit_page_button"] = True
 

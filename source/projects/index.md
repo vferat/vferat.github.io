@@ -1,6 +1,6 @@
 # Projects
 
-Here is a list of the main projects I work / have worked on:
+Here are the main projects I work on or have worked on:
 
 :::{card} Pycrostates
 :link: pycrostates.html
@@ -8,8 +8,16 @@ Here is a list of the main projects I work / have worked on:
 ```{image} https://raw.githubusercontent.com/vferat/pycrostates/main/docs/_static/logos/Pycrostates_logo_black.png
 :align: right
 :width: 200
+:class: only-light
+:alt: Pycrostates logo
 ```
-An open-source Python package for analyzing EEG microstates developed to work with MNE-python.
+```{image} https://raw.githubusercontent.com/vferat/pycrostates/main/docs/_static/logos/Pycrostates_logo_white.png
+:align: right
+:width: 200
+:class: only-dark
+:alt: Pycrostates logo
+```
+An open-source Python package for analyzing EEG microstates, designed to work with MNE-Python.
 +++
 [https://github.com/vferat/pycrostates](https://github.com/vferat/pycrostates)
 :::
@@ -17,12 +25,7 @@ An open-source Python package for analyzing EEG microstates developed to work wi
 :::{card} Pycartool
 :link: pycartool.html
 
-```{image} https://lh5.googleusercontent.com/ByeozYMIJO3Wiac6G7MdCthBmWX1mulcWGQKyaSIgZkdAXoxW8G3_Y74bsRTYcH07BNTp6WNSXtFK5Nm5GxTfy4=w16383
-:align: right
-:width: 100
-:alt: Cartool is broken
-```
-PyCartool is a simple open source Python package which provides I/O for most Cartool file formats as well as additional computing features.
+PyCartool is a simple open-source Python package that provides I/O for most Cartool file formats, as well as additional computing features.
 +++
 [https://github.com/Functional-Brain-Mapping-Laboratory/PyCartool](https://github.com/Functional-Brain-Mapping-Laboratory/PyCartool)
 :::
@@ -35,7 +38,7 @@ PyCartool is a simple open source Python package which provides I/O for most Car
 :align: right
 :width: 200
 ```
-BlenderBrainAtlas is a script to create 3D objects from a MRI segmentation file (usually preprocessed thanks to Freesurfer). It generates a single 3D object (outer shell) for each brain's region of interest contained in the MRI file.
+BlenderBrainAtlas is a script that creates 3D objects from an MRI segmentation file (usually preprocessed with FreeSurfer). It generates a single 3D object (outer shell) for each brain region of interest in the MRI file.
 +++
 [https://github.com/vferat/BlenderBrainAtlas](https://github.com/vferat/BlenderBrainAtlas)
 :::

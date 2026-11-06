@@ -1,11 +1,10 @@
 # Introduction to Python
 
-Python is a high-level, object oriented, interpreted programming language {footcite}`pythonabout`
+Python is a high-level, object-oriented, interpreted programming language{footcite}`pythonabout`.
 
-- high-level: code closely resembles human language and logic: users can focus more on the problem they are trying to solve rather than the intricacies of how the computer executes the code (i.e. how memory is allocated, pointers, types)
-- interpreted: the code is executed line by line by an interpreter software (on-the-fly), rather than being compiled into machine code before execution. This allows for Dynamic Typing, Interactivity, Portability
-- object oriented: a programming paradigm based on the concept of "objects," which can contain data (attributes) and code (methods) to manipulate that data.
-The object 'apple' does not only have a weight apple.weight but can also change itself apple.fall()
+- **High-level:** code closely resembles human language and logic, so users can focus on the problem they are trying to solve rather than on the intricacies of how the computer executes the code (e.g., memory allocation, pointers, types).
+- **Interpreted:** the code is executed line by line by interpreter software (on the fly), rather than being compiled into machine code before execution. This allows for dynamic typing, interactivity, and portability.
+- **Object-oriented:** a programming paradigm based on the concept of "objects", which can contain data (attributes) and code (methods) to manipulate that data. For example, an `apple` object not only has a weight (`apple.weight`) but can also change itself (`apple.fall()`).
 
 ## About Python
 
@@ -29,8 +28,8 @@ Python's simplicity and readability make it an ideal programming language for ed
 
 Python's lack of licensing requirements makes it a convenient choice for working in remote environments. This includes:
 
-- High-Performance Computing (HPC): HPC are remote computing environment used to run complex scripts that usually requires a lot of computational resources.
-- Workers (such as GitHub Workers) Workers are background processes that handle tasks like sending notifications, executing long-running scripts
+- **High-Performance Computing (HPC):** remote computing environments used to run complex scripts that usually require a lot of computational resources.
+- **Workers (such as GitHub Actions runners):** background processes that handle tasks like sending notifications or executing long-running scripts.
 
 ### For Researchers
 
@@ -47,14 +46,14 @@ These libraries are maintained by a variety of entities. Some are maintained by 
 
 This ecosystem of libraries greatly extends the capabilities of Python, allowing it to be used for an almost infinite range of tasks. It also means that Python can be as lightweight or as feature-rich as you need it to be, depending on which libraries you choose to use.
 
-### Most important python libraries for data sciences
+### Most important Python libraries for data science
 
 Although there are thousands of libraries, some are used much more than others. For data and time series analysis, which are key in neuroscience, it is important to familiarize yourself with the main ones:
 
 ::::{grid} 3
 :gutter: 1
 
-:::{grid-item-card} Numpy
+:::{grid-item-card} NumPy
 :columns: 3
 :img-top: https://github.com/numpy/numpy/blob/main/branding/logo/logomark/numpylogoicon.png?raw=true
 :class-img-top: sd-avatar-xl
@@ -63,7 +62,7 @@ Although there are thousands of libraries, some are used much more than others. 
 Numeric
 :::
 
-:::{grid-item-card} Scipy
+:::{grid-item-card} SciPy
 :columns: 3
 :img-top: https://raw.githubusercontent.com/scipy/scipy.org/db9fafb1d431f963f7962bd926171d6cead89a0a/static/images/logo.svg
 :class-img-top: sd-avatar-xl
@@ -114,20 +113,18 @@ Path, Files
 :::
 ::::
 
-### Neuroimaging libraires
+### Neuroimaging libraries
 
 ::::{card-carousel} 2
 
 
-:::{card} Psychopy
-:img-top: https://github.com/psychopy/psychopy/blob/dev/docs/source/_static/psychopy256.png?raw=true
-:class-img-top: sd-avatar-xl
+:::{card} PsychoPy
 :link: https://www.psychopy.org/
 +++
 Creating experiments
 :::
 
-:::{card} NiLearn
+:::{card} Nilearn
 :img-top: https://github.com/nilearn/nilearn/blob/main/doc/logos/nilearn-logo.png?raw=true
 :class-img-top: sd-avatar-xl
 :link: https://nilearn.github.io/stable/index.html
@@ -135,7 +132,7 @@ Creating experiments
 fMRI Analysis (ICA, GLM, Decoding)
 :::
 
-:::{card} MNE-python
+:::{card} MNE-Python
 :img-top: https://github.com/mne-tools/mne-python/blob/main/doc/_static/mne_logo.svg?raw=true
 :class-img-top: sd-avatar-xl
 :link: https://mne.tools/stable/index.html#
@@ -143,10 +140,10 @@ fMRI Analysis (ICA, GLM, Decoding)
 M/EEG - Intra - fNIRS 
 :::
 
-:::{card} fMRIprep
+:::{card} fMRIPrep
 :link: https://fmriprep.org/en/stable/index.html
 +++
-fMRI Pre-processing
+fMRI preprocessing
 :::
 
 :::{card} dabest
@@ -202,13 +199,13 @@ threadpoolctl==3.5.0
 wheel==0.43.0
 ```
 
-### Why using a environment manager ?
+### Why use an environment manager?
 
 Different versions of the same package can have different APIs. For example, consider the following two versions of NumPy:
 
 ::::{tab-set}
 
-:::{tab-item} Numpy '1.26.4'
+:::{tab-item} NumPy '1.26.4'
 
 ```python
 >>> import numpy as np
@@ -220,7 +217,7 @@ Different versions of the same package can have different APIs. For example, con
 
 :::
 
-:::{tab-item} Numpy '1.21.0'
+:::{tab-item} NumPy '1.21.0'
 
 ```python
 >>> import numpy as np
@@ -244,7 +241,7 @@ API changes:
 
 ::::{tab-set}
 
-:::{tab-item} Numpy '1.23.0'
+:::{tab-item} NumPy '1.23.0'
 
 ```python
 >>> import numpy as np
@@ -256,7 +253,7 @@ array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)
 
 :::
 
-:::{tab-item} Numpy '1.26.4'
+:::{tab-item} NumPy '1.26.4'
 
 ```python
 >>> import numpy as np
@@ -273,9 +270,9 @@ array([-2147483648, -2147483648, -2147483648, -2147483648, -2147483648,
 
 ::::
 
-On the second example, the same operation results in an overflow warning and an array of the minimum possible 32-bit integers instead of an array of zeros.. the behavior of the floor division operation has changed between these two versions of NumPy. This is a clear example of why it's important to manage your project's dependencies carefully, as changes in package versions can lead to unexpected results.
+In the second example, the same operation results in an overflow warning and an array of the minimum possible 32-bit integers instead of an array of zeros: the behavior of the floor division operation has changed between these two versions of NumPy. This is a clear example of why it's important to manage your project's dependencies carefully, as changes in package versions can lead to unexpected results.
 
-### Managing dependencies conflicts
+### Managing dependency conflicts
 
 Managing your project's environment is a crucial aspect of any programming project, and this is especially true when working with Python. Conda is a popular tool for environment management in Python. It allows you to create isolated environments, each with their own installed packages, which can help prevent conflicts between package versions.
 

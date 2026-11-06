@@ -1,6 +1,6 @@
 # Portfolio
 
-A repository template to create a Portfolio / blog with Github Pages and Sphinx
+A repository template for creating a portfolio/blog with GitHub Pages and Sphinx.
 
 https://desktop.github.com/
 
@@ -8,7 +8,8 @@ https://desktop.github.com/
 https://vferat.github.io/about.html
 
 
-Create a new branch named ```gt-pages```
+Create a new branch named ```gh-pages```.
+
 Go to <kbd>Settings</kbd> -> <kbd>Pages</kbd>
 
 - <kbd>Source</kbd> -> <kbd>deploy from a branch</kbd>
@@ -22,16 +23,16 @@ Go to <kbd>Settings</kbd> -> <kbd>Pages</kbd>
 conda create -n sphinx python=3.9
 conda activate sphinx
 ```
-## install sphinx
+## Install Sphinx
 ```console
 pip install sphinx
 ```
-also add it to ```requirements.txt```
+Also add it to ```requirements.txt```:
 ```txt
 sphinx
 ```
 
-## Start a new sphinx project
+## Start a new Sphinx project
 ```console
 sphinx-quickstart
 ```
@@ -42,7 +43,7 @@ sphinx-quickstart
 make html
 ```
 
-open <kbd>build</kbd>/ <kbd>index.html</kbd>
+Open <kbd>build</kbd>/<kbd>index.html</kbd>.
 
 ## Delete Docs
 
@@ -52,15 +53,15 @@ make clean
 
 # Configure the website
 
-Edit ```conf.py```
+Edit ```conf.py```.
 
-## Use markdown
-install myst-parser
+## Use Markdown
+Install myst-parser:
 
 ```console
 pip install --upgrade myst-parser
 ```
-also add it to ```requirements.txt```
+Also add it to ```requirements.txt```:
 ```txt
 sphinx
 myst-parser
@@ -71,7 +72,7 @@ Add myst_parser to the list of configured extensions:
 extensions = ['myst_parser']
 ```
 
-adjust the source_suffix variable in conf.py
+Adjust the source_suffix variable in conf.py:
 ```python
 ...
 
@@ -88,7 +89,7 @@ source_suffix = {
 pip install pydata_sphinx_theme
 ```
 
-In conf.py
+In conf.py:
 ```python
 ...
 
@@ -113,7 +114,7 @@ html_title = "Pycromancer"
 ...
 ```
 
-## Bonus: Adda custom icon link
+## Bonus: Add a custom icon link
 
 ```python
 ...
@@ -134,9 +135,9 @@ html_theme_options = {
 ```
 
 ## Configure the nav bar
-- Create a new page ```about.md```
-- Create a new page 'blog.md'
-- Add a toctree to ```index.md```
+- Create a new page ```about.md```.
+- Create a new page ```blog.md```.
+- Add a toctree to ```index.md```:
 ``````md
 ```{toctree}
 :maxdepth: 2
@@ -149,7 +150,7 @@ blog.md
 
 ## Create a sidebar
 
-create ```sidebar.html``` in ```_templates```
+Create ```sidebar.html``` in ```_templates```:
 
 ```
 <div class="profile-pic"><img src="{{ pathto('_static/profil.jfif', 1) }}" /></div>
@@ -168,7 +169,7 @@ create ```sidebar.html``` in ```_templates```
 html_sidebars = {'**': ['sidebar.html']}
 ```
 
-or use the sidebar only for specific pages
+Or use the sidebar only on specific pages:
 ```python
 ...
 
@@ -178,9 +179,9 @@ html_sidebars = {'index': ['sidebar.html'],
 ...
 ```
 
-### Custom the sidebar with css
+### Customize the sidebar with CSS
 
-#### create ```custom.css``` in ```_static```
+#### Create ```custom.css``` in ```_static```
 
 ```css
 /* Bio area */
@@ -209,7 +210,7 @@ div.profile-pic img {
 }
 ```
 
-#### Use css in conf
+#### Use the CSS in conf.py
 
 ```python
 ...
@@ -242,7 +243,7 @@ extensions += ['ablog']
 ```
 
 ### Add Content
-create post/_year_/yy_mm_dd_title.md
+Create post/_year_/yy_mm_dd_title.md.
 
 ### Edit blog sidebar
 
@@ -278,13 +279,13 @@ bibtex_bibfiles = ['bibliography.bib']
 
 ### Add content
 
-- Create ```bibliography.bib```
+- Create ```bibliography.bib```.
 
-- Create ```publications.md```
+- Create ```publications.md```.
 
-- Add it to toctree in ```index.md```
+- Add it to the toctree in ```index.md```.
 
-- Insert biblio:
+- Insert the bibliography:
 
 ``````md
 ```{bibliography}
@@ -315,7 +316,7 @@ extensions += ['sphinx_design']
 
 https://pydata-sphinx-theme.readthedocs.io/en/v0.5.2/user_guide/customizing.html
 
-Edit ```conf.py```
+Edit ```conf.py```:
 ```
 
 html_css_files = [
@@ -323,7 +324,7 @@ html_css_files = [
 ]
 ```
 
-Edit ```custom.css```
+Edit ```custom.css```:
 ```css
 /* Theme */
 /* https://pydata-sphinx-theme.readthedocs.io/en/v0.7.2/user_guide/customizing.html */
@@ -343,7 +344,7 @@ html[data-theme="dark"] {
 # Bonus
 
 ## PR preview
-Add a new github workflow: ```pr_preview.yml```
+Add a new GitHub workflow: ```pr_preview.yml```
 
 ```txt
 name: Deploy PR previews
@@ -365,7 +366,7 @@ jobs:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+        fetch-depth: 0 # otherwise, you will fail to push refs to the destination repo
     - name: Build and Commit
       uses: sphinx-notes/pages@v2
       with:
@@ -376,8 +377,8 @@ jobs:
         source-dir: ./
 ```
 
-Make sure to set ```clean-exclude: pr-preview/``` in  ```publish.yml```
-in order not to erase preview when building a new site on the main branch.
+Make sure to set ```clean-exclude: pr-preview/``` in ```publish.yml```
+so that previews are not erased when building a new site on the main branch.
 
 ```txt
 - name: Push changes
@@ -390,7 +391,7 @@ in order not to erase preview when building a new site on the main branch.
 
 ## Using giscus
 
-create layout.html in templates
+Create layout.html in templates:
 
 
 {%- extends "pydata_sphinx_theme/layout.html" %}

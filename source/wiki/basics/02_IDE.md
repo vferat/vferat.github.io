@@ -23,7 +23,7 @@ While this workflow is entirely functional, developers have created tools to fac
 
 Spyder is a free and open-source scientific environment for Python, which is also written in Python. It is designed to meet the needs of scientists, engineers, and data analysts when working with Python. Its graphical interface has many similarities with MATLAB, making it an excellent choice for those transitioning from MATLAB to Python. However, for others, there might be alternative tools that offer more features.
 
-I recommended to install `Spyder` in each conda environment using `pip`. This ensures that `Spyder` is configured to work within your current environment:
+I recommend installing `Spyder` in each conda environment using `pip`. This ensures that `Spyder` is configured to work within your current environment:
 
 ```bash
 pip install spyder
@@ -47,7 +47,7 @@ Jupyter Notebook and JupyterLab are powerful, interactive coding environments th
 
 
 
-JupyterLab is an enhanced interface for Jupyter Notebooks, offering additional features like an integrated file browser and support for multiple panels. While it can be more handy and versatile, it retains all the core functionalities of Jupyter Notebook.
+JupyterLab is an enhanced interface for Jupyter Notebooks, offering additional features like an integrated file browser and support for multiple panels. While it can be handier and more versatile, it retains all the core functionalities of Jupyter Notebook.
 
 ### Usage
 
@@ -84,9 +84,9 @@ Because Jupyter Notebook and JupyterLab are server-client applications, they can
 - **Binder**: A service that lets you create shareable, interactive computing environments from GitHub repositories. It enables you to run Jupyter Notebooks without needing to install any software locally.
   [Binder](https://mybinder.org/)
 
-This feature can also be used to run code on another computer within your network and/or a virtual machine on your own computer (docker/ Windows subsystem for Linux (WSL))
+This feature can also be used to run code on another computer within your network and/or in a virtual machine on your own computer (Docker or Windows Subsystem for Linux (WSL)).
 
-Additionally, you can access powerful computational resources by starting a Jupyter server on the High-Performance Computing (HPC) cluster. This is particularly useful for running resource-intensive analyses that would not run efficiently on your personal computer. For more details on how to use Jupyter servers on HPC, check this link:
+Additionally, you can access powerful computational resources by starting a Jupyter server on a High-Performance Computing (HPC) cluster. This is particularly useful for running resource-intensive analyses that would not run efficiently on your personal computer. For more details on how to use Jupyter servers on HPC, see:
 [Using Jupyter on HPC](https://doc.eresearch.unige.ch/hpc/how_to_use_openondemand)
 ```
 
@@ -97,18 +97,15 @@ Additionally, you can access powerful computational resources by starting a Jupy
 
 Visual Studio Code (VS Code) is an IDE developed by Microsoft. It is an excellent choice for Python development but also supports many other programming languages, making it a highly versatile tool for a wide range of coding needs.
 
-**Jupyter Notebooks Integration**: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a `.ipynb` file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.
-
-
 - **Multi-language Support**: VS Code is not limited to Python. It supports numerous programming languages such as JavaScript, C++, Java, and more, through its extensive marketplace of extensions.
 - **Marketplace Extensions**: The VS Code marketplace allows you to install extensions tailored to your specific needs. Whether you need tools for debugging, version control, or integrating cloud services, there is an extension available.
 - **Jupyter Notebooks Integration**: VS Code can edit both classic Python scripts and Jupyter Notebooks. When you open a `.ipynb` file, it automatically starts a Jupyter server for you or connects to an existing one, providing a seamless experience for notebook users.
 
 
-As VScode is developed by Microsoft, it integrates exceptionally well with other Microsoft tools:
+As VS Code is developed by Microsoft, it integrates exceptionally well with other Microsoft tools:
 
 - **GitHub Integration**: VS Code has built-in support for Git and GitHub, allowing you to manage your repositories directly within the IDE. You can commit changes, push to repositories, and review pull requests seamlessly.
-- **GitHub Copilot**: Students and educators can access GitHub Copilot, an AI-powered code completion tool that provides "Chat GPT in the IDE" experience. Copilot assists you by suggesting whole lines or blocks of code as you type, significantly enhancing productivity.
+- **GitHub Copilot**: Students and educators can access GitHub Copilot, an AI-powered code completion tool that provides a "ChatGPT in the IDE" experience. Copilot assists you by suggesting whole lines or blocks of code as you type, significantly enhancing productivity.
 
 
 ### Getting Started
@@ -118,7 +115,7 @@ To start using VS Code for Python and Jupyter Notebooks:
 1. **Download and Install**: Download VS Code from the [official website](https://code.visualstudio.com/).
 2. **Install Extensions**: Install the Python extension and Jupyter extension from the VS Code marketplace.
 3. **Open or Create Projects**: Open your Python scripts or Jupyter Notebooks directly in VS Code. For Jupyter Notebooks, the server will start automatically or connect to an existing one.
-4. Make sure to install ipykernel in each environment you want to use with VS code
+4. **Install ipykernel**: Make sure to install `ipykernel` in each environment you want to use with VS Code:
 
 ```bash
 pip install ipykernel
@@ -127,5 +124,5 @@ pip install ipykernel
 ```{note}
 VS Code is also a server-client application and can be integrated into web platforms. GitHub Codespaces ([https://github.com/features/codespaces](https://github.com/features/codespaces)) allows you to start a VS Code server and access it from your web browser.
 
-As with Jupyter Notebooks, a VS Code server can also be started on another computer within your network, a virtual machine on your own computer (Docker/Windows Subsystem for Linux (WSL)), and the UNIGE HPC.
+As with Jupyter Notebooks, a VS Code server can also be started on another computer within your network, in a virtual machine on your own computer (Docker or Windows Subsystem for Linux (WSL)), and on the UNIGE HPC.
 ```
