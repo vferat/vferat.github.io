@@ -1,7 +1,7 @@
 sphinx
 ipython
 myst-nb
-pydata_sphinx_theme
+pydata_sphinx_theme~=0.24.0
 ablog
 sphinxcontrib-bibtex
 sphinx_design
