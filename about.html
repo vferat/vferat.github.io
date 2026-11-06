@@ -1,20 +1,21 @@
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="en" data-content_root="./" data-theme="dark">
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>About Me &#8212; vferat</title>
+
+    <title>Experiences &amp; education &#8212; vferat</title>
+
   
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
   </script>
   <!--
     this give us a css class that will be invisible only if js is disabled
@@ -27,21 +28,21 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f0ebcbec" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=6a1efe30" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
 
     <script src="_static/documentation_options.js?v=d45e8c67"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
@@ -54,7 +55,6 @@
     <script src="_static/togglebutton.js?v=b8b12719"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FCG0LMTFDL"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
@@ -64,6 +64,11 @@
                     'ad_personalization': 'denied',
                     'analytics_storage': 'denied'
                 });
+            </script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FCG0LMTFDL"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-FCG0LMTFDL');
             </script>
@@ -75,8 +80,9 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Projects" href="projects/index.html" />
-    <link rel="prev" title="Welcome to Victor Ferat website !" href="index.html" /> 
+    <link rel="prev" title="Victor Férat" href="index.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
   
@@ -86,7 +92,8 @@
     <script src="searchindex.js"></script>
      
   </head>
-  <body data-default-mode="">
+<body data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
@@ -96,7 +103,9 @@
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -122,9 +131,10 @@
 </div>
 
   
+
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -159,8 +169,8 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    About Me
+  <a class="nav-link nav-internal" href="#" aria-current="page">
+    Experiences & education
   </a>
 </li>
 
@@ -196,7 +206,7 @@
         <div class="navbar-item navbar-persistent--container">
           
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -206,11 +216,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -223,8 +240,7 @@
           
           
           
-          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -235,8 +251,7 @@
           
           
           
-          <a href="https://twitter.com/ferat_victor" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i><span class="visually-hidden">ORCID</span></a>
         </li>
         <li class="nav-item">
           
@@ -247,20 +262,7 @@
           
           
           
-          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">ORCID</span></a>
-        </li>
-        <li class="nav-item">
-          
-          
-          
-          
-          
-          
-          
-          
-          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">LinkedIn</span></a>
+          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
         </li>
 </ul></div>
       
@@ -271,7 +273,7 @@
   
     <div class="navbar-persistent--mobile">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -280,7 +282,7 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -289,12 +291,14 @@
     </header>
   
 
+
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
@@ -311,8 +315,8 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
-    About Me
+  <a class="nav-link nav-internal" href="#" aria-current="page">
+    Experiences & education
   </a>
 </li>
 
@@ -349,11 +353,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -366,8 +377,7 @@
           
           
           
-          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -378,8 +388,7 @@
           
           
           
-          <a href="https://twitter.com/ferat_victor" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i><span class="visually-hidden">ORCID</span></a>
         </li>
         <li class="nav-item">
           
@@ -390,20 +399,7 @@
           
           
           
-          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">ORCID</span></a>
-        </li>
-        <li class="nav-item">
-          
-          
-          
-          
-          
-          
-          
-          
-          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">LinkedIn</span></a>
+          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
         </li>
 </ul></div>
         
@@ -412,16 +408,11 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<div class="profile-pic"><img src="_static/profil.jfif" /></div>
+        <div class="sidebar-primary-item"><div class="profile-pic"><img src="_static/profil.jfif" alt="Portrait of Victor Férat" /></div>
 
 <div class="bio">
-    <div class="name">
-        Victor Férat
-    </div>
-    <div class="title">
-        <center>Neurosciences & Python </center>
-    </div>
+    <div class="name">Victor Férat</div>
+    <div class="title">Neuroscience &amp; Python</div>
 </div></div>
     </div>
   
@@ -457,10 +448,10 @@
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
+        <i class="fa-solid fa-house"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">About Me</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Experiences &amp; education</span></li>
   </ul>
 </nav>
 </div>
@@ -477,89 +468,63 @@
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                   <section id="about-me">
-<h1>About Me<a class="headerlink" href="#about-me" title="Link to this heading">#</a></h1>
-<p>I am a passionate French engineer and post-doctoral researcher focused on transforming neuroscience research into practical solutions for society. I believe that achieving this requires scientific outputs to be reproducible and scalable, which drives my work in two key areas:</p>
-<ul class="simple">
-<li><p><strong>EEG Neurofeedback</strong>: Leveraging EEG, the most affordable neuroimaging method, to develop neurofeedback interventions that could benefit both clinical and non-clinical populations.</p></li>
-<li><p><strong>Reproducible and Scalable Neuroimaging Pipelines</strong>: Building robust analysis pipelines to ensure reproducibility and scalability in neuroimaging research.</p></li>
-</ul>
-<p>My work is shaped by collaborations with four different labs, allowing me to push the boundaries in both fields. With the <a class="reference external" href="https://neurocenter-unige.ch/research-groups/sophie-schwartz/">Sleep and Cognition Neuroimaging Lab</a> (Prof. Sophie Schwartz) for fMRI and the <a class="reference external" href="https://neuroling.github.io/index.html">Neuroling Lab</a> (Prof. Alexis Hervais-Adelman) for MEG, I develop and apply advanced analysis pipelines using industry-grade technologies such as Docker and GitHub integration.</p>
-<p>In collaboration with <a class="reference external" href="https://cibm.ch/community/tomas-ros/">Dr. Tomas Ros</a> as well as the <a class="reference external" href="https://neurocenter-unige.ch/research-groups/patrik-vuilleumier/">Laboratory for Behavioral Neurology and Imaging of Cognition</a> (Prof. Patrik Vuilleumier), I continue developing EEG neurofeedback paradigms. Pursuing my PhD work, I’m designing clinical trials to test the feasibility and efficacy of new home-based EEG neurofeedback paradigms.</p>
-<p>A core part of my mission is to make the tools and techniques I develop accessible to as many people as possible. I believe that democratizing access to research tools is key to advancing our understanding of the brain. This is why I contribute to the open-source Python ecosystem, working on libraries like <a class="reference external" href="https://nipype.readthedocs.io/en/latest/">nipype</a> and <a class="reference external" href="https://mne.tools/stable/index.html">MNE</a>, as well as creating and sharing my own libraries, <a class="reference external" href="https://pycartool.readthedocs.io/en/latest">Pycartool</a> and <a class="reference external" href="https://pycrostates.readthedocs.io/en/latest/">Pycrostates</a>.</p>
-<section id="work-experiences">
-<h2>Work Experiences<a class="headerlink" href="#work-experiences" title="Link to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+                   <section id="experiences-education">
+<h1>Experiences &amp; education<a class="headerlink" href="#experiences-education" title="Link to this heading">#</a></h1>
+<section id="work-experience">
+<h2>Work Experience<a class="headerlink" href="#work-experience" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2024 - today</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.unige.ch/">&#64;UNIGE</a></p>
+2023 – Present</div>
+<p class="sd-card-text"><a class="reference external" href="https://campus-neuro.ch/en/meg/">Fondation Campus Biotech – M/EEG platform</a></p>
 <p class="sd-card-text">Geneva</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Post doctoral researcher (70%)</div>
+Research Engineer</div>
+<p class="sd-card-text"><span class="vf-tag vf-tag--eeg">EEG</span> <span class="vf-tag vf-tag--meg">MEG</span> <span class="vf-tag vf-tag--fmri">fMRI</span></p>
+<p class="sd-card-text">Providing technical expertise and data support to academic research groups and industrial partners:</p>
 <ul class="simple">
-<li><p class="sd-card-text">Develop a home-based EEG neurofeedback software, including real-time data acquisition, artifact correction, and signal processing.</p></li>
+<li><p class="sd-card-text">Translate researchers’ needs into technical solutions: protocol design, data acquisition, and quality control for neurophysiological recordings.</p></li>
+<li><p class="sd-card-text">Build scalable, reproducible end-to-end data solutions (ingestion, curation, analysis, and archiving).</p></li>
+<li><p class="sd-card-text">Develop, maintain, and contribute to production-ready Python libraries for neuroimaging analysis.</p></li>
+<li><p class="sd-card-text">Design and conduct hypothesis-driven analyses, interpreting and communicating results to support clinical and research insights.</p></li>
+<li><p class="sd-card-text">Develop home-based EEG neurofeedback software, including real-time data acquisition, artifact correction, and signal processing.</p></li>
 <li><p class="sd-card-text">Design a cloud-based data management and analysis solution for remote monitoring.</p></li>
-<li><p class="sd-card-text">Support research labs in data management, curation, and the analysis of large-scale datasets from various neuroimaging modalities (MEG, EEG, fMRI).</p></li>
+<li><p class="sd-card-text">Support research labs with data management, curation, and the analysis of large-scale datasets from various neuroimaging modalities (MEG, EEG, fMRI).</p></li>
+<li><p class="sd-card-text">Supervise, train, and work with interdisciplinary teams.</p></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2023 - today</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.campusbiotech.ch/en/node/402">&#64;Fondation campus biotech - HNP</a></p>
+2020 – 2023</div>
+<p class="sd-card-text"><a class="reference external" href="https://www.unige.ch/">UNIGE</a></p>
 <p class="sd-card-text">Geneva</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Software Engineer (30%)</div>
-<ul class="simple">
-<li><p class="sd-card-text">Provide automated workflows for analyzing neuro-imaging data.</p></li>
-<li><p class="sd-card-text">Provide services for curation, preprocessing and analysis of fMRI, EEG and iEEG recordings.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-2020 - 2023</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.unige.ch/">&#64;UNIGE</a></p>
-<p class="sd-card-text">Geneva</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-PhD researcher Assistant (70%)</div>
-<p class="sd-card-text">PhD research project on Training spatio-temporally defined brain activity patterns with EEG neurofeedback.</p>
+PhD Research Assistant</div>
+<p class="sd-card-text"><span class="vf-tag vf-tag--eeg">EEG</span></p>
+<p class="sd-card-text">PhD research project on training spatiotemporally defined brain activity patterns with EEG neurofeedback.</p>
 <ul class="simple">
 <li><p class="sd-card-text">Designed and conducted a clinical trial to evaluate the feasibility of a novel EEG microstate-based neurofeedback protocol.</p></li>
 </ul>
@@ -568,154 +533,110 @@ PhD researcher Assistant (70%)</div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2020 - 2022</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.unige.ch/">&#64;UNIGE</a></p>
+2019 – 2025</div>
+<p class="sd-card-text"><a class="reference external" href="https://www.campusbiotech.ch/en/node/402">Fondation Campus Biotech</a></p>
 <p class="sd-card-text">Geneva</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Software Development Engineer (30%)</div>
-<p class="sd-card-text">Development of open-source python libraries for EEG microstates analysis.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-2019 - 2020</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.campusbiotech.ch/en/node/402">&#64;Fondation campus biotech - HNP</a></p>
-<p class="sd-card-text">Geneva</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Software Development Engineer – EEG/FMRI</div>
-<p class="sd-card-text">Support neuroscience researchers of the Functional Brain Mapping Lab at Campus Biotech</p>
+Software Development Engineer</div>
+<p class="sd-card-text"><span class="vf-tag vf-tag--eeg">EEG</span> <span class="vf-tag vf-tag--fmri">fMRI</span></p>
 <ul class="simple">
-<li><p class="sd-card-text">Developed combined EEG/MRI analysis pipeline for EEG source reconstruction.</p></li>
+<li><p class="sd-card-text">Developed open-source Python libraries for EEG microstate analysis.</p></li>
+<li><p class="sd-card-text">Supported neuroscience researchers in the Functional Brain Mapping Lab at Campus Biotech.</p></li>
+<li><p class="sd-card-text">Developed a combined EEG/MRI analysis pipeline for EEG source reconstruction.</p></li>
+<li><p class="sd-card-text">Developed user-friendly graphical user interfaces for EEG data preprocessing, including filtering, resampling, ICA processing, interpolation, and referencing.</p></li>
+<li><p class="sd-card-text">Conducted an in-depth study of artifact-cleaning algorithms using large-scale EEG simulations.</p></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-2019</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.campusbiotech.ch/en/node/402">&#64;Fondation campus biotech - HNP</a></p>
-<p class="sd-card-text">Geneva</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Software Development &amp; Data analysis Intern – EEG</div>
-<ul class="simple">
-<li><p class="sd-card-text">Developed user-friendly Graphical user interfaces for EEG data preprocessing including filters, resampling, ICA
-processing, interpolation, referencing…</p></li>
-<li><p class="sd-card-text">In depth study of artefact cleaning algorithm by mean of large-scale EEG simulation.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 2018</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.linkedin.com/company/zeta-science/about/">&#64;zeta</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://www.linkedin.com/company/zeta-science/about/">Zeta</a></p>
 <p class="sd-card-text">Paris (FR)</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Software Development &amp; Data analysis Intern – EEG</div>
+Software Development &amp; Data Analysis Intern – EEG</div>
+<p class="sd-card-text"><span class="vf-tag vf-tag--eeg">EEG</span></p>
 <ul class="simple">
-<li><p class="sd-card-text">Setting up a neurofeedback paradigm for tinnitus treatment (real time):</p></li>
-<li><p class="sd-card-text">Creation and optimization of bad channel interpolation and artefact rejection algorithms (ICA)</p></li>
-<li><p class="sd-card-text">Offline EEG  data analysis of tinnitus related EEG (offline):</p></li>
+<li><p class="sd-card-text">Set up a real-time neurofeedback paradigm for tinnitus treatment.</p></li>
+<li><p class="sd-card-text">Created and optimized bad-channel interpolation and artifact rejection algorithms (ICA).</p></li>
+<li><p class="sd-card-text">Analyzed tinnitus-related EEG data offline.</p></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 2018</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.bioserenity.com/">&#64;bioserenity</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://www.bioserenity.com/">BioSerenity</a></p>
 <p class="sd-card-text">Troyes (FR)</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Lean Management and Development &amp; Data analysis Intern – EE</div>
-<p class="sd-card-text">Design a test bench for EEG connected devices</p>
+Lean Management, Development &amp; Data Analysis Intern – EEG</div>
+<p class="sd-card-text"><span class="vf-tag vf-tag--eeg">EEG</span></p>
 <ul class="simple">
-<li><p class="sd-card-text">Improve ERP integration and stock prediction</p></li>
-<li><p class="sd-card-text">Developed software for label printing</p></li>
+<li><p class="sd-card-text">Designed a test bench for connected EEG devices.</p></li>
+<li><p class="sd-card-text">Improved ERP integration and stock prediction.</p></li>
+<li><p class="sd-card-text">Developed label-printing software.</p></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 2017</div>
-<p class="sd-card-text"><a class="reference external" href="https://www.wheel-solutions.co.uk/our-brands/mefro-wheels/">&#64;MEFRO WHEELS</a></p>
+<p class="sd-card-text"><a class="reference external" href="https://www.wheel-solutions.co.uk/our-brands/mefro-wheels/">MEFRO WHEELS</a></p>
 <p class="sd-card-text">Troyes (FR)</p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Production Operator</div>
-<p class="sd-card-text">Regulated the production flow in a wheel manufacturing company.</p>
+<p class="sd-card-text">Regulated the production flow at a wheel manufacturing company.</p>
 </div>
 </div>
 </div>
@@ -724,63 +645,84 @@ Production Operator</div>
 </section>
 <section id="education">
 <h2>Education<a class="headerlink" href="#education" title="Link to this heading">#</a></h2>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2020 - 2023</div>
+2026 – Present</div>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Certificate of Advanced Studies in Data Stewardship</div>
+<p class="sd-card-text">Formation Continue UNIL-EPFL</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+2020 – 2023</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 PhD in Neuroscience</div>
-<p class="sd-card-text">Lemanic Neurosicences Doctoral School</p>
+<p class="sd-card-text">Lemanic Neuroscience Doctoral School</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2018 - 2019</div>
+2018 – 2019</div>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Master in Neurosciences and engineering</div>
-<p class="sd-card-text">Bioengineering and Innovation in Neurosciences (Paristech)</p>
+Master’s in Neuroscience and Engineering</div>
+<p class="sd-card-text">Bioengineering and Innovation in Neuroscience (ParisTech)</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 vf-timeline docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-3 sd-col-lg-3 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-2015 - 2018</div>
+2015 – 2018</div>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-9 sd-col-lg-9 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Master’s in industrial and mechanical engineering</div>
+Master’s in Industrial and Mechanical Engineering</div>
 <p class="sd-card-text">Arts et Métiers</p>
 </div>
 </div>
@@ -797,27 +739,42 @@ Master’s in industrial and mechanical engineering</div>
                 </article>
               
 
+
 <!-- giscus -->
 <script>
-var script = document.createElement('script');
-script.setAttribute("src", "https://giscus.app/client.js");
-script.setAttribute("data-repo", "vferat/vferat.github.io");
-script.setAttribute("data-repo-id", "R_kgDOIMr2YA");
-script.setAttribute("data-category", "Q&A");
-script.setAttribute("data-category-id", "DIC_kwDOIMr2YM4CR7_W");
-script.setAttribute("data-mapping", "pathname");
-script.setAttribute("data-strict", "0");
-script.setAttribute("data-reactions-enabled", "1");
-script.setAttribute("data-emit-metadata", "1");
-script.setAttribute("data-input-position", "top");
-script.setAttribute("data-theme", document.documentElement.dataset.theme == "dark" ? "dark_protanopia" : "light");
-script.setAttribute("data-lang", "en");
-script.setAttribute("data-loading", "lazy");
-script.setAttribute("crossorigin", "anonymous");
-script.async, "true";
-var main = document.getElementsByClassName("bd-article-container")[0];
-main.appendChild(script);
+(function () {
+  var giscusTheme = function () {
+    return document.documentElement.dataset.theme === "dark" ? "transparent_dark" : "light";
+  };
+
+  var script = document.createElement("script");
+  script.setAttribute("src", "https://giscus.app/client.js");
+  script.setAttribute("data-repo", "vferat/vferat.github.io");
+  script.setAttribute("data-repo-id", "R_kgDOIMr2YA");
+  script.setAttribute("data-category", "Q&A");
+  script.setAttribute("data-category-id", "DIC_kwDOIMr2YM4CR7_W");
+  script.setAttribute("data-mapping", "pathname");
+  script.setAttribute("data-strict", "0");
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "1");
+  script.setAttribute("data-input-position", "top");
+  script.setAttribute("data-theme", giscusTheme());
+  script.setAttribute("data-lang", "en");
+  script.setAttribute("data-loading", "lazy");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+  document.getElementsByClassName("bd-article-container")[0].appendChild(script);
+
+  // Keep the comments in sync with the light/dark switch.
+  new MutationObserver(function () {
+    var frame = document.querySelector("iframe.giscus-frame");
+    if (frame) {
+      frame.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, "https://giscus.app");
+    }
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+})();
 </script>
+
 
               
               
@@ -827,7 +784,7 @@ main.appendChild(script);
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
@@ -839,35 +796,10 @@ main.appendChild(script);
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-experiences">Work Experiences</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#work-experience">Work Experience</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#education">Education</a></li>
 </ul>
   </nav></div>
-
-  <div class="sidebar-secondary-item">
-
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/about.md">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
-    </a>
-  </div>
-</div>
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="_sources/about.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
 
 </div></div>
               
@@ -882,8 +814,8 @@ main.appendChild(script);
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -894,7 +826,7 @@ main.appendChild(script);
 
   <p class="copyright">
     
-      © Copyright 2024, Victor Férat.
+      © Copyright 2022–2026, Victor Férat.
       <br/>
     
   </p>
@@ -903,8 +835,7 @@ main.appendChild(script);
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
-    <br/>
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1.
   </p>
 </div>
       
@@ -917,7 +848,7 @@ main.appendChild(script);
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
 </p></div>
       
     </div>

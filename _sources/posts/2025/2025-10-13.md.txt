@@ -1,0 +1,22 @@
+---
+tags: EEG
+date: "2025-10-13"
+author: me
+language: en
+redirect: projects/gedai
+---
+
+# GEDAI
+
+GEDAI removes noise from EEG recordings without supervision, using leadfield filtering. This package brings the algorithm to Python, alongside its MATLAB reference implementation.
+
+I managed the Python implementation and GitHub integration up to version 0.3.0, and I have helped maintain the package since then.
+
+## Learn more
+
+- [Code on GitHub](https://github.com/neurotuning/gedai)
+- [Documentation](https://neurotuning.github.io/gedai)
+- [Preprint: Ros et al., *bioRxiv*, 2025](https://doi.org/10.1101/2025.10.04.680449)
+- [MATLAB reference implementation](https://github.com/neurotuning/GEDAI-master)
+
+GEDAI is released under the PolyForm Noncommercial License 1.0.0. Commercial use requires a separate license.

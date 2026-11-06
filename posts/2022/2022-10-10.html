@@ -1,20 +1,21 @@
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../" >
+<html lang="en" data-content_root="../../" data-theme="dark">
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+
     <title>Syntax guide for this website &#8212; vferat</title>
+
   
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
   </script>
   <!--
     this give us a css class that will be invisible only if js is disabled
@@ -27,8 +28,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
@@ -36,13 +37,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=a5c4661c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f0ebcbec" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=6a1efe30" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
 
     <script src="../../_static/documentation_options.js?v=d45e8c67"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -55,7 +56,6 @@
     <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FCG0LMTFDL"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){ dataLayer.push(arguments); }
@@ -65,6 +65,11 @@
                     'ad_personalization': 'denied',
                     'analytics_storage': 'denied'
                 });
+            </script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-FCG0LMTFDL"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-FCG0LMTFDL');
             </script>
@@ -78,6 +83,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
   
@@ -87,7 +93,8 @@
     <script src="../../searchindex.js"></script>
      
   </head>
-  <body data-default-mode="">
+<body data-default-mode="dark">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
@@ -97,7 +104,9 @@
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -123,9 +132,10 @@
 </div>
 
   
+
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -161,7 +171,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../about.html">
-    About Me
+    Experiences & education
   </a>
 </li>
 
@@ -197,7 +207,7 @@
         <div class="navbar-item navbar-persistent--container">
           
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -207,11 +217,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -224,8 +241,7 @@
           
           
           
-          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -236,8 +252,7 @@
           
           
           
-          <a href="https://twitter.com/ferat_victor" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i><span class="visually-hidden">ORCID</span></a>
         </li>
         <li class="nav-item">
           
@@ -248,20 +263,7 @@
           
           
           
-          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">ORCID</span></a>
-        </li>
-        <li class="nav-item">
-          
-          
-          
-          
-          
-          
-          
-          
-          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">LinkedIn</span></a>
+          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
         </li>
 </ul></div>
       
@@ -272,7 +274,7 @@
   
     <div class="navbar-persistent--mobile">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
  <span class="search-button__default-text">Search</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
@@ -281,7 +283,7 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -290,6 +292,8 @@
     </header>
   
 
+
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
@@ -297,7 +301,7 @@
       
         
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
@@ -315,7 +319,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../about.html">
-    About Me
+    Experiences & education
   </a>
 </li>
 
@@ -352,11 +356,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -369,8 +380,7 @@
           
           
           
-          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/vferat/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -381,8 +391,7 @@
           
           
           
-          <a href="https://twitter.com/ferat_victor" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i><span class="visually-hidden">ORCID</span></a>
         </li>
         <li class="nav-item">
           
@@ -393,20 +402,7 @@
           
           
           
-          <a href="https://orcid.org/0000-0003-1952-7657" title="ORCID" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-orcid fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">ORCID</span></a>
-        </li>
-        <li class="nav-item">
-          
-          
-          
-          
-          
-          
-          
-          
-          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">LinkedIn</span></a>
+          <a href="https://www.linkedin.com/in/victor-ferat/" title="LinkedIn" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
         </li>
 </ul></div>
         
@@ -446,7 +442,7 @@
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
+        <i class="fa-solid fa-house"></i>
       </a>
     </li>
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Syntax guide for this website</span></li>
@@ -468,11 +464,11 @@
                 <article class="bd-article">
                    <section id="syntax-guide-for-this-website">
 <h1>Syntax guide for this website<a class="headerlink" href="#syntax-guide-for-this-website" title="Link to this heading">#</a></h1>
-<p>This blog post illustrates some awesome possibilities of the markdown syntax.</p>
+<p>This blog post illustrates some awesome possibilities of Markdown syntax.</p>
 <section id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Link to this heading">#</a></h2>
-<p>Here is a brief overview of syntax that can be use to populate this website.</p>
-<p>Please check the <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">markdown guide</a>
+<p>Here is a brief overview of the syntax that can be used to populate this website.</p>
+<p>Please check the <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">Markdown guide</a>
 to learn the basic syntax.</p>
 <p>Additional features are listed below.</p>
 </section>
@@ -495,21 +491,21 @@ alt: My figure text
 <p><span class="caption-text">And here is my figure caption.</span><a class="headerlink" href="#my-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">:name:</span></code> variable to link to figure:</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">:name:</span></code> variable to link to a figure:</p>
 <div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span>{ref}<span class="nv">`my-figure`</span>
 </pre></div>
 </div>
-<p>link to the figure <a class="reference internal" href="#my-figure"><span class="std std-ref">And here is my figure caption.</span></a></p>
+<p>Link to the figure: <a class="reference internal" href="#my-figure"><span class="std std-ref">And here is my figure caption.</span></a></p>
 </section>
 <section id="mathematics">
 <h2>Mathematics<a class="headerlink" href="#mathematics" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight" id="equation-eq-label">
 <span class="eqno">()<a class="headerlink" href="#equation-eq-label" title="Link to this equation">#</a></span>\[z=\sqrt{x^2+y^2}\]</div>
-<p>You can use the <code class="docutils literal notranslate"><span class="pre">label</span></code> variable to link to equation:</p>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">label</span></code> variable to link to an equation:</p>
 <div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span>{eq}<span class="nv">`eq-label`</span>
 </pre></div>
 </div>
-<p>link to the equation <a class="reference internal" href="#equation-eq-label">()</a></p>
+<p>Link to the equation: <a class="reference internal" href="#equation-eq-label">()</a></p>
 </section>
 <section id="notes">
 <h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
@@ -527,17 +523,17 @@ A note
 <h2>References and bibliographies<a class="headerlink" href="#references-and-bibliographies" title="Link to this heading">#</a></h2>
 <section id="references">
 <h3>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h3>
-<p>The extension <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code> allows to manage the bibliography of this site.
+<p>The <code class="docutils literal notranslate"><span class="pre">sphinxcontrib-bibtex</span></code> extension manages the bibliography of this site.
 To cite an article, add the reference in bibtex format to the <code class="docutils literal notranslate"><span class="pre">bibliography.bib</span></code> file and
-refer to the citation using the bibtex keyword:</p>
+refer to the citation using the BibTeX keyword:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>{footcite}`ferat2022electroencephalographic`
 </pre></div>
 </div>
-<p>Will be rendered as <a class="footnote-reference brackets" href="#footcite-ferat2022electroencephalographic" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>This will be rendered as <a class="footnote-reference brackets" href="#footcite-ferat2022electroencephalographic" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 </section>
 <section id="bibliography">
 <h3>Bibliography<a class="headerlink" href="#bibliography" title="Link to this heading">#</a></h3>
-<p>To insert a bibliography on the page use</p>
+<p>To insert a bibliography on the page, use:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{footbibliography}
 ```
 </pre></div>
@@ -571,14 +567,14 @@ refer to the citation using the bibtex keyword:</p>
 <section id="custom">
 <h2>Custom<a class="headerlink" href="#custom" title="Link to this heading">#</a></h2>
 <p>You can add HTML content directly in your <code class="docutils literal notranslate"><span class="pre">markdown</span></code> files:</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border-radius:12px&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://open.spotify.com/embed/track/0VypHqSlFRWpshnWwzLe5K?utm_source=generator&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;380&quot;</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">style</span><span class="o">=</span><span class="s">"border-radius:12px"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://open.spotify.com/embed/track/0VypHqSlFRWpshnWwzLe5K?utm_source=generator"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span> <span class="na">height</span><span class="o">=</span><span class="s">"380"</span> <span class="na">frameBorder</span><span class="o">=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="o">=</span><span class="s">""</span> <span class="na">allow</span><span class="o">=</span><span class="s">"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"</span> <span class="na">loading</span><span class="o">=</span><span class="s">"lazy"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0VypHqSlFRWpshnWwzLe5K?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </section>
 <section id="toggle-content-with-buttons">
 <h2>Toggle content with buttons<a class="headerlink" href="#toggle-content-with-buttons" title="Link to this heading">#</a></h2>
-<p>The extension <code class="docutils literal notranslate"><span class="pre">sphinx_togglebutton</span></code> allows to add content in toggle frames.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">sphinx_togglebutton</span></code> extension adds content in toggle frames.</p>
 <div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span><span class="s">```{image} https://media.giphy.com/media/FaKV1cVKlVRxC/giphy.gif</span>
 <span class="s">:class: toggle</span>
 <span class="s">```</span>
@@ -591,7 +587,7 @@ refer to the citation using the bibtex keyword:</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="footcite-ferat2022electroencephalographic" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Victor Férat, Martijn Arns, Marie-Pierre Deiber, Roland Hasler, Nader Perroud, Christoph M Michel, and Tomas Ros. Electroencephalographic microstates as novel functional biomarkers for adult attention-deficit/hyperactivity disorder. <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 7(8):814–823, 2022. <a class="reference external" href="https://doi.org/10.1016/j.bpsc.2021.11.006">doi:10.1016/j.bpsc.2021.11.006</a>.</p>
+<p>Victor Férat, Martijn Arns, Marie-Pierre Deiber, Roland Hasler, Nader Perroud, Christoph M Michel, and Tomas Ros. <strong>Electroencephalographic microstates as novel functional biomarkers for adult attention-deficit/hyperactivity disorder</strong> <em>Biological Psychiatry: Cognitive Neuroscience and Neuroimaging</em>, 7(8):814–823, 2022. <a class="reference external" href="https://doi.org/10.1016/j.bpsc.2021.11.006">doi:10.1016/j.bpsc.2021.11.006</a>.</p>
 </aside>
 </aside>
 
@@ -599,6 +595,13 @@ refer to the citation using the bibtex keyword:</p>
      
 <div class="section ablog__prev-next">
   <span class="ablog__prev">
+     
+    <a href="../2021/2021-11-27.html">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Blender Brain Atlas</span>
+    </a>
     
   </span>
   <span class="ablog__spacer">&nbsp;</span>
@@ -619,27 +622,42 @@ refer to the citation using the bibtex keyword:</p>
                 </article>
               
 
+
 <!-- giscus -->
 <script>
-var script = document.createElement('script');
-script.setAttribute("src", "https://giscus.app/client.js");
-script.setAttribute("data-repo", "vferat/vferat.github.io");
-script.setAttribute("data-repo-id", "R_kgDOIMr2YA");
-script.setAttribute("data-category", "Q&A");
-script.setAttribute("data-category-id", "DIC_kwDOIMr2YM4CR7_W");
-script.setAttribute("data-mapping", "pathname");
-script.setAttribute("data-strict", "0");
-script.setAttribute("data-reactions-enabled", "1");
-script.setAttribute("data-emit-metadata", "1");
-script.setAttribute("data-input-position", "top");
-script.setAttribute("data-theme", document.documentElement.dataset.theme == "dark" ? "dark_protanopia" : "light");
-script.setAttribute("data-lang", "en");
-script.setAttribute("data-loading", "lazy");
-script.setAttribute("crossorigin", "anonymous");
-script.async, "true";
-var main = document.getElementsByClassName("bd-article-container")[0];
-main.appendChild(script);
+(function () {
+  var giscusTheme = function () {
+    return document.documentElement.dataset.theme === "dark" ? "transparent_dark" : "light";
+  };
+
+  var script = document.createElement("script");
+  script.setAttribute("src", "https://giscus.app/client.js");
+  script.setAttribute("data-repo", "vferat/vferat.github.io");
+  script.setAttribute("data-repo-id", "R_kgDOIMr2YA");
+  script.setAttribute("data-category", "Q&A");
+  script.setAttribute("data-category-id", "DIC_kwDOIMr2YM4CR7_W");
+  script.setAttribute("data-mapping", "pathname");
+  script.setAttribute("data-strict", "0");
+  script.setAttribute("data-reactions-enabled", "1");
+  script.setAttribute("data-emit-metadata", "1");
+  script.setAttribute("data-input-position", "top");
+  script.setAttribute("data-theme", giscusTheme());
+  script.setAttribute("data-lang", "en");
+  script.setAttribute("data-loading", "lazy");
+  script.setAttribute("crossorigin", "anonymous");
+  script.async = true;
+  document.getElementsByClassName("bd-article-container")[0].appendChild(script);
+
+  // Keep the comments in sync with the light/dark switch.
+  new MutationObserver(function () {
+    var frame = document.querySelector("iframe.giscus-frame");
+    if (frame) {
+      frame.contentWindow.postMessage({ giscus: { setConfig: { theme: giscusTheme() } } }, "https://giscus.app");
+    }
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+})();
 </script>
+
 
               
               
@@ -649,9 +667,38 @@ main.appendChild(script);
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div class="ablog-sidebar-item ablog__postcard">
+   
+  <h2>
+     
+    <i class="fa fa-calendar"></i>
+    
+    <span>10 October 2022</span>
+    
+  </h2>
+  <ul>
+    <div class="ablog-sidebar-item ablog__postcard2">
+       
+  <li id="ablog-sidebar-item tags ablog__tags">
+    <span>
+       
+      <i class="fa-fw fa fa-tag"></i>
+      
+    </span>
+     
+    <a href="../../blog/tag/sphinx.html">sphinx</a>
+      
+  </li>
+   
+</div>
+  </ul>
+</div>
+</div>
 
   <div class="sidebar-secondary-item">
 <div
@@ -676,31 +723,6 @@ main.appendChild(script);
 </ul>
   </nav></div>
 
-  <div class="sidebar-secondary-item">
-
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/vferat/vferat.github.io/edit/main/./source/posts/2022/2022-10-10.md">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
-    </a>
-  </div>
-</div>
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../_sources/posts/2022/2022-10-10.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
-
 </div></div>
               
             
@@ -714,8 +736,8 @@ main.appendChild(script);
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -726,7 +748,7 @@ main.appendChild(script);
 
   <p class="copyright">
     
-      © Copyright 2024, Victor Férat.
+      © Copyright 2022–2026, Victor Férat.
       <br/>
     
   </p>
@@ -735,8 +757,7 @@ main.appendChild(script);
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
-    <br/>
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1.
   </p>
 </div>
       
@@ -749,7 +770,7 @@ main.appendChild(script);
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.17.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
 </p></div>
       
     </div>

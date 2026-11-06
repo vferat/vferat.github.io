@@ -6,14 +6,14 @@ date: "2022-10-10"
 # Syntax guide for this website
 
 
-This blog post illustrates some awesome possibilities of the markdown syntax.
+This blog post illustrates some awesome possibilities of Markdown syntax.
 
 
 ## Syntax
 
-Here is a brief overview of syntax that can be use to populate this website.
+Here is a brief overview of the syntax that can be used to populate this website.
 
-Please check the [markdown guide](https://www.markdownguide.org/basic-syntax/)
+Please check the [Markdown guide](https://www.markdownguide.org/basic-syntax/)
 to learn the basic syntax.
 
 Additional features are listed below.
@@ -40,11 +40,11 @@ name: my-figure
 And here is my figure caption.
 ```
 
-You can use the `:name:` variable to link to figure:
+You can use the `:name:` variable to link to a figure:
 ``````restructuredtext
 {ref}`my-figure`
 ``````
-link to the figure {ref}`my-figure`
+Link to the figure: {ref}`my-figure`
 
 ## Mathematics
 
@@ -54,11 +54,11 @@ link to the figure {ref}`my-figure`
 z=\sqrt{x^2+y^2}
 ```
 
-You can use the `label` variable to link to equation:
+You can use the `label` variable to link to an equation:
 ``````restructuredtext
 {eq}`eq-label`
 ``````
-link to the equation {eq}`eq-label`
+Link to the equation: {eq}`eq-label`
 
 ## Notes
 ````
@@ -75,19 +75,19 @@ A note
 
 ### References
 
-The extension `sphinxcontrib-bibtex` allows to manage the bibliography of this site.
+The `sphinxcontrib-bibtex` extension manages the bibliography of this site.
 To cite an article, add the reference in bibtex format to the `bibliography.bib` file and
-refer to the citation using the bibtex keyword:
+refer to the citation using the BibTeX keyword:
 
 ````markdown
 {footcite}`ferat2022electroencephalographic`
 ````
 
-Will be rendered as {footcite}`ferat2022electroencephalographic`
+This will be rendered as {footcite}`ferat2022electroencephalographic`
 
 ### Bibliography
 
-To insert a bibliography on the page use
+To insert a bibliography on the page, use:
 
 ````markdown
 ```{footbibliography}
@@ -148,7 +148,7 @@ You can add HTML content directly in your `markdown` files:
 ## Toggle content with buttons
 
 
-The extension `sphinx_togglebutton` allows to add content in toggle frames.
+The `sphinx_togglebutton` extension adds content in toggle frames.
 
 ``````restructuredtext
 

@@ -1,0 +1,13 @@
+---
+tags: EEG
+date: "2019-07-18"
+author: me
+language: en
+redirect: projects/pycartool
+---
+
+# Pycartool
+
+PyCartool is a simple open-source Python package that provides I/O for most Cartool file formats, as well as additional computing features.
+
+The code is available on [GitHub](https://github.com/Functional-Brain-Mapping-Laboratory/PyCartool).

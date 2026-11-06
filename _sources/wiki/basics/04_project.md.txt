@@ -1,13 +1,13 @@
-# New python project Cheatsheet
+# New Python project cheatsheet
 
-## Create a new Github repository
+## Create a new GitHub repository
 
 TODO
 
-## Create a new python environment
+## Create a new Python environment
 
 ```{warning}
-NO pity for people using the (base) environment.
+No pity for people using the (base) environment.
 ```
 
 
@@ -29,7 +29,7 @@ conda activate {env_name}
 pip install jupyter
 ```
 
-- VS code:
+- VS Code:
 ```bash
 conda activate {env_name}
 pip install ipykernel
@@ -46,7 +46,7 @@ Make sure to activate the environment you want to work with:
 ```bash
 conda activate {env_name}
 ```
-before using any of the following commands
+before using any of the following commands.
 
 ``````
 
@@ -68,7 +68,7 @@ pip install {library_name}=={library_version}
 conda install {library_name}=={library_version}
 ```
 
-**Recommendend:** create a `requirements.txt` file to keep track of all package your are installing, so you can easily share or recreate you environment:
+**Recommended:** create a `requirements.txt` file to keep track of all the packages you are installing, so you can easily share or recreate your environment:
 
 ```text
 pandas
@@ -77,7 +77,7 @@ nilearn==1.2
 statsmodels
 ```
 
-You can then install all packages listed in the `requirements.txt` using:
+You can then install all the packages listed in `requirements.txt` using:
 
 ```bash
 pip install -r requirements.txt
@@ -92,32 +92,33 @@ Make sure to activate the environment you want to work with:
 ```bash
 conda activate {env_name}
 ```
-before using any of the following commands
+before using any of the following commands.
 
 ``````
 
 - Spyder:
 ```bash
-pip spyder
+spyder
 ```
 
 - Jupyter:
 ```bash
-pip jupyter notebook
+jupyter notebook
 ```
-or 
+or
 ```bash
-pip jupyter lab
+jupyter lab
 ```
 
 
-- VS code:
+- VS Code:
 
-Open a new VS code folder: <kbd>File</kbd> -> <kbd>Open Folder</kbd>:
-    - create a new `.py` file, on the bottom right corner, next to `python` choose your `{env_name}` environment.
-    - create a new `.ipynb` file, on the top right corner, click `select kernel` and select your `{env_name}` environment
+Open a folder in VS Code: <kbd>File</kbd> -> <kbd>Open Folder</kbd>. Then:
 
-VS code save your kernel choices so you don't have to do it every time you open your project.
+- For a new `.py` file: in the bottom right corner, next to `Python`, choose your `{env_name}` environment.
+- For a new `.ipynb` file: in the top right corner, click `Select Kernel` and select your `{env_name}` environment.
+
+VS Code saves your kernel choices, so you don't have to do this every time you open your project.
 
 
 
