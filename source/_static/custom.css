@@ -40,6 +40,11 @@ html[data-theme="dark"] {
     --vf-accent: #3ee07f;
     --vf-accent-hover: #86f2b0;
     --vf-accent-soft: rgba(62, 224, 127, 0.12);
+    --vf-meta: #a8e6c4;
+    --vf-eeg: #4ade80;
+    --vf-fmri: #fbbf5a;
+    --vf-meg: #7cc0ff;
+    --vf-neuromod: #e39af2;
     --vf-on-accent: #04130a;
     --vf-header: rgba(7, 10, 8, 0.78);
 }
@@ -54,6 +59,11 @@ html[data-theme="light"] {
     --vf-accent: #0a7541;
     --vf-accent-hover: #06552f;
     --vf-accent-soft: rgba(10, 117, 65, 0.1);
+    --vf-meta: #2f6b4f;
+    --vf-eeg: #0a7541;
+    --vf-fmri: #8f5200;
+    --vf-meg: #1a5fb4;
+    --vf-neuromod: #8a2ca3;
     --vf-on-accent: #ffffff;
     --vf-header: rgba(246, 249, 246, 0.82);
 }
@@ -247,6 +257,7 @@ div.profile-pic img {
 }
 
 .vf-timeline .sd-col:first-child .sd-card-body {
+    background: transparent;
     padding: 0.75rem 0.5rem;
 }
 
@@ -322,6 +333,24 @@ div.admonition {
 }
 
 /* -- Blog ------------------------------------------------------------------- */
+/* Post details (date, author, language, tags) and the sidebar tag cloud. */
+ul.ablog-archive,
+ul.ablog-archive a,
+ul.ablog-cloud a {
+    color: var(--vf-meta);
+}
+
+ul.ablog-archive a,
+ul.ablog-cloud a {
+    text-decoration: none;
+}
+
+ul.ablog-archive a:hover,
+ul.ablog-cloud a:hover {
+    color: var(--vf-accent);
+    text-decoration: underline;
+}
+
 ul.postlist {
     list-style: none;
     padding-left: 0;
@@ -498,18 +527,6 @@ ul.postlist p {
     color: var(--vf-text);
 }
 
-.vf-btn--primary {
-    background: var(--vf-accent);
-    border-color: var(--vf-accent);
-    color: var(--vf-on-accent);
-}
-
-.vf-btn--primary:hover {
-    background: var(--vf-accent-hover);
-    border-color: var(--vf-accent-hover);
-    color: var(--vf-on-accent);
-}
-
 .vf-hero__photo {
     aspect-ratio: 1;
     border: 2px solid var(--vf-accent);
@@ -530,6 +547,73 @@ ul.postlist p {
     .vf-hero__photo {
         width: 132px;
     }
+}
+
+.vf-position-photo {
+    border: 1px solid var(--vf-border);
+    border-radius: 0.75rem;
+    display: block;
+    height: auto;
+    max-width: 16rem;
+    width: 100%;
+}
+
+.vf-position-credit {
+    color: var(--vf-muted);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    max-width: 16rem;
+}
+
+.vf-people {
+    display: grid;
+    gap: 1.5rem 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.vf-people a {
+    align-items: center;
+    color: var(--vf-text);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 0.6rem;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vf-people img {
+    aspect-ratio: 1;
+    border: 2px solid var(--vf-border);
+    border-radius: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 25%;
+    transition: border-color 0.15s ease;
+    width: 6rem;
+}
+
+.vf-people a:hover img,
+.vf-people a:focus-visible img {
+    border-color: var(--vf-accent);
+}
+
+@media (max-width: 720px) {
+    .vf-people {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* The logos are drawn in white, so they need a dark disc in both themes. */
+.vf-people img.vf-people-logo {
+    background: #10151a;
+    object-fit: contain;
+    object-position: center;
+    padding: 0.4rem;
 }
 
 /* -- Tabs (sphinx-tabs) ----------------------------------------------------- */
@@ -556,7 +640,152 @@ ul.postlist p {
     color: var(--vf-text);
 }
 
+.bd-article ul.postlist .ablog-post .ablog-post-title,
 ul.postlist p,
+ul.postlist li,
 ul.postlist p * {
     font-size: 1.02rem;
+}
+
+/* -- Modality tags ---------------------------------------------------------- */
+/* .vf-tag comes from the {modality} role in source/_ext/modality.py.
+   Blog tags are ablog links, so they are matched on their tag page address. */
+.vf-tag--eeg,
+a[href$="tag/eeg.html"] {
+    --vf-tag: var(--vf-eeg);
+}
+
+.vf-tag--fmri,
+a[href$="tag/fmri.html"] {
+    --vf-tag: var(--vf-fmri);
+}
+
+.vf-tag--meg,
+a[href$="tag/meg.html"] {
+    --vf-tag: var(--vf-meg);
+}
+
+.vf-tag--neuromod,
+a[href$="tag/neuromod.html"] {
+    --vf-tag: var(--vf-neuromod);
+}
+
+.vf-tag,
+:is(ul.ablog-archive, ul.ablog-cloud, .ablog__postcard) a:is([href$="tag/eeg.html"], [href$="tag/fmri.html"], [href$="tag/meg.html"], [href$="tag/neuromod.html"]) {
+    background: color-mix(in srgb, var(--vf-tag) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--vf-tag) 40%, transparent);
+    border-radius: 999px;
+    color: var(--vf-tag);
+    display: inline-block;
+    font-family: var(--pst-font-family-monospace);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0.05rem 0.55rem;
+    text-decoration: none;
+}
+
+/* Post details on individual post pages. */
+.ablog__postcard h2 {
+    color: var(--vf-meta);
+    font-family: var(--pst-font-family-base);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 0.4rem;
+}
+
+.ablog__postcard ul {
+    color: var(--vf-meta);
+    font-size: 0.85rem;
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+.ablog__postcard ul a {
+    color: var(--vf-meta);
+    text-decoration: none;
+}
+
+/* Publications page. Each entry reads authors, then title, then venue. */
+.bd-article .vf-publications ul {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bd-article .vf-publications li {
+    background: var(--vf-surface);
+    border: 1px solid var(--vf-border);
+    border-radius: var(--vf-radius-sm);
+    margin: 0;
+    padding: 0.85rem 1.1rem;
+    transition: border-color 0.15s ease;
+}
+
+.bd-article .vf-publications li:hover {
+    border-color: var(--vf-accent);
+}
+
+.bd-article .vf-publications li p {
+    color: var(--vf-muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.bd-article .vf-publications strong {
+    color: var(--vf-text);
+    display: block;
+    font-size: 1.04rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0.3rem 0;
+}
+
+.bd-article .vf-publications .vf-self {
+    color: var(--vf-accent);
+    font-weight: 600;
+}
+
+.bd-article .vf-publications .vf-tag {
+    margin-left: 0.2rem;
+}
+
+/* Libraries I contributed to (Projects page). */
+.bd-article .vf-contrib ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bd-article .vf-contrib li {
+    margin: 0;
+}
+
+.bd-article .vf-contrib li p {
+    margin: 0;
+}
+
+.bd-article .vf-contrib a {
+    background: var(--vf-surface);
+    border: 1px solid var(--vf-border);
+    border-radius: 999px;
+    color: var(--vf-text);
+    display: inline-block;
+    font-weight: 500;
+    padding: 0.35rem 1rem;
+    text-decoration: none;
+}
+
+.bd-article .vf-contrib a:hover {
+    border-color: var(--vf-accent);
+    color: var(--vf-accent);
 }

@@ -9,8 +9,11 @@ sys.path.insert(0, os.path.abspath('_ext'))
 
 # Register custom pybtex style
 from pybtex.plugin import register_plugin
-from bold_title_style import Style as BoldTitleStyle
+from bold_title_style import ModalityStyle, Style as BoldTitleStyle
+from modality import ModalityBackend
 register_plugin('pybtex.style.formatting', 'bold_title_style', BoldTitleStyle)
+register_plugin('pybtex.style.formatting', 'bold_title_modality_style', ModalityStyle)
+register_plugin('pybtex.backends', 'docutils', ModalityBackend, force=True)
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -54,11 +57,6 @@ html_theme_options = {
   "github_url": "https://github.com/vferat/",
   "icon_links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/ferat_victor",
-            "icon": "fa-brands fa-twitter",
-        },
-        {
             "name": "ORCID",
             "url": "https://orcid.org/0000-0003-1952-7657",
             "icon": "fa-brands fa-orcid",
@@ -72,7 +70,7 @@ html_theme_options = {
   "search_bar_text": "Search this site...",
   "show_prev_next": False,
   "secondary_sidebar_items": {
-      "**": ["page-toc", "edit-this-page", "sourcelink"],
+      "**": ["ablog/postcard.html", "page-toc"],
       "index": [],
   },
 }
@@ -89,7 +87,7 @@ html_css_files = [
 html_sidebars = {'index': [],
                  'about': ['sidebar.html'],
                  'publications': ['sidebar.html'],
-                 'projects/**': ['sidebar.html', "sidebar-nav-bs.html"],
+                 'projects/**': ['sidebar.html'],
                  'posts/**': [],
                  'wiki/**': [],
                  'wiki/index': ["sidebar-nav-bs.html"],
@@ -108,6 +106,7 @@ fontawesome_included = True
 blog_post_pattern = ["posts/*/*.md", "posts/*/*.ipynb"]
 post_auto_image = 1 # Index of the image that will be displayed
 post_auto_excerpt = 1 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt
+post_redirect_refresh = 0 # Old project addresses redirect to their post without waiting
 
 blog_authors = {
     'me': ('Victor Férat', 'https://vferat.github.io/about.html'),}
@@ -124,6 +123,9 @@ bibtex_default_style = 'bold_title_style'
 
 # Cards and grid
 extensions += ['sphinx_design']
+
+# Colored EEG / fMRI / MEG / neuromod labels
+extensions += ['modality']
 
 # toggle
 extensions += ['sphinx_togglebutton']
